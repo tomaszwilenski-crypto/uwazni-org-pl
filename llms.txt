@@ -32,3 +32,12 @@
 - Firmy: kontakt@uwazni.org.pl
 - Paneliści: pomoc@uwazni.org.pl
 - TGV Sp. z o.o., Al. Niepodległości 54/34, 02-626 Warszawa, KRS 0000534661, NIP 5213684806
+
+## English
+
+uwazni.org.pl is a Polish attention research panel. Companies commission a study and a selected demographic or psychographic group of people living in Poland visits their website, landing page, article or video, reads it and clicks on what interests them. Panelists are paid for every completed task. Operator: TGV Sp. z o.o., Warsaw, Poland.
+
+- [Attention research for Polish audiences and A/B tests](https://uwazni.org.pl/en/for-business.html): 4-step configurator, pricing in PLN and FAQ. Metrics: active attention time, drop-off by page zone, clicks on page elements, Attentive Share (share of people who read attentively), A/B comparison, optional survey. Study visits appear in the client's Google Analytics about a minute after launch, tagged utm_source=uwazni.
+- Pricing (base group, net): article up to 3 min PLN 12, page up to 5 min PLN 20, website or video up to 10 min PLN 35 per person. Packages: Pilot PLN 1,000 (50 people), Standard PLN 3,600 (200 people), Pro PLN 8,500 (500 people). Minimum order PLN 1,000 net. International clients welcome; EU businesses invoiced under reverse charge.
+- [Paid online tasks for people living in Poland](https://uwazni.org.pl/en/): PLN 3–9 per task of 3–10 minutes, payouts from PLN 20 via BLIK, bank transfer or gift cards.
+- Documents (English translations, Polish versions binding): [Terms of service](https://uwazni.org.pl/en/service-terms.html), [Panel terms](https://uwazni.org.pl/en/panel-terms.html), [Privacy policy](https://uwazni.org.pl/en/privacy-policy.html).

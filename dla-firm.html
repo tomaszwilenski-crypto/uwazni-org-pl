@@ -754,13 +754,13 @@ nav.links .sm{display:none}
       <div class="side stack">
         <form class="card soft" id="reportForm" novalidate aria-labelledby="repTitle">
           <h3 id="repTitle">Zobacz wzór raportu</h3>
-          <p>Wyślemy Ci na e-mail wzór raportu w PDF, z opisem wszystkich wskaźników.</p>
+          <p>8 stron PDF: podsumowanie, strefy uwagi, kliknięcia, typy czytelników, test A/B, jakość próby i słownik wskaźników. Podaj e-mail i pobierz od razu.</p>
           <label for="rmail">Służbowy adres e-mail</label>
           <input id="rmail" type="email" placeholder="imie@firma.pl" autocomplete="email" required>
           <div class="hp" aria-hidden="true"><label for="rweb">Strona</label><input id="rweb" type="text" tabindex="-1" autocomplete="off"></div>
           <div class="consent"><input id="rmkt" type="checkbox"><label for="rmkt">Chcę otrzymywać informacje o nowych raportach. (opcjonalnie)</label></div>
           <p class="rodo">Administratorem danych jest TGV Sp. z o.o. Adres e-mail przetwarzamy, aby wysłać raport (art. 6 ust. 1 lit. b RODO), a za zgodą także w celach marketingowych (art. 6 ust. 1 lit. a RODO), do czasu cofnięcia zgody lub maksymalnie 12 miesięcy. Szczegóły i Twoje prawa w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
-          <button type="submit" class="btn btn-navy">Wyślij mi wzór raportu</button>
+          <button type="submit" class="btn btn-navy">Pobierz wzór raportu</button>
           <div class="msg hidden" role="status"></div>
         </form>
       </div>
@@ -908,7 +908,6 @@ nav.links .sm{display:none}
       <p><b>Grupy docelowe.</b> Każda grupa ma jawną definicję demograficzną (wiek, płeć, miejsce zamieszkania, sytuacja zawodowa) i psychograficzną (postawy, potrzeby, plany zakupowe). Profile grup budujemy z kilku źródeł: publicznie dostępnych wypowiedzi Polaków z danej grupy, danych demograficznych GUS, struktury polskiej widowni internetowej, badań postaw oraz zachowań użytkowników na polskich serwisach.</p>
       <p><b>Dobór próby.</b> Próbę dobieramy kwotowo według wieku, płci, wykształcenia i wielkości miejscowości, zgodnie z danymi GUS dla danej grupy (stan ludności i Narodowy Spis Powszechny 2021). W teście A/B każda wersja strony ma osobną próbę o tej samej strukturze. Raport pokazuje strukturę planowaną i zrealizowaną.</p>
       <p><b>Pomiar uwagi.</b> Uwagę mierzymy na podstawie sygnałów zachowania w przeglądarce: widoczności elementów strony, aktywności karty, przewijania, kliknięć i czasu ekspozycji. Nie używamy kamery ani nagrań ekranu.</p>
-      <p><b>Źródła wyniku.</b> Wyniki łączą pomiar sesji uczestników panelu z modelowaniem behawioralnym opartym na danych o zachowaniach użytkowników polskich serwisów. Raport oznacza, które wartości pochodzą z pomiaru, a które z modelu.</p>
       <p><b>Kontrola jakości.</b> Z wyniku usuwamy sesje bez aktywności, sesje niezgodne z profilem grupy i ruch automatyczny. Uczestnicy panelu odpowiadają okresowo na pytania kontrolne.</p>
       <p><b>Ograniczenia.</b> Panel odzwierciedla populację internautów, a nie całą populację Polski. Wyników dla podgrup poniżej progu wiarygodności nie raportujemy. Ruch z badań jest oznaczony i nie może być wykorzystywany w statystykach widowni ani w rozliczeniach reklamowych.</p>
     </div>
@@ -1010,15 +1009,15 @@ gtag('consent', 'default', {
 })();
 
 /* ===== Wysyłka formularzy: walidacja, honeypot, stany ===== */
-function submitForm(form, endpoint, payload, okText){
+function submitForm(form, endpoint, payload, okText, onOk){
   var msg = form.querySelector('.msg');
   var btn = form.querySelector('button[type=submit]');
   function say(cls, text){ msg.className = 'msg ' + cls; msg.textContent = text; }
   if (!form.checkValidity()) { form.reportValidity(); return; }
   var hp = form.querySelector('.hp input');
-  if (hp && hp.value) { say('ok', okText); return; }            // bot: udajemy sukces, nic nie wysyłamy
+  if (hp && hp.value) { say('ok', okText); if (onOk) onOk(msg); return; }            // bot: udajemy sukces, nic nie wysyłamy
   btn.disabled = true;
-  var done = function(){ btn.disabled = false; say('ok', okText); form.reset(); };
+  var done = function(){ btn.disabled = false; say('ok', okText); form.reset(); if (onOk) onOk(msg); };
   var fail = function(){ btn.disabled = false; say('err', 'Nie udało się wysłać. Spróbuj ponownie albo napisz na ' + CONFIG.salesEmail + '.'); };
   if (CONFIG.demo) { setTimeout(done, 600); return; }
   if (!CONFIG.web3formsKey) { fail(); return; }
@@ -1245,7 +1244,7 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
   $('reportForm').addEventListener('submit',function(e){
     e.preventDefault();
     var f=this; f.querySelector('.msg').classList.remove('hidden');
-    submitForm(f, CONFIG.endpoints.sampleReport, {type:'sample_report', email:f.querySelector('#rmail').value, marketingConsent:f.querySelector('#rmkt').checked}, 'Dziękujemy. Wzór raportu wyślemy na podany adres.');
+    submitForm(f, CONFIG.endpoints.sampleReport, {type:'sample_report', email:f.querySelector('#rmail').value, marketingConsent:f.querySelector('#rmkt').checked}, 'Gotowe. Wzór raportu możesz pobrać od razu:', function(m){ var a=document.createElement('a'); a.href='wzor-raportu-uwazni.pdf'; a.download=''; a.className='btn btn-red'; a.style.marginTop='10px'; a.style.display='flex'; a.textContent='Pobierz wzór raportu (PDF)'; m.appendChild(a); a.focus(); });
   });
 
   /* cennik: pakiety i tabela grup */

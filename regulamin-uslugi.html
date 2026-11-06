@@ -680,15 +680,15 @@ gtag('consent', 'default', {
 })();
 
 /* ===== Wysyłka formularzy: walidacja, honeypot, stany ===== */
-function submitForm(form, endpoint, payload, okText){
+function submitForm(form, endpoint, payload, okText, onOk){
   var msg = form.querySelector('.msg');
   var btn = form.querySelector('button[type=submit]');
   function say(cls, text){ msg.className = 'msg ' + cls; msg.textContent = text; }
   if (!form.checkValidity()) { form.reportValidity(); return; }
   var hp = form.querySelector('.hp input');
-  if (hp && hp.value) { say('ok', okText); return; }            // bot: udajemy sukces, nic nie wysyłamy
+  if (hp && hp.value) { say('ok', okText); if (onOk) onOk(msg); return; }            // bot: udajemy sukces, nic nie wysyłamy
   btn.disabled = true;
-  var done = function(){ btn.disabled = false; say('ok', okText); form.reset(); };
+  var done = function(){ btn.disabled = false; say('ok', okText); form.reset(); if (onOk) onOk(msg); };
   var fail = function(){ btn.disabled = false; say('err', 'Nie udało się wysłać. Spróbuj ponownie albo napisz na ' + CONFIG.salesEmail + '.'); };
   if (CONFIG.demo) { setTimeout(done, 600); return; }
   if (!CONFIG.web3formsKey) { fail(); return; }

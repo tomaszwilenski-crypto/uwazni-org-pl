@@ -688,7 +688,7 @@ nav.links .sm{display:none}
       <input id="pmail" type="email" placeholder="ty@przyklad.pl" autocomplete="email" required>
       <div class="hp" aria-hidden="true"><label for="pweb">Strona</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
       <div class="consent"><input id="zgodaP" type="checkbox" required><label for="zgodaP">Mam ukończone 18 lat i akceptuję <a href="regulamin-panelu.html">regulamin panelu</a>. (wymagane)</label></div>
-      <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">Chcę dostawać informacje o bonusach i nowościach w panelu. (opcjonalnie)</label></div>
+      <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">Chcę dostawać e-mailem informacje o bonusach i nowościach w panelu. Zgodę mogę w każdej chwili cofnąć. (opcjonalnie)</label></div>
       <p class="rodo">Administratorem danych jest TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warszawa</span>. Przetwarzamy je, aby założyć i prowadzić Twoje konto w panelu oraz wypłacać wynagrodzenie (art. 6 ust. 1 lit. b RODO), a za Twoją zgodą także w celach marketingowych (art. 6 ust. 1 lit. a RODO). Dane przechowujemy do czasu usunięcia konta, a dane rozliczeniowe przez okres wymagany przepisami. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu, przenoszenia oraz skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html#panelisci">polityce prywatności</a>.</p>
       <button type="submit" class="btn btn-navy" style="font-size:17px">Dołącz za darmo</button>
       <div class="msg hidden" role="status"></div>
@@ -801,7 +801,9 @@ gtag('consent', 'default', {
 
   document.addEventListener('DOMContentLoaded', function(){
     var c = read();
-    if (c) apply(c); else show(false);
+    var optional = !!CONFIG.gaId;
+    if (!optional) document.querySelectorAll('[data-cookie-settings]').forEach(function(el){ el.remove(); });
+    if (c) apply(c); else if (optional) show(false);
     document.getElementById('ckAll').addEventListener('click', function(){ decide({analytics:true, marketing:true}); });
     document.getElementById('ckNone').addEventListener('click', function(){ decide({analytics:false, marketing:false}); });
     document.getElementById('ckMore').addEventListener('click', function(){ show(true); });

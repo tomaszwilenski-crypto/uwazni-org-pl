@@ -510,8 +510,7 @@ nav.links .sm{display:none}
   <thead><tr><th scope="col">Cel</th><th scope="col">Dane</th><th scope="col">Podstawa</th><th scope="col">Okres</th></tr></thead>
   <tbody>
     <tr><td>Wyświetlenie strony i bezpieczeństwo</td><td>adres IP, dane przeglądarki, logi serwera</td><td>art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes)</td><td>30 dni</td></tr>
-    <tr><td>Statystyki odwiedzin</td><td>dane z cookies analitycznych</td><td>zgoda, art. 6 ust. 1 lit. a RODO</td><td>do cofnięcia zgody, maks. 14 miesięcy</td></tr>
-    <tr><td>Mierzenie skuteczności naszych reklam</td><td>dane z cookies marketingowych</td><td>zgoda, art. 6 ust. 1 lit. a RODO</td><td>do cofnięcia zgody</td></tr>
+    <tr><td>Obsługa formularzy kontaktowych, zapisu i wzoru raportu</td><td>dane wpisane w formularz, adres IP</td><td>art. 6 ust. 1 lit. b lub f RODO</td><td>jak w tabelach poniżej</td></tr>
   </tbody></table></div>
 
 <div class="tbl" style="border:1px solid var(--line);margin-top:16px" id="firmy"><table>
@@ -542,23 +541,21 @@ nav.links .sm{display:none}
 <p>Firmy zlecające badania nie otrzymują Twoich danych osobowych, tylko wyniki zbiorcze. Nie nagrywamy obrazu z kamery, dźwięku ani ekranu, nie mierzymy Twojego zachowania poza zadaniami i nie pytamy o zdrowie, poglądy, religię ani inne szczególne kategorie danych.</p>
 
 <h2>4. Komu przekazujemy dane?</h2>
-<p>Dostawcom, którzy działają na nasze zlecenie: hostingu i infrastruktury chmurowej, poczty e-mail i SMS, obsługi płatności i wypłat, biura rachunkowego, a po wyrażeniu zgody także Google (Google Analytics). Korzystamy z dostawców: GitHub, Inc. (hosting strony), Web3Forms (obsługa formularzy), dostawcy poczty e-mail oraz, wyłącznie po wyrażeniu zgody, Google Ireland Ltd. (Google Analytics). Jeśli dane trafiają poza Europejski Obszar Gospodarczy, odbywa się to na podstawie decyzji Komisji Europejskiej o adekwatności (EU-US Data Privacy Framework) lub standardowych klauzul umownych. Dane mogą też otrzymać organy publiczne, jeśli wymaga tego prawo.</p>
-<p>Jeśli dane trafiają poza Europejski Obszar Gospodarczy (np. do Google), opieramy się na decyzji Komisji Europejskiej o odpowiednim stopniu ochrony (EU-US Data Privacy Framework) lub standardowych klauzulach umownych.</p>
+<p>Dostawcom, którzy działają na nasze zlecenie: hostingu strony (GitHub, Inc.), obsługi formularzy (Web3Forms), poczty e-mail (Google), a po uruchomieniu panelu także dostawcom infrastruktury chmurowej, SMS, obsługi wypłat oraz biuru rachunkowemu. Dane mogą też otrzymać organy publiczne, jeśli wymaga tego prawo.</p>
+<p>Część dostawców ma siedzibę poza Europejskim Obszarem Gospodarczym (USA). Przekazanie danych odbywa się wtedy na podstawie decyzji Komisji Europejskiej o odpowiednim stopniu ochrony (EU-US Data Privacy Framework) lub standardowych klauzul umownych.</p>
 
 <h2>5. Twoje prawa</h2>
 <p>Masz prawo do dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie. Zgodę możesz cofnąć w każdej chwili, bez wpływu na zgodność z prawem przetwarzania przed jej cofnięciem. Masz też prawo wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych.</p>
 <p>Podanie danych jest dobrowolne, ale bez nich nie odpowiemy na zapytanie, nie założysz konta w panelu ani nie otrzymasz wypłaty.</p>
 
 <h2 id="cookies">6. Pliki cookies</h2>
-<p>Cookies to małe pliki zapisywane w przeglądarce. Używamy trzech kategorii. Zgodę na cookies analityczne i marketingowe możesz zmienić w każdej chwili przyciskiem „Ustawienia cookies” w stopce strony.</p>
+<p>Cookies i podobne technologie (np. pamięć lokalna przeglądarki, localStorage) to małe pliki lub wpisy zapisywane w przeglądarce. Obecnie używamy wyłącznie technologii niezbędnych do działania strony. Nie używamy cookies analitycznych ani marketingowych. Czcionki serwujemy z naszego serwera, bez łączenia się z Google Fonts.</p>
 <div class="tbl" style="border:1px solid var(--line)"><table>
   <thead><tr><th scope="col">Kategoria</th><th scope="col">Do czego służą</th><th scope="col">Wymagają zgody?</th></tr></thead>
   <tbody>
-    <tr><td>Niezbędne</td><td>działanie strony, bezpieczeństwo formularzy, zapamiętanie decyzji o cookies</td><td>nie</td></tr>
-    <tr><td>Analityczne</td><td>statystyki odwiedzin (Google Analytics)</td><td>tak</td></tr>
-    <tr><td>Marketingowe</td><td>mierzenie skuteczności naszych reklam</td><td>tak</td></tr>
+    <tr><td>Niezbędne</td><td>działanie strony i formularzy; wpis <code>uwazni_consent_v1</code> w pamięci lokalnej zapamiętuje decyzję dotyczącą cookies, jeśli zostanie podjęta</td><td>nie</td></tr>
   </tbody></table></div>
-<p style="margin-top:12px">Do czasu wyrażenia zgody Google Analytics nie zapisuje cookies (tryb zgody Google, Consent Mode).</p>
+<p style="margin-top:12px">Jeśli w przyszłości wprowadzimy narzędzia analityczne (np. Google Analytics) lub marketingowe, uruchomimy je wyłącznie po Twojej zgodzie wyrażonej w banerze cookies i zaktualizujemy tę politykę.</p>
 
 <h2>7. Zmiany polityki</h2>
 <p>O istotnych zmianach poinformujemy na stronie, a panelistów i klientów także e-mailem.</p>
@@ -668,7 +665,9 @@ gtag('consent', 'default', {
 
   document.addEventListener('DOMContentLoaded', function(){
     var c = read();
-    if (c) apply(c); else show(false);
+    var optional = !!CONFIG.gaId;
+    if (!optional) document.querySelectorAll('[data-cookie-settings]').forEach(function(el){ el.remove(); });
+    if (c) apply(c); else if (optional) show(false);
     document.getElementById('ckAll').addEventListener('click', function(){ decide({analytics:true, marketing:true}); });
     document.getElementById('ckNone').addEventListener('click', function(){ decide({analytics:false, marketing:false}); });
     document.getElementById('ckMore').addEventListener('click', function(){ show(true); });

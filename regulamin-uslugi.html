@@ -503,9 +503,10 @@ nav.links .sm{display:none}
 
 <h2>§ 1. Usługodawca i zakres</h2>
 <ol>
-  <li>Usługę świadczy TGV Sp. z o.o. z siedzibą w Warszawie, Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warszawa</span>, KRS 0000534661, NIP 5213684806 („Usługodawca”). Kontakt: <a data-email="sales" href="#"></a>.</li>
+  <li>Usługę świadczy TGV Sp. z o.o. z siedzibą w Warszawie, Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warszawa</span>, KRS 0000534661, NIP 5213684806 („Usługodawca”). Kontakt: <a data-email="sales" href="mailto:kontakt@uwazni.org.pl">kontakt@uwazni.org.pl</a>.</li>
   <li>Usługa polega na zbadaniu uwagi wybranej grupy docelowej na stronie, artykule lub materiale wideo wskazanym przez Klienta i dostarczeniu raportu („Badanie”).</li>
   <li>Regulamin dotyczy wyłącznie przedsiębiorców („Klient”).</li>
+  <li>Do przedsiębiorcy będącego osobą fizyczną, który zawiera umowę bezpośrednio związaną z jego działalnością gospodarczą, gdy z treści umowy wynika, że nie ma ona dla niego charakteru zawodowego (art. 385<sup>5</sup> Kodeksu cywilnego), stosuje się przepisy o niedozwolonych postanowieniach umownych, prawie odstąpienia od umowy zawartej na odległość i rękojmi w zakresie przewidzianym dla konsumentów. Postanowienia Regulaminu ograniczające odpowiedzialność Usługodawcy nie mają wobec niego zastosowania w zakresie, w jakim są sprzeczne z tymi przepisami.</li>
 </ol>
 
 <h2>§ 2. Zawarcie umowy</h2>
@@ -525,7 +526,7 @@ nav.links .sm{display:none}
 <ol>
   <li>Usługodawca dobiera próbę według kryteriów grupy docelowej opisanych w ofercie i w sekcji <a href="dla-firm.html#metodologia">Metodologia</a>.</li>
   <li>Pierwsze wizyty są widoczne w Google Analytics Klienta zwykle około minuty po starcie Badania. Standardowe raporty Google Analytics uzupełniają się w ciągu 24–48 godzin, zgodnie z zasadami przetwarzania danych przez Google.</li>
-  <li>Raport zawiera wyniki zbiorcze. Wartości pochodzące z modelowania behawioralnego są w raporcie oznaczone.</li>
+  <li>Raport zawiera wyniki zbiorcze.</li>
   <li>Wyników dla podgrup poniżej progu wiarygodności Usługodawca nie raportuje.</li>
 </ol>
 
@@ -555,7 +556,14 @@ nav.links .sm{display:none}
 <h2>§ 9. Reklamacje</h2>
 <p>Reklamacje Klient zgłasza e-mailem w ciągu 14 dni od otrzymania raportu. Usługodawca odpowiada w ciągu 14 dni.</p>
 
-<h2>§ 10. Postanowienia końcowe</h2>
+<h2>§ 10. Wymagania techniczne i zasady korzystania</h2>
+<ol>
+  <li>Usługodawca świadczy drogą elektroniczną usługi: konfigurator i formularze zapytań, udostępnianie wzoru raportu, korespondencję e-mail oraz, po jego uruchomieniu, panel klienta.</li>
+  <li>Do korzystania z usług potrzebne są: urządzenie z dostępem do internetu, aktualna przeglądarka z włączoną obsługą JavaScript oraz aktywny adres e-mail. Raporty są dostarczane w formacie PDF i CSV.</li>
+  <li>Zabronione jest dostarczanie przez Klienta treści o charakterze bezprawnym, w tym zlecanie badania stron z takimi treściami.</li>
+</ol>
+
+<h2>§ 11. Postanowienia końcowe</h2>
 <p>Regulamin podlega prawu polskiemu. Spory rozstrzyga sąd właściwy dla siedziby Usługodawcy. Usługodawca informuje o zmianach Regulaminu e-mailem co najmniej 14 dni przed ich wejściem w życie. Do Badań zleconych wcześniej stosuje się dotychczasowe zasady.</p>
 </main>
 
@@ -663,7 +671,9 @@ gtag('consent', 'default', {
 
   document.addEventListener('DOMContentLoaded', function(){
     var c = read();
-    if (c) apply(c); else show(false);
+    var optional = !!CONFIG.gaId;
+    if (!optional) document.querySelectorAll('[data-cookie-settings]').forEach(function(el){ el.remove(); });
+    if (c) apply(c); else if (optional) show(false);
     document.getElementById('ckAll').addEventListener('click', function(){ decide({analytics:true, marketing:true}); });
     document.getElementById('ckNone').addEventListener('click', function(){ decide({analytics:false, marketing:false}); });
     document.getElementById('ckMore').addEventListener('click', function(){ show(true); });

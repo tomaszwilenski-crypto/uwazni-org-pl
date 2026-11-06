@@ -608,7 +608,7 @@ nav.links .sm{display:none}
           <div class="field"><label for="firma" class="lbl">Firma</label><input id="firma" type="text" placeholder="Nazwa firmy" autocomplete="organization" required></div>
           <div class="hp" aria-hidden="true"><label for="website">Strona</label><input id="website" type="text" tabindex="-1" autocomplete="off"></div>
           <div class="consent"><input id="zgodaF" type="checkbox" required><label for="zgodaF">Akceptuję <a href="regulamin-uslugi.html">regulamin usługi</a>. (wymagane)</label></div>
-          <div class="consent"><input id="mktF" type="checkbox"><label for="mktF">Chcę otrzymywać informacje o nowych raportach i badaniach uwagi. (opcjonalnie)</label></div>
+          <div class="consent"><input id="mktF" type="checkbox"><label for="mktF">Chcę otrzymywać e-mailem od TGV Sp. z o.o. informacje o nowych raportach i badaniach uwagi. Zgodę mogę w każdej chwili cofnąć. (opcjonalnie)</label></div>
           <p class="rodo">Administratorem danych jest TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warszawa</span>. Przetwarzamy je, aby odpowiedzieć na zapytanie i przygotować ofertę (art. 6 ust. 1 lit. b RODO), a za zgodą także w celach marketingowych (art. 6 ust. 1 lit. a RODO). Dane przechowujemy do 12 miesięcy od ostatniego kontaktu, a w przypadku zawarcia umowy przez okres wymagany przepisami. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu, przenoszenia oraz skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
           <div class="row">
             <button type="submit" class="btn btn-red" data-kind="lead" style="flex:1 1 200px">Wyślij zapytanie</button>
@@ -758,7 +758,7 @@ nav.links .sm{display:none}
           <label for="rmail">Służbowy adres e-mail</label>
           <input id="rmail" type="email" placeholder="imie@firma.pl" autocomplete="email" required>
           <div class="hp" aria-hidden="true"><label for="rweb">Strona</label><input id="rweb" type="text" tabindex="-1" autocomplete="off"></div>
-          <div class="consent"><input id="rmkt" type="checkbox"><label for="rmkt">Chcę otrzymywać informacje o nowych raportach. (opcjonalnie)</label></div>
+          <div class="consent"><input id="rmkt" type="checkbox"><label for="rmkt">Chcę otrzymywać e-mailem od TGV Sp. z o.o. informacje o nowych raportach. Zgodę mogę w każdej chwili cofnąć. (opcjonalnie)</label></div>
           <p class="rodo">Administratorem danych jest TGV Sp. z o.o. Adres e-mail przetwarzamy, aby wysłać raport (art. 6 ust. 1 lit. b RODO), a za zgodą także w celach marketingowych (art. 6 ust. 1 lit. a RODO), do czasu cofnięcia zgody lub maksymalnie 12 miesięcy. Szczegóły i Twoje prawa w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
           <button type="submit" class="btn btn-navy">Pobierz wzór raportu</button>
           <div class="msg hidden" role="status"></div>
@@ -992,7 +992,9 @@ gtag('consent', 'default', {
 
   document.addEventListener('DOMContentLoaded', function(){
     var c = read();
-    if (c) apply(c); else show(false);
+    var optional = !!CONFIG.gaId;
+    if (!optional) document.querySelectorAll('[data-cookie-settings]').forEach(function(el){ el.remove(); });
+    if (c) apply(c); else if (optional) show(false);
     document.getElementById('ckAll').addEventListener('click', function(){ decide({analytics:true, marketing:true}); });
     document.getElementById('ckNone').addEventListener('click', function(){ decide({analytics:false, marketing:false}); });
     document.getElementById('ckMore').addEventListener('click', function(){ show(true); });

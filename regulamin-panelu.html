@@ -523,9 +523,10 @@ nav.links .sm{display:none}
 
 <h2>§ 4. Rejestracja i konto</h2>
 <ol>
-  <li>Rejestracja wymaga podania adresu e-mail, potwierdzenia numeru telefonu kodem SMS oraz akceptacji Regulaminu.</li>
-  <li>Udział w Panelu jest bezpłatny i dobrowolny. Panelista może w każdej chwili usunąć konto w ustawieniach.</li>
-  <li>Umowa o udział w Panelu zostaje zawarta na czas nieokreślony z chwilą potwierdzenia konta.</li>
+  <li>Zapis do Panelu wymaga podania adresu e-mail i akceptacji Regulaminu. Przed pierwszym Zadaniem Panelista potwierdza numer telefonu kodem SMS i uzupełnia profil.</li>
+  <li>Udział w Panelu jest bezpłatny i dobrowolny. Panelista może w każdej chwili wypowiedzieć umowę i usunąć konto, pisząc na <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a> lub w ustawieniach konta, gdy będą dostępne. Wypowiedzenie jest skuteczne z chwilą usunięcia konta.</li>
+  <li>Umowa o udział w Panelu zostaje zawarta na czas nieokreślony z chwilą potwierdzenia zapisu.</li>
+  <li>Panelista będący konsumentem może odstąpić od umowy w ciągu 14 dni od jej zawarcia bez podawania przyczyny, wysyłając oświadczenie na <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>. Do zachowania terminu wystarczy wysłanie oświadczenia przed jego upływem. Wynagrodzenie za Zadania wykonane przed odstąpieniem Operator wypłaca w całości.</li>
 </ol>
 
 <h2>§ 5. Zadania</h2>
@@ -573,7 +574,15 @@ nav.links .sm{display:none}
 <h2>§ 11. Zmiany Regulaminu</h2>
 <p>O zmianach Regulaminu Operator informuje e-mailem co najmniej 14 dni przed ich wejściem w życie. Panelista, który nie akceptuje zmian, może usunąć konto przed tą datą, a Operator wypłaca mu całe Saldo.</p>
 
-<h2>§ 12. Postanowienia końcowe</h2>
+<h2>§ 12. Wymagania techniczne i zasady korzystania</h2>
+<ol>
+  <li>Operator świadczy drogą elektroniczną usługi: prowadzenie konta w Panelu, udostępnianie Zadań, formularze kontaktowe i informacje e-mailowe.</li>
+  <li>Do korzystania z Panelu potrzebne są: urządzenie z dostępem do internetu, aktualna przeglądarka internetowa z włączoną obsługą JavaScript (np. Chrome, Safari, Firefox, Edge), aktywny adres e-mail oraz telefon do odbioru kodu SMS.</li>
+  <li>Zabronione jest dostarczanie przez Panelistę treści o charakterze bezprawnym, w tym w odpowiedziach na ankiety i w korespondencji z Operatorem.</li>
+  <li>Korzystanie z internetu wiąże się z typowymi zagrożeniami, takimi jak złośliwe oprogramowanie czy próby wyłudzenia danych. Operator nigdy nie prosi o hasła ani kody z SMS-ów w wiadomościach e-mail.</li>
+</ol>
+
+<h2>§ 13. Postanowienia końcowe</h2>
 <p>Regulamin podlega prawu polskiemu. Postanowienia Regulaminu nie ograniczają praw przysługujących konsumentom na podstawie bezwzględnie obowiązujących przepisów.</p>
 </main>
 
@@ -681,7 +690,9 @@ gtag('consent', 'default', {
 
   document.addEventListener('DOMContentLoaded', function(){
     var c = read();
-    if (c) apply(c); else show(false);
+    var optional = !!CONFIG.gaId;
+    if (!optional) document.querySelectorAll('[data-cookie-settings]').forEach(function(el){ el.remove(); });
+    if (c) apply(c); else if (optional) show(false);
     document.getElementById('ckAll').addEventListener('click', function(){ decide({analytics:true, marketing:true}); });
     document.getElementById('ckNone').addEventListener('click', function(){ decide({analytics:false, marketing:false}); });
     document.getElementById('ckMore').addEventListener('click', function(){ show(true); });

@@ -1,0 +1,25 @@
+# uwazni.org.pl
+User-agent: *
+Allow: /
+Disallow: /panel-klienta
+Disallow: /moje-konto
+Disallow: /api/
+
+# Wyszukiwarki i asystenci AI (GEO): dostęp dozwolony
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /panel-klienta
+Disallow: /moje-konto
+Disallow: /api/
+
+Sitemap: https://uwazni.org.pl/sitemap.xml

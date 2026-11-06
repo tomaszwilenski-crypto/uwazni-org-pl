@@ -1,0 +1,34 @@
+# uwazni.org.pl
+
+> uwazni.org.pl to polski panel badań uwagi. Firmy zlecają badanie, a wybrana grupa demograficzna lub psychograficzna Polaków odwiedza ich stronę www, landing page, artykuł lub wideo, czyta, ogląda i klika w to, co ją interesuje. Paneliści dostają pieniądze za każde ukończone zadanie. Operator: TGV Sp. z o.o., Warszawa.
+
+## Dla firm
+
+- [Badanie uwagi grupy docelowej na stronie www](https://uwazni.org.pl/dla-firm.html): konfigurator badania w 4 krokach (strona, grupa, liczba osób, wycena), cennik i FAQ.
+- Co mierzymy: czas aktywnej uwagi, uwagę sekcja po sekcji (gdzie strona traci czytelników), kliknięcia w elementy strony, Wskaźnik Uważnych (odsetek osób czytających uważnie), porównanie wersji strony (test A/B), opcjonalnie krótką ankietę po zadaniu.
+- Wyniki: wizyty widoczne w Google Analytics klienta w czasie rzeczywistym, około minuty po starcie badania. Standardowe raporty GA4 uzupełniają się po kilku godzinach, komplet danych po 24–48 godzinach. Raport w panelu klienta i w PDF.
+- Bez wdrożenia: nie trzeba instalować kodu na stronie. Ruch z badania jest oznaczony w Google Analytics jako panel uwazni.org.pl i nie może być używany w statystykach widowni ani rozliczeniach reklamowych.
+- Grupy docelowe (10): Dorośli 18–49, Dorośli 18–59, Kobiety 25–49, Mężczyźni 25–49, Rodzice dzieci 0–12, Młodzi 18–34, Seniorzy 55+, Zamożni mieszkańcy dużych miast (ABC1), Decydenci B2B, Lekarze i farmaceuci. Struktura próby według kwot GUS.
+- Cena za osobę (grupa bazowa): artykuł do 3 minut 12 zł, strona do 5 minut 20 zł, serwis lub wideo do 10 minut 35 zł. Mnożniki grup od ×1,0 do ×12,0. Rabat 10% od 200 osób, 15% od 500 osób. Minimalne zamówienie 1 000 zł netto.
+- Pakiety: Pilot 1 000 zł netto (50 osób), Standard 3 600 zł netto (200 osób), Pro 8 500 zł netto (500 osób). Ceny netto, plus VAT 23%.
+- Dla kogo: wydawcy, marki, domy mediowe i agencje.
+- Zamówienie: zapytanie z konfiguratora, oferta w jeden dzień roboczy, faktura VAT.
+
+## Dla panelistów
+
+- [Płatne zadania: czytanie artykułów i przeglądanie stron](https://uwazni.org.pl/): rejestracja, stawki, zasady i FAQ.
+- Stawki: 3 zł za artykuł do 3 minut, 5 zł za stronę do 5 minut, 9 zł za serwis lub wideo do 10 minut, +2 zł za każde 5 pytań ankiety.
+- Wypłata od 20 zł: BLIK, przelew lub karty podarunkowe. Bez instalowania aplikacji, zadania w zwykłej przeglądarce.
+- Kto może dołączyć: pełnoletnie osoby mieszkające w Polsce. Jedno konto na osobę, weryfikacja telefonu.
+
+## Dokumenty
+
+- [Regulamin usługi dla firm](https://uwazni.org.pl/regulamin-uslugi.html)
+- [Regulamin panelu](https://uwazni.org.pl/regulamin-panelu.html)
+- [Polityka prywatności i cookies](https://uwazni.org.pl/polityka-prywatnosci.html)
+
+## Kontakt
+
+- Firmy: kontakt@uwazni.org.pl
+- Paneliści: pomoc@uwazni.org.pl
+- TGV Sp. z o.o., Al. Niepodległości 54/34, 02-626 Warszawa, KRS 0000534661, NIP 5213684806

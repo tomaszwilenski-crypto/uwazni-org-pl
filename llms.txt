@@ -14,6 +14,17 @@
 - Dla kogo: wydawcy, marki, domy mediowe i agencje.
 - Zamówienie: zapytanie z konfiguratora, oferta w jeden dzień roboczy, faktura VAT.
 
+## Badania dla branż
+
+- [Badanie uwagi decydentów B2B](https://uwazni.org.pl/badanie-uwagi-b2b.html): Badanie uwagi decydentów B2B to test, w którym właściciele firm, członkowie zarządów i kierownicy czytają Twoją stronę lub materiał sprzedażowy, a Ty widzisz, co naprawdę przeczytali i w co kliknęli.
+- [Badanie uwagi lekarzy i farmaceutów](https://uwazni.org.pl/badanie-uwagi-farmacja.html): Badanie uwagi lekarzy i farmaceutów to test, w którym osoby z potwierdzonym prawem wykonywania zawodu czytają Twój serwis, artykuł lub materiał edukacyjny, a Ty widzisz, które fragmenty przeczytały uważnie, a które pominęły.
+- [Badanie uwagi dla telekomunikacji](https://uwazni.org.pl/badanie-uwagi-telekomunikacja.html): Badanie uwagi dla telekomunikacji to test, w którym osoby rozważające zmianę operatora, np. seniorzy 55+, czytają Twoją ofertę, cennik lub regulamin promocji, a Ty widzisz, gdzie tracą zainteresowanie i co klikają.
+- [Badanie uwagi dla banków i fintechów](https://uwazni.org.pl/badanie-uwagi-banki-fintech.html): Badanie uwagi dla banków i fintechów to test, w którym osoby planujące kredyt, w tym hipoteczny, czytają Twoją ofertę, kalkulator lub tabelę opłat, a Ty widzisz, które informacje zatrzymują ich uwagę, a które pomijają.
+- [Badanie uwagi dla motoryzacji](https://uwazni.org.pl/badanie-uwagi-motoryzacja.html): Badanie uwagi dla motoryzacji to test, w którym osoby planujące zakup auta czytają stronę modelu, ofertę finansowania lub artykuł testowy, a Ty widzisz, co je zatrzymuje i w co klikają.
+- [Badanie uwagi dla marek budowlanych i DIY](https://uwazni.org.pl/badanie-uwagi-dom-i-budownictwo.html): Badanie uwagi dla marek budowlanych i DIY to test, w którym osoby remontujące lub urządzające mieszkanie czytają Twoją kartę produktu, poradnik lub gazetkę online, a Ty widzisz, co je przekonuje i w co klikają.
+- [Badanie uwagi rodziców](https://uwazni.org.pl/badanie-uwagi-rodzice.html): Badanie uwagi rodziców to test, w którym rodzice dzieci w wieku 0–12 lat czytają Twoją stronę produktu, artykuł poradnikowy lub stronę kampanii, a Ty widzisz, które informacje budzą ich zaufanie i w co klikają.
+- [Badanie uwagi dla marek premium](https://uwazni.org.pl/badanie-uwagi-marki-premium.html): Badanie uwagi dla marek premium to test, w którym zamożni mieszkańcy dużych miast z grupy ABC1 czytają stronę Twojej marki, kolekcji lub oferty, a Ty widzisz, co przyciąga ich uwagę, a co ich zniechęca.
+
 ## Dla panelistów
 
 - [Płatne zadania: czytanie artykułów i przeglądanie stron](https://uwazni.org.pl/): rejestracja, stawki, zasady i FAQ.
@@ -41,3 +52,14 @@ uwazni.org.pl is a Polish attention research panel. Companies commission a study
 - Pricing (base group, net): article up to 3 min PLN 12, page up to 5 min PLN 20, website or video up to 10 min PLN 35 per person. Packages: Pilot PLN 1,000 (50 people), Standard PLN 3,600 (200 people), Pro PLN 8,500 (500 people). Minimum order PLN 1,000 net. International clients welcome; EU businesses invoiced under reverse charge.
 - [Paid online tasks for people living in Poland](https://uwazni.org.pl/en/): PLN 3–9 per task of 3–10 minutes, payouts from PLN 20 via BLIK, bank transfer or gift cards.
 - Documents (English translations, Polish versions binding): [Terms of service](https://uwazni.org.pl/en/service-terms.html), [Panel terms](https://uwazni.org.pl/en/panel-terms.html), [Privacy policy](https://uwazni.org.pl/en/privacy-policy.html).
+
+## Industry studies (English)
+
+- [Attention research with B2B decision-makers](https://uwazni.org.pl/en/attention-research-b2b.html): Attention research with B2B decision-makers is a test in which business owners, board members and managers in Poland read your page or sales material, and you see what they actually read and clicked.
+- [Attention research with doctors and pharmacists](https://uwazni.org.pl/en/attention-research-pharma.html): Attention research with doctors and pharmacists is a test in which people in Poland with a verified licence to practise read your website, article or educational material, and you see which parts they read attentively and which they skipped.
+- [Attention research for telecoms](https://uwazni.org.pl/en/attention-research-telecom.html): Attention research for telecoms is a test in which people in Poland considering a switch of operator, for example seniors aged 55+, read your offer, pricing or promotion terms, and you see where they lose interest and what they click.
+- [Attention research for banks and fintechs](https://uwazni.org.pl/en/attention-research-banking.html): Attention research for banks and fintechs is a test in which people in Poland planning a loan, including a mortgage, read your offer, calculator or fee table, and you see which information holds their attention and which they skip.
+- [Attention research for automotive](https://uwazni.org.pl/en/attention-research-automotive.html): Attention research for automotive is a test in which people in Poland planning to buy a car read your model page, financing offer or test-drive article, and you see what holds their attention and what they click.
+- [Attention research for home improvement and DIY brands](https://uwazni.org.pl/en/attention-research-home-improvement.html): Attention research for home improvement and DIY brands is a test in which people in Poland renovating or furnishing a home read your product page, guide or online leaflet, and you see what convinces them and what they click.
+- [Attention research with parents](https://uwazni.org.pl/en/attention-research-parents.html): Attention research with parents is a test in which parents in Poland of children aged 0–12 read your product page, parenting article or campaign page, and you see which information earns their trust and what they click.
+- [Attention research for premium brands](https://uwazni.org.pl/en/attention-research-premium-brands.html): Attention research for premium brands is a test in which affluent residents of large Polish cities in the ABC1 group read your brand, collection or offer page, and you see what draws their attention and what puts them off.

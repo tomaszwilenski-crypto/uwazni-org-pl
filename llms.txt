@@ -19,6 +19,10 @@
 - [Co to jest pomiar uwagi?](https://uwazni.org.pl/co-to-jest-pomiar-uwagi.html): Pomiar uwagi (attention measurement) to badanie, czy ludzie rzeczywiście zwrócili uwagę na treść lub reklamę, jak długo i jak intensywnie, a nie tylko czy mieli ją na ekranie.
 - [Uwaga a viewability i czas na stronie](https://uwazni.org.pl/uwaga-a-viewability.html): Viewability mówi, że treść była na ekranie, czas na stronie mówi, jak długo była otwarta karta, a uwaga mówi, czy człowiek rzeczywiście się nią zajmował.
 - [Wskaźnik Uważnych](https://uwazni.org.pl/wskaznik-uwaznych.html): Wskaźnik Uważnych to odsetek badanej grupy, który przeczytał stronę uważnie, czyli należy do typów Głęboki Czytelnik lub Aktywny Odkrywca.
+- [Panel uwagi a panel ankietowy](https://uwazni.org.pl/panel-uwagi-a-panel-ankietowy.html): Panel ankietowy pyta ludzi, co myślą, a panel uwagi obserwuje, jak naprawdę czytają i klikają stronę, zanim ktokolwiek zada im pytanie.
+- [Jak dbamy o jakość panelu](https://uwazni.org.pl/jak-dbamy-o-jakosc-panelu.html): Jakość panelu uwagi zależy od dwóch rzeczy: czy w próbie są prawdziwe osoby z właściwej grupy i czy podczas zadania naprawdę korzystały ze strony.
+- [Ile osób potrzeba do badania uwagi?](https://uwazni.org.pl/ile-osob-potrzeba-do-badania.html): Do szybkiej oceny jednej strony zwykle wystarcza 50 osób, do wiarygodnego obrazu jednej grupy około 200, a do porównania kilku grup lub wersji co najmniej 100–200 osób na każdą z nich.
+- [Ile kosztuje badanie uwagi?](https://uwazni.org.pl/ile-kosztuje-badanie-uwagi.html): Badanie uwagi w uwazni.org.pl kosztuje od 1 000 zł netto, a cena zależy od trzech rzeczy: długości zadania, grupy docelowej i liczby osób.
 
 ## Badania dla branż
 
@@ -43,6 +47,10 @@
 - [Regulamin usługi dla firm](https://uwazni.org.pl/regulamin-uslugi.html)
 - [Regulamin panelu](https://uwazni.org.pl/regulamin-panelu.html)
 - [Polityka prywatności i cookies](https://uwazni.org.pl/polityka-prywatnosci.html)
+
+## Pełna treść
+
+- [llms-full.txt](https://uwazni.org.pl/llms-full.txt): pełny tekst bazy wiedzy i stron branżowych (PL i EN).
 
 ## Kontakt
 
@@ -75,3 +83,7 @@ uwazni.org.pl is a Polish attention research panel. Companies commission a study
 - [What is attention measurement?](https://uwazni.org.pl/en/what-is-attention-measurement.html): Attention measurement studies whether people actually paid attention to content or an ad, for how long and how intensely, not just whether it was on their screen.
 - [Attention vs viewability and time on page](https://uwazni.org.pl/en/attention-vs-viewability.html): Viewability says content was on screen, time on page says how long the tab was open, and attention says whether a person actually engaged with it.
 - [Attentive Share](https://uwazni.org.pl/en/attentive-share.html): Attentive Share is the percentage of the studied group that read a page attentively, that is, belongs to the Deep Reader or Active Explorer types.
+- [Attention panel vs survey panel](https://uwazni.org.pl/en/attention-panel-vs-survey-panel.html): A survey panel asks people what they think, while an attention panel observes how they actually read and click a page before anyone asks them a question.
+- [How we ensure panel quality](https://uwazni.org.pl/en/panel-quality.html): The quality of an attention panel depends on two things: whether the sample contains real people from the right group, and whether they actually used the page during the task.
+- [How many people does an attention study need?](https://uwazni.org.pl/en/sample-size-for-attention-research.html): A quick assessment of one page usually needs 50 people, a reliable picture of one group about 200, and a comparison of several groups or versions at least 100–200 people for each.
+- [How much does attention research cost?](https://uwazni.org.pl/en/attention-research-cost.html): An attention study at uwazni.org.pl costs from PLN 1,000 net, and the price depends on three things: task length, target group and number of people.

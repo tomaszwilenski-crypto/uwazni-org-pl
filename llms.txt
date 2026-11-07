@@ -14,6 +14,12 @@
 - Dla kogo: wydawcy, marki, domy mediowe i agencje.
 - Zamówienie: zapytanie z konfiguratora, oferta w jeden dzień roboczy, faktura VAT.
 
+## Baza wiedzy (konsultacja merytoryczna: Tomasz Wileński, IAB Polska)
+
+- [Co to jest pomiar uwagi?](https://uwazni.org.pl/co-to-jest-pomiar-uwagi.html): Pomiar uwagi (attention measurement) to badanie, czy ludzie rzeczywiście zwrócili uwagę na treść lub reklamę, jak długo i jak intensywnie, a nie tylko czy mieli ją na ekranie.
+- [Uwaga a viewability i czas na stronie](https://uwazni.org.pl/uwaga-a-viewability.html): Viewability mówi, że treść była na ekranie, czas na stronie mówi, jak długo była otwarta karta, a uwaga mówi, czy człowiek rzeczywiście się nią zajmował.
+- [Wskaźnik Uważnych](https://uwazni.org.pl/wskaznik-uwaznych.html): Wskaźnik Uważnych to odsetek badanej grupy, który przeczytał stronę uważnie, czyli należy do typów Głęboki Czytelnik lub Aktywny Odkrywca.
+
 ## Badania dla branż
 
 - [Badanie uwagi decydentów B2B](https://uwazni.org.pl/badanie-uwagi-b2b.html): Badanie uwagi decydentów B2B to test, w którym właściciele firm, członkowie zarządów i kierownicy czytają Twoją stronę lub materiał sprzedażowy, a Ty widzisz, co naprawdę przeczytali i w co kliknęli.
@@ -63,3 +69,9 @@ uwazni.org.pl is a Polish attention research panel. Companies commission a study
 - [Attention research for home improvement and DIY brands](https://uwazni.org.pl/en/attention-research-home-improvement.html): Attention research for home improvement and DIY brands is a test in which people in Poland renovating or furnishing a home read your product page, guide or online leaflet, and you see what convinces them and what they click.
 - [Attention research with parents](https://uwazni.org.pl/en/attention-research-parents.html): Attention research with parents is a test in which parents in Poland of children aged 0–12 read your product page, parenting article or campaign page, and you see which information earns their trust and what they click.
 - [Attention research for premium brands](https://uwazni.org.pl/en/attention-research-premium-brands.html): Attention research for premium brands is a test in which affluent residents of large Polish cities in the ABC1 group read your brand, collection or offer page, and you see what draws their attention and what puts them off.
+
+## Knowledge base (expert review: Tomasz Wileński, IAB Polska)
+
+- [What is attention measurement?](https://uwazni.org.pl/en/what-is-attention-measurement.html): Attention measurement studies whether people actually paid attention to content or an ad, for how long and how intensely, not just whether it was on their screen.
+- [Attention vs viewability and time on page](https://uwazni.org.pl/en/attention-vs-viewability.html): Viewability says content was on screen, time on page says how long the tab was open, and attention says whether a person actually engaged with it.
+- [Attentive Share](https://uwazni.org.pl/en/attentive-share.html): Attentive Share is the percentage of the studied group that read a page attentively, that is, belongs to the Deep Reader or Active Explorer types.

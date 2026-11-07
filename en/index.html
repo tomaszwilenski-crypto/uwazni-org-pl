@@ -490,6 +490,17 @@ html[lang=en] .tier.t1 span::after{content:" · Attentive Share"}
 nav.links a.lang{font-size:13px;font-weight:800;letter-spacing:.04em;border:2px solid var(--line-2);border-radius:8px;padding:5px 8px;line-height:1;min-height:0}
 nav.links a.lang:hover{border-color:var(--navy)}
 html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
+
+/* ===== kogo szukamy ===== */
+.wanted{list-style:none;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.wcard{background:#fff;border:2px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.wcard h3{font-size:19px;line-height:1.25}
+.wcard p{font-size:15px;line-height:1.55;color:var(--text-2)}
+.wcard .btn{margin-top:auto;min-height:44px;padding:10px 16px;font-size:15px}
+.wcard .ihead{justify-content:space-between}
+.wtag{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--red);background:var(--red-soft);padding:5px 10px;border-radius:999px}
+.grpsel{background:var(--bg-2);border-radius:10px;padding:10px 12px;font-size:14px}
+.grpsel .as-link{font:inherit;background:none;border:0;color:var(--red);font-weight:700;cursor:pointer;padding:0 4px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/en/#page", "url": "https://uwazni.org.pl/en/", "name": "Paid online tasks in Poland: read and earn | uwazni.org.pl", "description": "Earn money reading articles and browsing websites: PLN 3–9 per task (3–10 min). Nothing to install, payouts from PLN 20 via BLIK or bank transfer.", "inLanguage": "en", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-07", "primaryImageOfPage": "https://uwazni.org.pl/og-panel-en.jpg"}, {"@type": "FAQPage", "@id": "https://uwazni.org.pl/en/#faq", "mainEntity": [{"@type": "Question", "name": "Is this legal and safe?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The panel is run by TGV Sp. z o.o., a company registered in Poland (KRS 0000534661). The rules are set out in the panel terms."}}, {"@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. You open tasks in your usual browser, on a phone or computer."}}, {"@type": "Question", "name": "How much will I really earn?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on how many tasks match your profile. Every task shows its pay rate before you start."}}, {"@type": "Question", "name": "What if a task is rejected?", "acceptedAnswer": {"@type": "Answer", "text": "We reject a task when there was no real attention, for example the browser tab was inactive or the answer to a check question was wrong. You will be told the reason. You have 14 days to appeal, and every appeal is reviewed by a person."}}, {"@type": "Question", "name": "Who am I browsing websites for?", "acceptedAnswer": {"@type": "Answer", "text": "For companies and publishers who want to know how people really read and watch their content. We do not share your personal data with them."}}, {"@type": "Question", "name": "Do I have to pay tax?", "acceptedAnswer": {"@type": "Answer", "text": "Income from the panel may be taxable. Where the law requires it, we will send you a tax statement for the year. Details are in the panel terms."}}, {"@type": "Question", "name": "How do I delete my account?", "acceptedAnswer": {"@type": "Answer", "text": "Write to pomoc@uwazni.org.pl. We will delete your account and data, and pay out any balance from PLN 20 before deletion."}}, {"@type": "Question", "name": "Where can I get help?", "acceptedAnswer": {"@type": "Answer", "text": "Write to pomoc@uwazni.org.pl. We reply within one business day."}}]}]}</script>
 </head>
@@ -616,24 +627,27 @@ html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
   </div>
 </section>
 
-<section>
+<section id="wanted">
   <div class="wrap">
-    <div style="border:2px solid var(--red);border-radius:28px;padding:clamp(24px,5vw,56px)" class="split">
+    <div class="split" style="margin-bottom:40px">
       <div class="main stack">
-        <img class="illus" src="../img/zalozyciele.webp" alt="Illustration: people of different ages with smartphones" width="1440" height="720" loading="lazy" decoding="async" style="aspect-ratio:2/1;object-fit:cover" onerror="this.remove()">
-        <span class="eyebrow">Founding members</span>
-        <h2>Be one of the first 1,000 panelists</h2>
-        <p class="lead">The first 1,000 people get a PLN 10 bonus after their first accepted task, a founder badge on their profile and priority for new tasks.</p>
-        <p class="lead">In a few weeks we will share real stories from our panelists here. Maybe yours.</p>
+        <span class="eyebrow">Who we are looking for now</span>
+        <h2>We are recruiting specific groups for specific studies</h2>
+        <p class="lead">Companies order studies for precisely defined audiences. That is why right now we are mainly looking for people from the groups below. If you belong to one of them, you will get tasks more often.</p>
+        <p class="muted">Not in any of these groups? Join anyway: new studies start every week and we will let you know when one matches your profile.</p>
       </div>
-      <div class="side box" style="padding:28px;gap:14px">
-        <b>Places taken</b>
-        <span style="font-size:44px;font-weight:800;letter-spacing:-.03em"><span id="fCount">761</span> <span class="muted" style="font-size:22px">/ 1,000</span></span>
-        <div class="progress" role="progressbar" aria-label="Places taken" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="761" id="fBarWrap"><i id="fBar" style="width:76.1%"></i></div>
-        <span class="muted" id="fLeft">239 places left</span>
-        <a class="btn btn-red" href="#join">Claim your place</a>
-      </div>
+      <div class="side"><img class="illus" src="../img/zalozyciele.webp" alt="Illustration: people of different ages with smartphones" width="1440" height="720" loading="lazy" decoding="async" style="aspect-ratio:2/1;object-fit:cover" onerror="this.remove()"></div>
     </div>
+    <ul class="wanted">
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span></div><h3>Seniors 55+ switching mobile operator</h3><p>You are 55 or older and plan to change your mobile plan, phone or internet provider within a year.</p><p class="muted small"><b>Example tasks:</b> Operator offers, comparison sites, phone product pages.</p><a class="btn btn-line" href="#join" data-grp="sen-telco" data-grp-name="Seniors 55+ switching mobile operator">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span></div><h3>Buying a car within 12 months</h3><p>You plan to buy a new or used car, on your own or with your partner.</p><p class="muted small"><b>Example tasks:</b> Car configurators, reviews, leasing and insurance offers.</p><a class="btn btn-line" href="#join" data-grp="m-auto" data-grp-name="Buying a car within 12 months">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg></span></div><h3>About to take a loan or buy a flat</h3><p>You are looking for a mortgage, a personal loan or your first home.</p><p class="muted small"><b>Example tasks:</b> Loan calculators, bank offers, property portals.</p><a class="btn btn-line" href="#join" data-grp="kredyt" data-grp-name="About to take a loan or buy a flat">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" /><path d="m18 15 4-4" /><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" /></svg></span></div><h3>Renovating or furnishing a home</h3><p>In the coming months you are renovating, furnishing or replacing home appliances.</p><p class="muted small"><b>Example tasks:</b> Home stores, how-to guides, product catalogues.</p><a class="btn btn-line" href="#join" data-grp="remont" data-grp-name="Renovating or furnishing a home">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" /><path d="M15 12h.01" /><path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" /><path d="M9 12h.01" /></svg></span></div><h3>Parents of children up to 12</h3><p>You have at least one child aged 0–12 and make purchase decisions for the family.</p><p class="muted small"><b>Example tasks:</b> Toys, clothes, education and child health websites.</p><a class="btn btn-line" href="#join" data-grp="rodzice" data-grp-name="Parents of children up to 12">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 12h4" /><path d="M10 8h4" /><path d="M14 21v-3a2 2 0 0 0-4 0v3" /><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></svg></span><span class="wtag">Higher rate</span></div><h3>Big-city professionals and managers</h3><p>You are 25–54, live in a city of 500,000+ and work as a professional or manager.</p><p class="muted small"><b>Example tasks:</b> Premium banking, travel, cars, investing.</p><a class="btn btn-line" href="#join" data-grp="abc1" data-grp-name="Big-city professionals and managers">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></svg></span><span class="wtag">Higher rate</span></div><h3>Business decision-makers</h3><p>You make or co-make purchase decisions at your company: IT, finance, marketing, procurement, management.</p><p class="muted small"><b>Example tasks:</b> Software, business services, industry reports.</p><a class="btn btn-line" href="#join" data-grp="b2b" data-grp-name="Business decision-makers">That's me</a></li>
+        <li class="wcard"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /><path d="M8 15a6 6 0 0 0 12 0v-3" /><circle cx="20" cy="10" r="2" /></svg></span><span class="wtag">Highest rate</span></div><h3>Doctors and pharmacists</h3><p>You hold a licence to practise as a doctor or pharmacist. We verify it at sign-up.</p><p class="muted small"><b>Example tasks:</b> Medical websites, materials on medicines and therapies.</p><a class="btn btn-line" href="#join" data-grp="hcp" data-grp-name="Doctors and pharmacists">That's me</a></li>
+    </ul>
   </div>
 </section>
 
@@ -691,6 +705,7 @@ html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
     </div>
     <form class="side" id="regForm" novalidate style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px" aria-labelledby="regTitle">
       <h3 id="regTitle">Join the panel</h3>
+      <p class="grpsel hidden" id="grpSel">Signing up as: <b id="grpName"></b> <button type="button" class="as-link" id="grpClear">change</button></p><input type="hidden" id="pgrp">
       <label for="pmail">Email address</label>
       <input id="pmail" type="email" placeholder="you@example.com" autocomplete="email" required>
       <div class="hp" aria-hidden="true"><label for="pweb">Website</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
@@ -854,13 +869,13 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
 </script>
 <script>
 (function(){
-  /* Founders counter: keep "joined" in sync with the Polish index.js */
-  var FOUNDERS = {joined: 761, limit: 1000};
-  var z = Math.min(FOUNDERS.joined, FOUNDERS.limit), left = FOUNDERS.limit - z;
-  document.getElementById('fCount').textContent = z.toLocaleString('en-US');
-  document.getElementById('fBar').style.width = (z / FOUNDERS.limit * 100) + '%';
-  document.getElementById('fBarWrap').setAttribute('aria-valuenow', z);
-  document.getElementById('fLeft').textContent = left > 0 ? left + (left === 1 ? ' place left' : ' places left') : 'All places taken';
+  /* Grupy poszukiwane: wybór grupy przed zapisem */
+  var gIn=document.getElementById('pgrp'), gSel=document.getElementById('grpSel');
+  document.querySelectorAll('[data-grp]').forEach(function(a){ a.addEventListener('click',function(){
+    gIn.value=a.dataset.grp; document.getElementById('grpName').textContent=a.dataset.grpName; gSel.classList.remove('hidden');
+    setTimeout(function(){ document.getElementById('pmail').focus({preventScroll:true}); },400);
+  }); });
+  document.getElementById('grpClear').addEventListener('click',function(){ gIn.value=''; gSel.classList.add('hidden'); document.getElementById('szukamy')&&document.getElementById('szukamy').scrollIntoView({behavior:'smooth'}); document.getElementById('wanted')&&document.getElementById('wanted').scrollIntoView({behavior:'smooth'}); });
 
   /* Earnings calculator: 5-minute tasks, 4.3 weeks per month */
   var pw = document.getElementById('perWeek');
@@ -871,7 +886,7 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
   document.getElementById('regForm').addEventListener('submit', function(e){
     e.preventDefault();
     var f = this; f.querySelector('.msg').classList.remove('hidden');
-    submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', lang:'en', email:f.querySelector('#pmail').value, adult:true, marketingConsent:f.querySelector('#mktP').checked},
+    submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', lang:'en', email:f.querySelector('#pmail').value, adult:true, group:gIn.value, marketingConsent:f.querySelector('#mktP').checked},
       'Done, you are on the list. We will email you when the first tasks are ready.');
   });
 })();

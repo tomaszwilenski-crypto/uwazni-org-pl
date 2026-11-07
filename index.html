@@ -501,6 +501,25 @@ html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
 .wtag{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--red);background:var(--red-soft);padding:5px 10px;border-radius:999px}
 .grpsel{background:var(--bg-2);border-radius:10px;padding:10px 12px;font-size:14px}
 .grpsel .as-link{font:inherit;background:none;border:0;color:var(--red);font-weight:700;cursor:pointer;padding:0 4px}
+
+/* ===== statystyki i wypłaty ===== */
+.herocount{font-size:15px;font-weight:700;color:var(--text-2);margin:0}
+.herocount::before{content:"";display:inline-block;width:8px;height:8px;border-radius:99px;background:#2E9E5B;margin-right:8px;vertical-align:middle}
+.paystats{margin-top:32px;display:flex;flex-direction:column;gap:16px}
+.paystats[hidden],.ticker[hidden]{display:none}
+.ps-tiles{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ps-tile{background:var(--navy);color:#fff;border-radius:20px;padding:22px 24px;display:flex;flex-direction:column;gap:4px}
+.ps-tile b{font-size:clamp(28px,3vw,38px);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.ps-tile span{color:var(--on-dark);font-size:15px}
+.ticker{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid var(--line);border-radius:16px;padding:12px 14px 12px 18px;min-height:64px}
+.tk-label{flex:none;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.tk-item{flex:1;min-width:0;margin:0;font-size:15px;font-weight:600;transition:opacity .25s}
+.tk-item.out{opacity:0}
+.tk-pause{flex:none;font:inherit;font-size:13px;font-weight:700;background:var(--bg-2);border:0;border-radius:8px;padding:8px 12px;min-height:36px;color:var(--navy);cursor:pointer}
+.story{margin:0;gap:12px}.story blockquote{margin:0;font-size:17px;line-height:1.5;color:var(--navy)}
+.story figcaption{display:flex;flex-direction:column;gap:2px}
+@media(max-width:639px){.ticker{flex-wrap:wrap}.tk-item{flex-basis:100%;order:3}.tk-pause{margin-left:auto}}
+.story.card.soft{background:#fff}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/#page", "url": "https://uwazni.org.pl/", "name": "Płatne zadania online: czytaj i zarabiaj | uwazni.org.pl", "description": "Zarabiaj, czytając artykuły i przeglądając strony: 3–9 zł za zadanie (3–10 min). Bez instalowania aplikacji, wypłata od 20 zł przez BLIK lub przelew.", "inLanguage": "pl-PL", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-07", "primaryImageOfPage": "https://uwazni.org.pl/og-panel.jpg"}, {"@type": "FAQPage", "@id": "https://uwazni.org.pl/#faq", "mainEntity": [{"@type": "Question", "name": "Czy to legalne i bezpieczne?", "acceptedAnswer": {"@type": "Answer", "text": "Tak. Panel prowadzi TGV Sp. z o.o., spółka zarejestrowana w Polsce (KRS 0000534661). Zasady są opisane w regulaminie panelu."}}, {"@type": "Question", "name": "Czy muszę coś instalować?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Zadania otwierasz w zwykłej przeglądarce, na telefonie lub komputerze."}}, {"@type": "Question", "name": "Ile naprawdę zarobię?", "acceptedAnswer": {"@type": "Answer", "text": "To zależy od liczby zadań pasujących do Twojego profilu. Każde zadanie pokazuje stawkę, zanim je zaczniesz."}}, {"@type": "Question", "name": "Co, jeśli zadanie zostanie odrzucone?", "acceptedAnswer": {"@type": "Answer", "text": "Zadanie odrzucamy, gdy nie było w nim realnej uwagi, na przykład karta była nieaktywna albo odpowiedź na pytanie kontrolne była błędna. Dostaniesz informację z powodem. Masz 14 dni na odwołanie, a każde odwołanie sprawdza człowiek."}}, {"@type": "Question", "name": "Dla kogo przeglądam strony?", "acceptedAnswer": {"@type": "Answer", "text": "Dla firm i wydawców, którzy chcą wiedzieć, jak ludzie naprawdę czytają i oglądają ich treści. Nie przekazujemy im Twoich danych osobowych."}}, {"@type": "Question", "name": "Czy muszę płacić podatek?", "acceptedAnswer": {"@type": "Answer", "text": "Wynagrodzenie z panelu może być przychodem podlegającym opodatkowaniu. Jeśli przepisy tego wymagają, przekażemy Ci informację podatkową za dany rok. Szczegóły znajdziesz w regulaminie panelu."}}, {"@type": "Question", "name": "Jak usunąć konto?", "acceptedAnswer": {"@type": "Answer", "text": "Napisz na pomoc@uwazni.org.pl. Usuniemy konto i dane, a środki od 20 zł wypłacimy przed usunięciem."}}, {"@type": "Question", "name": "Gdzie szukać pomocy?", "acceptedAnswer": {"@type": "Answer", "text": "Napisz na pomoc@uwazni.org.pl. Odpowiadamy w ciągu jednego dnia roboczego."}}]}]}</script>
 </head>
@@ -532,6 +551,7 @@ html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
       <h1>Twoja uwaga jest coś warta.</h1>
       <p class="lead" style="font-size:20px">Czytaj artykuły, przeglądaj strony i oglądaj treści, które dla Ciebie wybieramy. Za każde ukończone zadanie dostajesz pieniądze. Bez długich ankiet i bez instalowania czegokolwiek.</p>
       <div class="row"><a class="btn btn-red" href="#dolacz" style="font-size:17px">Dołącz za darmo</a><a class="btn btn-line" href="#jak" style="font-size:17px">Jak to działa?</a></div>
+      <p class="herocount" id="heroCount" hidden></p>
       <dl style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;border-top:1px solid var(--line);padding-top:16px;max-width:560px;margin:0">
         <div class="stack" style="gap:4px"><dt class="muted small" style="order:2">za 5 minut</dt><dd style="margin:0;font-size:24px;font-weight:800;order:1">5 zł</dd></div>
         <div class="stack" style="gap:4px"><dt class="muted small" style="order:2">trwa zadanie</dt><dd style="margin:0;font-size:24px;font-weight:800;order:1">3–10 min</dd></div>
@@ -623,6 +643,16 @@ html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
       <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><h3 style="font-size:22px">BLIK</h3><p>Na numer telefonu, najszybciej.</p></div>
       <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg></span><h3 style="font-size:22px">Przelew</h3><p>Na Twoje konto w dowolnym banku.</p></div>
       <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 7v14" /><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" /><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5" /><rect x="3" y="7" width="18" height="4" rx="1" /></svg></span><h3 style="font-size:22px">Karty podarunkowe</h3><p>Do wybranych sklepów.</p></div>
+    </div>
+    <div class="paystats" id="payStats" hidden>
+      <div class="ps-tiles" id="psTiles"></div>
+      <div class="ticker" id="ticker" hidden>
+        <span class="tk-label">Ostatnie wypłaty</span>
+        <p class="tk-item" id="tkItem"></p>
+        <button type="button" class="tk-pause" id="tkPause" aria-pressed="false">Wstrzymaj</button>
+      </div>
+      <div class="grid stories" id="stories"></div>
+      <p class="muted small" id="psNote"></p>
     </div>
   </div>
 </section>
@@ -889,6 +919,82 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
     submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', email:f.querySelector('#pmail').value, adult:true, group:gIn.value, marketingConsent:f.querySelector('#mktP').checked},
       'Gotowe, jesteś na liście. Napiszemy do Ciebie, gdy pierwsze zadania będą gotowe.');
   });
+})();
+/* Statystyki i wypłaty z pliku stats.json (aktualizowany ręcznie, docelowo z systemu).
+   Każdy element jest ukryty, dopóki plik nie zawiera prawdziwych danych. */
+(function(){
+  var EN = IS_EN, URL = (EN ? '../' : '') + 'stats.json';
+  var T = EN ? {
+    panel:'More than {n} people in the panel', asof:'as of', paid:'Paid out to panelists', median:'Typical monthly payout of an active panelist', medianNote:'median',
+    women:'Woman', men:'Man', yrs:'years', reg:'', paidv:'withdrew', via:'via', ago:function(d){return d===0?'today':d===1?'yesterday':d+' days ago';}, tasks:function(n){return n+(n===1?' task':' tasks');},
+    note:'Examples are real, anonymised payouts from the last 30 days, shown in random order with amounts reflecting the actual distribution.', pause:'Pause', play:'Resume',
+    story:function(s){return s.tasks_month+' tasks a month · about '+fmt(s.monthly_pln)+' a month';}
+  } : {
+    panel:'Ponad {n} osób w panelu', asof:'stan na', paid:'Wypłaciliśmy panelistom', median:'Typowa miesięczna wypłata aktywnego panelisty', medianNote:'mediana',
+    women:'Kobieta', men:'Mężczyzna', yrs:'lat', reg:'woj. ', paidv:'wypłacił', via:'przez', ago:function(d){return d===0?'dziś':d===1?'wczoraj':d+' dni temu';}, tasks:function(n){return n+' '+(n===1?'zadanie':(n%10>=2&&n%10<=4&&(n%100<12||n%100>14))?'zadania':'zadań');},
+    note:'Przykłady to prawdziwe, zanonimizowane wypłaty z ostatnich 30 dni, pokazywane w losowej kolejności, z kwotami odpowiadającymi rzeczywistemu rozkładowi.', pause:'Wstrzymaj', play:'Wznów',
+    story:function(s){return s.tasks_month+' zadań w miesiącu · ok. '+fmt(s.monthly_pln)+' miesięcznie';}
+  };
+  var GROUPS = EN ? {'sen-telco':'Seniors','m-auto':'Car buyers','kredyt':'Loan or flat','remont':'Home renovation','rodzice':'Parents','abc1':'Big-city professionals','b2b':'Business decision-makers','hcp':'Doctors and pharmacists','ogolna':'General panel'}
+                  : {'sen-telco':'Seniorzy','m-auto':'Kupujący auto','kredyt':'Kredyt lub mieszkanie','remont':'Remont','rodzice':'Rodzice','abc1':'Zamożni miejscy','b2b':'Decydenci w firmach','hcp':'Lekarze i farmaceuci','ogolna':'Panel ogólny'};
+  var MIN_TICKER = 10, MAX_AGE_DAYS = 30, STALE_DAYS = 45;
+  function age(n){ if(EN) return n+' years'; var a=n%10,b=n%100; return n+' '+((a>=2&&a<=4&&(b<12||b>14))?'lata':'lat'); }
+  function meth(m){ var k=String(m).toLowerCase(); if(k==='blik') return 'BLIK'; if(k.indexOf('przelew')===0||k==='transfer') return EN?'bank transfer':'przelew'; if(k.indexOf('kart')===0||k==='gift card') return EN?'gift card':'kartę podarunkową'; return m; }
+  function fmt(v){ return money(v); }
+  function el(t,c,x){ var e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e; }
+  function days(iso){ return Math.floor((Date.now() - new Date(iso+'T12:00:00').getTime())/864e5); }
+  function dstr(iso){ var d=new Date(iso+'T12:00:00'); return d.toLocaleDateString(EN?'en-GB':'pl-PL',{day:'numeric',month:'long',year:'numeric'}); }
+  function seeded(seed){ return function(){ seed=(seed*9301+49297)%233280; return seed/233280; }; }
+
+  fetch(URL,{cache:'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+    if(!d || !d.updated || days(d.updated) > STALE_DAYS) return;
+    var asof = T.asof+' '+dstr(d.updated);
+
+    if(d.panelists && d.panelists >= 1000){
+      var n = Math.floor(d.panelists/1000)*1000, h = document.getElementById('heroCount');
+      if(h){ h.textContent = T.panel.replace('{n}', n.toLocaleString(EN?'en-US':'pl-PL')) + ' · ' + asof; h.hidden = false; }
+    }
+
+    var box = document.getElementById('payStats'); if(!box) return;
+    var shown = false, tiles = document.getElementById('psTiles');
+    if(d.paid_total_pln > 0){ var t=el('div','ps-tile'); t.appendChild(el('b',null,fmt(d.paid_total_pln))); t.appendChild(el('span',null,T.paid)); tiles.appendChild(t); shown=true; }
+    if(d.median_monthly_pln > 0){ var t2=el('div','ps-tile'); t2.appendChild(el('b',null,fmt(d.median_monthly_pln))); t2.appendChild(el('span',null,T.median+' ('+T.medianNote+')')); tiles.appendChild(t2); shown=true; }
+
+    var pool = (d.payouts||[]).filter(function(p){ var a=days(p.date); return a>=0 && a<=MAX_AGE_DAYS && p.amount>=20; });
+    if(pool.length >= MIN_TICKER){
+      var rnd = seeded(Number(new Date().toISOString().slice(0,10).replace(/-/g,'')));
+      for(var i=pool.length-1;i>0;i--){ var j=Math.floor(rnd()*(i+1)); var x=pool[i]; pool[i]=pool[j]; pool[j]=x; }
+      var item=document.getElementById('tkItem'), idx=0, timer=null, paused=false, grp=null;
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function list(){ if(grp){ var g=pool.filter(function(p){return p.group===grp;}); if(g.length>=3) return g; } return pool; }
+      function line(p){
+        var who = (p.sex==='K'?T.women:T.men)+', '+age(p.age)+', '+T.reg+p.region;
+        var verb = EN ? T.paidv : (p.sex==='K'?'wypłaciła':'wypłacił');
+        return who+' · '+(GROUPS[p.group]||'')+' · '+verb+' '+fmt(p.amount)+' '+T.via+' '+meth(p.method)+' · '+T.ago(days(p.date))+' · '+T.tasks(p.tasks);
+      }
+      function show(){ var L=list(); var p=L[idx%L.length]; idx++;
+        if(reduce){ item.textContent=line(p); return; }
+        item.classList.add('out'); setTimeout(function(){ item.textContent=line(p); item.classList.remove('out'); },250); }
+      function start(){ stop(); timer=setInterval(show,7000); }
+      function stop(){ if(timer) clearInterval(timer); timer=null; }
+      item.textContent=line(list()[0]); idx=1;
+      var tk=document.getElementById('ticker'); tk.hidden=false; start();
+      tk.addEventListener('mouseenter',stop); tk.addEventListener('mouseleave',function(){ if(!paused) start(); });
+      var pb=document.getElementById('tkPause'); pb.addEventListener('click',function(){ paused=!paused; pb.setAttribute('aria-pressed',paused); pb.textContent=paused?T.play:T.pause; if(paused) stop(); else start(); });
+      document.querySelectorAll('[data-grp]').forEach(function(a){ a.addEventListener('click',function(){ grp=a.dataset.grp; idx=0; item.textContent=line(list()[0]); idx=1; }); });
+      shown=true;
+    }
+
+    var st=document.getElementById('stories');
+    (d.stories||[]).filter(function(s){ return s.consent===true && (EN ? s.quote_en : s.quote_pl); }).slice(0,3).forEach(function(s){
+      var c=el('figure','card soft story');
+      c.appendChild(el('blockquote',null,'„'+(EN?s.quote_en:s.quote_pl)+'”'));
+      var fc=el('figcaption'); fc.appendChild(el('b',null,s.name+', '+age(s.age)+(s.region?', '+T.reg+s.region:'')));
+      fc.appendChild(el('span','muted small',(GROUPS[s.group]||'')+' · '+T.story(s))); c.appendChild(fc); st.appendChild(c); shown=true;
+    });
+
+    if(shown){ document.getElementById('psNote').textContent = (pool.length>=MIN_TICKER ? T.note+' ' : '') + asof[0].toUpperCase()+asof.slice(1)+'.'; box.hidden=false; }
+  }).catch(function(){});
 })();
 </script>
 </body>

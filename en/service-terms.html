@@ -500,6 +500,25 @@ html[lang=en] .segprev .kv b,html[lang=en] .kv b{min-width:128px}
 .wtag{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--red);background:var(--red-soft);padding:5px 10px;border-radius:999px}
 .grpsel{background:var(--bg-2);border-radius:10px;padding:10px 12px;font-size:14px}
 .grpsel .as-link{font:inherit;background:none;border:0;color:var(--red);font-weight:700;cursor:pointer;padding:0 4px}
+
+/* ===== statystyki i wypłaty ===== */
+.herocount{font-size:15px;font-weight:700;color:var(--text-2);margin:0}
+.herocount::before{content:"";display:inline-block;width:8px;height:8px;border-radius:99px;background:#2E9E5B;margin-right:8px;vertical-align:middle}
+.paystats{margin-top:32px;display:flex;flex-direction:column;gap:16px}
+.paystats[hidden],.ticker[hidden]{display:none}
+.ps-tiles{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ps-tile{background:var(--navy);color:#fff;border-radius:20px;padding:22px 24px;display:flex;flex-direction:column;gap:4px}
+.ps-tile b{font-size:clamp(28px,3vw,38px);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.ps-tile span{color:var(--on-dark);font-size:15px}
+.ticker{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid var(--line);border-radius:16px;padding:12px 14px 12px 18px;min-height:64px}
+.tk-label{flex:none;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.tk-item{flex:1;min-width:0;margin:0;font-size:15px;font-weight:600;transition:opacity .25s}
+.tk-item.out{opacity:0}
+.tk-pause{flex:none;font:inherit;font-size:13px;font-weight:700;background:var(--bg-2);border:0;border-radius:8px;padding:8px 12px;min-height:36px;color:var(--navy);cursor:pointer}
+.story{margin:0;gap:12px}.story blockquote{margin:0;font-size:17px;line-height:1.5;color:var(--navy)}
+.story figcaption{display:flex;flex-direction:column;gap:2px}
+@media(max-width:639px){.ticker{flex-wrap:wrap}.tk-item{flex-basis:100%;order:3}.tk-pause{margin-left:auto}}
+.story.card.soft{background:#fff}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/en/service-terms.html#page", "url": "https://uwazni.org.pl/en/service-terms.html", "name": "Terms of service for business | uwazni.org.pl", "description": "Terms for attention studies of target audiences provided to businesses by TGV Sp. z o.o.", "inLanguage": "en", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-07"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "uwazni.org.pl", "item": "https://uwazni.org.pl/en/"}, {"@type": "ListItem", "position": 2, "name": "Terms of service", "item": "https://uwazni.org.pl/en/service-terms.html"}]}]}</script>
 </head>

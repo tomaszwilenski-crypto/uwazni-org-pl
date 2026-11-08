@@ -28,6 +28,12 @@
 - [Badanie uwagi a eye-tracking](https://uwazni.org.pl/badanie-uwagi-a-eye-tracking.html): Eye-tracking mierzy, gdzie dokładnie patrzy człowiek, ale wymaga kamery lub urządzenia i zwykle małej próby, a badanie uwagi w przeglądarce mierzy zachowanie na stronie bez kamery i na większej grupie.
 - [Słownik pomiaru uwagi](https://uwazni.org.pl/slownik-pomiaru-uwagi.html): Słownik zbiera podstawowe pojęcia pomiaru uwagi w reklamie i treściach, od viewability po aCPM, z krótką definicją każdego z nich.
 - [Testy stron na polskich grupach docelowych](https://uwazni.org.pl/testy-stron-na-polskich-grupach.html): Jeśli wchodzisz na polski rynek albo prowadzisz kampanię w Polsce, możesz sprawdzić stronę na polskiej grupie docelowej dobranej kwotowo według GUS, zanim wydasz budżet na media.
+- [Czy artykuł sponsorowany jest czytany?](https://uwazni.org.pl/czy-artykul-sponsorowany-jest-czytany.html): To, czy artykuł sponsorowany jest czytany, sprawdzisz dopiero wtedy, gdy zmierzysz uwagę grupy docelowej akapit po akapicie, bo odsłony, kliknięcia i czas na stronie mówią tylko, że artykuł się wyświetlił.
+
+## Dla wydawców
+
+- [uwazni.org.pl dla wydawców](https://uwazni.org.pl/dla-wydawcow.html): łączymy ludzi zainteresowanych tematem z artykułami sponsorowanymi i natywnymi wydawców; raport uwagi dla reklamodawcy, pretest A/B, bezpłatny pilotaż.
+- [For publishers (EN)](https://uwazni.org.pl/en/for-publishers.html)
 
 ## Badania dla branż
 
@@ -97,3 +103,4 @@ uwazni.org.pl is a Polish attention research panel. Companies commission a study
 - [Attention research vs eye-tracking](https://uwazni.org.pl/en/attention-research-vs-eye-tracking.html): Eye-tracking measures exactly where a person looks but requires a camera or device and usually a small sample, while browser-based attention research measures behaviour on the page without a camera and on a larger group.
 - [Attention measurement glossary](https://uwazni.org.pl/en/attention-measurement-glossary.html): This glossary collects the core terms of attention measurement in advertising and content, from viewability to aCPM, with a short definition of each.
 - [User testing with Polish audiences](https://uwazni.org.pl/en/user-testing-with-polish-audiences.html): If you are entering the Polish market or running a campaign in Poland, you can test your page with a Polish target audience, quota-matched to national statistics, before you spend your media budget.
+- [Is a sponsored article actually read?](https://uwazni.org.pl/en/is-a-sponsored-article-read.html): You can only tell whether a sponsored article is read by measuring the target group’s attention paragraph by paragraph, because page views, clicks and time on page only show that the article was displayed.

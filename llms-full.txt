@@ -1066,7 +1066,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Uwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Uwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1126,7 +1126,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-Attention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+Attention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1180,7 +1180,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1234,7 +1234,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1288,7 +1288,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1342,7 +1342,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1396,7 +1396,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1450,7 +1450,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive SharePanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive SharePanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1516,7 +1516,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1582,7 +1582,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1638,7 +1638,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1694,7 +1694,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1756,7 +1756,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1818,7 +1818,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1878,7 +1878,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -1938,7 +1938,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -1988,7 +1988,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -2038,7 +2038,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -2090,7 +2090,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -2142,7 +2142,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -2178,7 +2178,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -2214,7 +2214,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---
@@ -2266,7 +2266,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagi
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiCzy artykuł sponsorowany jest czytany
 Skonfiguruj badanie
 
 ---
@@ -2318,5 +2318,125 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossary
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryIs a sponsored article actually read
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/czy-artykul-sponsorowany-jest-czytany.html
+
+Baza wiedzy
+
+## Czy artykuł sponsorowany jest czytany?
+
+To, czy artykuł sponsorowany jest czytany, sprawdzisz dopiero wtedy, gdy zmierzysz uwagę grupy docelowej akapit po akapicie, bo odsłony, kliknięcia i czas na stronie mówią tylko, że artykuł się wyświetlił.
+
+Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+
+## Czego nie mówią typowe wskaźniki
+
+ | | Wskaźnik | Co mówi | Czego nie mówi
+
+ | Odsłony | Ile razy artykuł się wyświetlił | Czy ktoś go przeczytał
+
+ | Kliknięcia w link | Kto przeszedł na stronę marki | Czy pozostali przeczytali przekaz
+
+ | Czas na stronie | Jak długo była otwarta karta | Czy czytelnik był przy tekście
+
+ | Viewability | Czy element był na ekranie | Czy na niego spojrzano
+
+## Jak sprawdzić, czy artykuł jest czytany
+
+- Wybierz grupę docelową reklamodawcy, np. osoby planujące kredyt albo zakup auta.
+
+- Pokaż jej artykuł w naturalnych warunkach, na stronie wydawcy albo na środowisku testowym.
+
+- Zmierz uwagę akapit po akapicie: do którego miejsca czytano, gdzie przewijano i co kliknięto.
+
+## Co pokazuje raport
+
+- Wskaźnik Uważnych: jaka część grupy przeczytała artykuł uważnie.
+
+- Doczytania do marki: ile osób dotarło do akapitu z marką i do linku.
+
+- Mapa odpadania: w którym akapicie czytelnicy przestają czytać.
+
+- Test A/B: która wersja tytułu, leadu lub miejsca marki działa lepiej, przed publikacją.
+
+Wydawców zapraszamy na stronę Dla wydawców, gdzie opisujemy raport uwagi jako dodatek do pakietów natywnych. Reklamodawcy mogą od razu wycenić badanie w konfiguratorze.
+
+## Częste pytania
+
+Czym różni się artykuł sponsorowany od natywnego?+
+Artykuł sponsorowany to treść opłacona przez markę i oznaczona jako reklama. Reklama natywna to szersze pojęcie: format reklamowy dopasowany wyglądem do treści serwisu. Oba trzeba oznaczać, a w obu reklamodawca płaci za uwagę czytelników.
+Ile osób potrzeba, żeby sprawdzić artykuł sponsorowany?+
+Do szybkiej oceny wystarcza zwykle 50–100 osób z grupy docelowej, do porównania dwóch wersji około 200 na wersję.
+Czy można sprawdzić artykuł przed publikacją?+
+Tak. Badanie działa na środowisku testowym wydawcy, a treść zadań jest poufna.
+
+Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
+LinkedIn
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/is-a-sponsored-article-read.html
+
+Knowledge base
+
+## Is a sponsored article actually read?
+
+You can only tell whether a sponsored article is read by measuring the target group’s attention paragraph by paragraph, because page views, clicks and time on page only show that the article was displayed.
+
+Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+
+## What the usual metrics don't tell you
+
+ | | Metric | What it tells you | What it doesn't
+
+ | Page views | How many times the article was shown | Whether anyone read it
+
+ | Link clicks | Who went to the brand's site | Whether the rest read the message
+
+ | Time on page | How long the tab was open | Whether the reader was with the text
+
+ | Viewability | Whether an element was on screen | Whether anyone looked at it
+
+## How to check whether an article is read
+
+- Choose the advertiser's target group, e.g. people planning a loan or buying a car.
+
+- Show them the article in natural conditions, on the publisher's site or a test environment.
+
+- Measure attention paragraph by paragraph: how far people read, where they scrolled and what they clicked.
+
+## What the report shows
+
+- Attentive Share: what share of the group read the article attentively.
+
+- Read-through to the brand: how many people reached the brand paragraph and the link.
+
+- Drop-off map: the paragraph where readers stop reading.
+
+- A/B test: which version of the headline, lead or brand placement works better, before publication.
+
+Publishers: see For publishers, where we describe the attention report as an add-on to native packages. Advertisers can price a study straight away in the configurator.
+
+## Frequently asked questions
+
+What is the difference between a sponsored and a native article?+
+A sponsored article is content paid for by a brand and labelled as advertising. Native advertising is the broader term: an ad format that matches the look of the site’s content. Both must be labelled, and in both the advertiser pays for readers’ attention.
+How many people do you need to test a sponsored article?+
+A quick assessment usually needs 50–100 people from the target group, a comparison of two versions about 200 per version.
+Can an article be tested before publication?+
+Yes. The study works on the publisher’s test environment, and task content is confidential.
+
+Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
+LinkedIn
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study

@@ -35,6 +35,11 @@
 - [uwazni.org.pl dla wydawców](https://uwazni.org.pl/dla-wydawcow.html): łączymy ludzi zainteresowanych tematem z artykułami sponsorowanymi i natywnymi wydawców; raport uwagi dla reklamodawcy, pretest A/B, bezpłatny pilotaż.
 - [For publishers (EN)](https://uwazni.org.pl/en/for-publishers.html)
 
+## Ruch panelu (dla administratorów)
+
+- [Informacja o ruchu panelu](https://uwazni.org.pl/panel/): jak rozpoznać wizyty panelu badawczego uwazni.org.pl. User-Agent zawiera "uwazni.org.pl/panel (+https://uwazni.org.pl/panel)", nagłówek HTTP x-uwazni-panelist, referrer uwazni.org.pl, parametr utm_source=uwazni. Wizyty nie klikają reklam, nie wypełniają formularzy, mają dzienny limit; domenę można wyłączyć z badań.
+- [Panel traffic information (EN)](https://uwazni.org.pl/en/panel/)
+
 ## Badania dla branż
 
 - [Badanie uwagi decydentów B2B](https://uwazni.org.pl/badanie-uwagi-b2b.html): Badanie uwagi decydentów B2B to test, w którym właściciele firm, członkowie zarządów i kierownicy czytają Twoją stronę lub materiał sprzedażowy, a Ty widzisz, co naprawdę przeczytali i w co kliknęli.

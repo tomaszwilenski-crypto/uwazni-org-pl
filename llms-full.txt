@@ -2159,7 +2159,7 @@ Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileńsk
 
 ## Pojęcia
 
-Active attention (uwaga aktywna)Czas, w którym odbiorca patrzy bezpośrednio na reklamę lub treść.Passive attention (uwaga bierna)Kontakt z reklamą lub treścią w polu widzenia, ale bez bezpośredniego patrzenia na nią.Attentive seconds (sekundy uwagi)Łączny czas uwagi poświęconej reklamie lub treści, liczony w sekundach.APM (attention per mille)Liczba sekund uwagi na 1000 odsłon. Pozwala porównać jakość kontaktu między nośnikami.aCPM (attention CPM)Koszt tysiąca odsłon skorygowany o uwagę. Jedna z proponowanych formuł to CPM pomnożony przez wskaźnik uwagi.Viewability (widoczność)Techniczna widoczność reklamy na ekranie. Według standardu MRC i IAB: 50% powierzchni przez co najmniej 1 sekundę dla displayu i 2 sekundy dla wideo.Czas aktywnej uwagiCzas, w którym treść jest widoczna na ekranie, a użytkownik jest aktywny na karcie przeglądarki.Wskaźnik UważnychOdsetek badanej grupy, który przeczytał stronę uważnie.
+Active attention (uwaga aktywna)Czas, w którym odbiorca patrzy bezpośrednio na reklamę lub treść.Passive attention (uwaga bierna)Kontakt z reklamą lub treścią w polu widzenia, ale bez bezpośredniego patrzenia na nią.Attentive seconds (sekundy uwagi)Łączny czas uwagi poświęconej reklamie lub treści, liczony w sekundach.APM (attention per mille)Liczba sekund uwagi na 1000 odsłon. Pozwala porównać jakość kontaktu między nośnikami.aCPM (attention CPM)Koszt tysiąca odsłon skorygowany o uwagę. Jedna z proponowanych formuł to CPM pomnożony przez wskaźnik uwagi.Viewability (widoczność)Techniczna widoczność reklamy na ekranie. Według standardu MRC i IAB: 50% powierzchni przez co najmniej 1 sekundę dla displayu i 2 sekundy dla wideo.Czas aktywnej uwagiCzas, w którym treść jest widoczna na ekranie, a użytkownik jest aktywny na karcie przeglądarki.Wskaźnik UważnychOdsetek badanej grupy, który przeczytał stronę uważnie.Artykuł sponsorowanyTreść opłacona przez markę, publikowana w serwisie wydawcy i oznaczona jako reklama.Reklama natywnaFormat reklamowy dopasowany wyglądem i formą do treści serwisu, w którym się ukazuje. Wymaga oznaczenia jako reklama.
 
 ## Jak czytać te pojęcia
 
@@ -2195,7 +2195,7 @@ Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of t
 
 ## Terms
 
-Active attentionTime during which the viewer looks directly at an ad or content.Passive attentionContact with an ad or content within the field of view, without looking at it directly.Attentive secondsTotal attention given to an ad or content, measured in seconds.APM (attention per mille)Attentive seconds per 1,000 impressions. Used to compare contact quality across media.aCPM (attention CPM)Cost per thousand impressions adjusted for attention. One proposed formula is CPM multiplied by an attention metric.ViewabilityTechnical visibility of an ad on screen. Under the MRC and IAB standard: 50% of pixels for at least 1 second for display and 2 seconds for video.Active attention timeTime during which content is visible on screen and the user is active in the browser tab.Attentive ShareThe percentage of the studied group that read a page attentively.
+Active attentionTime during which the viewer looks directly at an ad or content.Passive attentionContact with an ad or content within the field of view, without looking at it directly.Attentive secondsTotal attention given to an ad or content, measured in seconds.APM (attention per mille)Attentive seconds per 1,000 impressions. Used to compare contact quality across media.aCPM (attention CPM)Cost per thousand impressions adjusted for attention. One proposed formula is CPM multiplied by an attention metric.ViewabilityTechnical visibility of an ad on screen. Under the MRC and IAB standard: 50% of pixels for at least 1 second for display and 2 seconds for video.Active attention timeTime during which content is visible on screen and the user is active in the browser tab.Attentive ShareThe percentage of the studied group that read a page attentively.Sponsored articleContent paid for by a brand, published on a publisher’s site and labelled as advertising.Native advertisingAn ad format that matches the look and form of the content on the site where it appears. It must be labelled as advertising.
 
 ## How to read these terms
 
@@ -2440,3 +2440,423 @@ More in the knowledge base · Knowledge base
 
 What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
+
+---
+
+URL: https://uwazni.org.pl/dla-wydawcow.html
+
+uwazni.org.plPolski Panel Uważnych
+
+ Dla firm
+ Dla wydawców
+ Dla panelistów
+
+ Jak to działa
+ Produkty
+ FAQ
+ EN
+ Umów pilotażPilotaż
+
+ Dla wydawców
+
+## Łączymy ludzi z treściami, które ich obchodzą
+
+ Masz dobre artykuły sponsorowane i natywne. My przyprowadzamy do nich czytelników z grup zainteresowań Twoich reklamodawców i dajemy dowód, że przeczytali je do marki.
+
+ Umów bezpłatny pilotażZobacz przykładowy raport
+
+ Bez instalowania kodu
+ Ruch jawnie oznaczony
+ Pilotaż bez kosztów
+
+ Problem artykułu sponsorowanego
+
+## Reklamodawca pyta: czy przeczytali to ludzie, do których mówię?
+
+- Odsłony mówią, ile razy artykuł się wyświetlił.
+
+- Kliknięcia mówią, kto kliknął, a nie kto przeczytał przekaz marki.
+
+- Czas na stronie mówi, jak długo była otwarta karta.
+
+ Żaden z nich nie mówi, czy właściwa grupa doczytała do marki. Tę lukę zamykamy.
+
+## Ludzie wybierają tematy, Ty masz treści. My je łączymy.
+
+ 1Zainteresowania
+Paneliści zapisują się według tematów: finanse, motoryzacja, zdrowie, dom, rodzina, biznes.
+
+ 2Dopasowanie
+Artykuł sponsorowany lub natywny trafia do grupy, którą temat naprawdę obchodzi.
+
+ 3Dowód uwagi
+Mierzymy uwagę akapit po akapicie i kliknięcia w link marki. Wizyty widzisz w Google Analytics po minucie.
+
+## Trzy dodatki do Twojej oferty natywnej
+Sprzedajesz je razem jako pakiet premium albo osobno, jako dodatek do istniejących pakietów.
+
+ Czytelnicy z grupy
+Artykuł trafia do osób z grupy zainteresowań reklamodawcy, np. planujących kredyt albo zakup auta.
+
+ Raport uwagi
+Po publikacji reklamodawca dostaje dowód: kto przeczytał, do którego akapitu i co kliknął.
+
+ Pretest natywny
+Przed publikacją dwie wersje tytułu, leadu lub miejsca marki w teście A/B na grupie docelowej.
+
+## Co widzi Twój reklamodawca
+
+ Wskaźnik Uważnych
+Jaka część grupy przeczytała artykuł uważnie.
+
+ Doczytania do marki
+Ile osób dotarło do akapitu z marką i do linku.
+
+ Kliknięcia w link marki
+Ile osób z grupy przeszło na stronę reklamodawcy.
+
+ Zobacz przykładowy raport
+
+## Ruch pod Twoją kontrolą
+
+ Każda wizyta panelu jest jawnie oznaczona w User-Agent, nagłówku HTTP i parametrze utm_source=uwazni. Wyodrębnisz ją w Google Analytics, logach serwera i CDN.
+
+- Wizyta panelu nie klika reklam i nie wypełnia formularzy.
+
+- Nie loguje się i nie zakłada kont.
+
+- Liczba wizyt na adres ma dzienny limit.
+
+- Na Twoją prośbę wyłączamy domenę z badań.
+
+ Informacja o ruchu panelu dla administratorów
+
+## Program partnerski
+
+ Odsprzedaż badań z rabatem partnerskim, prowizja za polecenie albo wspólny pakiet natywny. Warunki omawiamy indywidualnie, po pilotażu.
+
+ Ceny katalogowe badań są jawne: Ile kosztuje badanie uwagi.
+
+## Zacznijmy od jednego artykułu sponsorowanego
+Pilotaż bez kosztów dla wydawcy. Na koniec masz gotowy raport, który pokazujesz reklamodawcom jako nowy produkt.
+
+- Dzień 1Start: jeden artykuł sponsorowany lub natywny i jedna grupa zainteresowań.
+
+- Dni 1–7100 wizyt panelu z wybranej grupy, widocznych na bieżąco w Google Analytics.
+
+- +3 dni roboczeRaport: Wskaźnik Uważnych, doczytania do marki, kliknięcia.
+
+- Na koniecOmówienie wyników z działem sprzedaży i redakcją natywną.
+
+ Nie wypełniaj
+ Serwis lub wydawnictwo
+ E-mail
+ Wiadomość (opcjonalnie)
+ Umów pilotaż
+
+ Dane z formularza wykorzystujemy tylko do odpowiedzi. Szczegóły w polityce prywatności.
+
+## Częste pytania wydawców
+
+ Czy muszę coś instalować?+
+Nie. Badanie działa na opublikowanym artykule albo na Twoim środowisku testowym. Wystarczy adres.
+
+ Jak odróżnię wizyty panelu w swoich statystykach?+
+Każda wizyta ma oznaczenie w User-Agent, nagłówek x-uwazni-panelist i parametr utm_source=uwazni. Instrukcje dla GA4, logów i CDN są na stronie Informacja o ruchu panelu.
+
+ Czy wizyty panelu klikają reklamy?+
+Nie. Wizyty panelu czytają treść, przewijają stronę i przechodzą po linkach wewnętrznych. Nie klikają reklam, nie wypełniają formularzy i nie logują się.
+
+ Ile to kosztuje?+
+Pilotaż jest bez kosztów dla wydawcy. Dalej obowiązuje jawny cennik badań, a dla wydawców program partnerski z rabatem lub prowizją.
+
+ Czy mogę wyłączyć swoją domenę z badań?+
+Tak. Napisz do nas, a wyłączymy domenę z badań.
+
+## Połączmy Twoje treści z ludźmi, których interesują
+
+ Odpowiadamy w ciągu jednego dnia roboczego: kontakt@uwazni.org.pl
+
+ Umów pilotaż
+
+---
+
+URL: https://uwazni.org.pl/en/for-publishers.html
+
+uwazni.org.plPolish Attention Panel
+
+ For business
+ For publishers
+ For panelists
+
+ How it works
+ Products
+ FAQ
+ PL
+ Book a pilotPilot
+
+ For publishers
+
+## We connect people with content they care about
+
+ You have strong sponsored and native articles. We bring readers from your advertisers' interest groups to them and give proof they read as far as the brand.
+
+ Book a free pilotSee a sample report
+
+ No code to install
+ Clearly labelled traffic
+ Free pilot
+
+ The sponsored article problem
+
+## Your advertiser asks: did the people I'm talking to read it?
+
+- Page views tell you how many times the article was shown.
+
+- Clicks tell you who clicked, not who read the brand message.
+
+- Time on page tells you how long the tab was open.
+
+ None of them tells you whether the right group read as far as the brand. We close that gap.
+
+## People choose topics, you have the content. We connect them.
+
+ 1Interests
+Panelists sign up by topic: finance, cars, health, home, family, business.
+
+ 2Matching
+A sponsored or native article reaches the group that genuinely cares about the topic.
+
+ 3Proof of attention
+We measure attention paragraph by paragraph and clicks on the brand link. Visits show up in Google Analytics within a minute.
+
+## Three add-ons for your native offer
+Sell them together as a premium package or separately as add-ons to your existing packages.
+
+ Readers from the group
+The article reaches people from the advertiser's interest group, e.g. those planning a loan or buying a car.
+
+ Attention report
+After publication the advertiser gets proof: who read, how far and what they clicked.
+
+ Native pretest
+Before publication, two versions of the headline, lead or brand placement in an A/B test on the target group.
+
+## What your advertiser sees
+
+ Attentive Share
+What share of the group read the article attentively.
+
+ Read-through to the brand
+How many people reached the brand paragraph and the link.
+
+ Brand link clicks
+How many people from the group went to the advertiser's site.
+
+ See a sample report
+
+## Traffic under your control
+
+ Every panel visit is clearly labelled in the User-Agent, an HTTP header and the utm_source=uwazni parameter. You can separate it in Google Analytics, server logs and CDN.
+
+- A panel visit does not click ads or fill in forms.
+
+- It does not log in or create accounts.
+
+- Visits per URL have a daily limit.
+
+- At your request we exclude your domain from studies.
+
+ Panel traffic information for administrators
+
+## Partner programme
+
+ Resale of studies at a partner discount, a referral commission, or a joint native package. We agree terms individually, after the pilot.
+
+ Catalogue prices are public: How much does attention research cost.
+
+## Let's start with one sponsored article
+The pilot is free for publishers. At the end you have a finished report to show advertisers as a new product.
+
+- Day 1Start: one sponsored or native article and one interest group.
+
+- Days 1–7100 panel visits from the chosen group, visible live in Google Analytics.
+
+- +3 business daysReport: Attentive Share, read-through to the brand, clicks.
+
+- FinallyA results review with your sales team and native desk.
+
+ Leave empty
+ Site or publishing house
+ Email
+ Message (optional)
+ Book a pilot
+
+ We use form data only to reply. Details in the privacy policy.
+
+## Publisher FAQ
+
+ Do I need to install anything?+
+No. The study works on a published article or on your test environment. A URL is enough.
+
+ How do I tell panel visits apart in my statistics?+
+Every visit is labelled in the User-Agent, with the x-uwazni-panelist header and the utm_source=uwazni parameter. Instructions for GA4, logs and CDN are on the panel traffic information page.
+
+ Do panel visits click ads?+
+No. Panel visits read content, scroll and follow internal links. They do not click ads, fill in forms or log in.
+
+ How much does it cost?+
+The pilot is free for publishers. After that, public catalogue prices apply, and publishers get a partner programme with a discount or commission.
+
+ Can I exclude my domain from studies?+
+Yes. Write to us and we will exclude your domain from studies.
+
+## Let's connect your content with people who care about it
+
+ We reply within one business day: kontakt@uwazni.org.pl
+
+ Book a pilot
+
+---
+
+URL: https://uwazni.org.pl/panel/
+
+uwazni.org.plPolski Panel Uważnych
+
+ Dla firm
+ Dla wydawców
+ Dla panelistów
+
+ EN
+
+Informacja dla wydawców i administratorów
+
+## Ruch panelu uwazni.org.pl na Twojej stronie
+
+Jeśli w logach serwera lub w analityce widzisz wizyty oznaczone uwazni.org.pl, to wizyty panelu badawczego uwazni.org.pl. Wyjaśniamy, czym są, jak je rozpoznać i jak je wyodrębnić.
+
+## 1. Czym jest ten ruch
+
+uwazni.org.pl prowadzi badania uwagi na stronach www. Na zlecenie klientów, z którymi mamy podpisane umowy, wizyty panelu badawczego odwiedzają wskazane strony, a my mierzymy, które fragmenty treści są czytane i w którym miejscu czytanie się kończy.
+
+## 2. Jak go rozpoznać
+
+KopiujUser-Agent zawiera:
+uwazni.org.pl/panel (+https://uwazni.org.pl/panel)
+
+Nagłówek HTTP na stronach badanego serwisu:
+x-uwazni-panelist
+
+Witryna odsyłająca:
+uwazni.org.pl
+
+Parametr w adresie:
+utm_source=uwazni
+
+## 3. Co robi wizyta panelu
+
+- wyświetla stronę i obsługuje baner zgód,
+
+- czyta treść i przewija stronę,
+
+- przechodzi po linkach wewnętrznych.
+
+Wizyta panelu nie klika reklam, nie wypełnia formularzy, nie loguje się i nie zakłada kont. Liczba wizyt na jeden adres ma dzienny limit.
+
+## 4. Jak wyodrębnić ten ruch
+
+Jeśli chcesz widzieć wizyty panelu osobno:
+
+- Google Analytics 4: utwórz segment lub filtr porównania, w którym źródło sesji to uwazni albo witryna odsyłająca zawiera uwazni.org.pl.
+
+- Logi serwera i CDN: filtruj żądania, w których User-Agent zawiera uwazni.org.pl/panel albo występuje nagłówek x-uwazni-panelist.
+
+- Inne systemy analityczne i adserwery: jeśli system pozwala oznaczać ruch po User-Agent, nagłówku lub parametrze w adresie, użyj oznaczeń z punktu 2.
+
+## 5. Kontakt i wyłączenie domeny
+
+Masz pytania albo nie chcesz, żeby Twoja domena była objęta badaniami? Napisz do nas i podaj domenę. Na prośbę wydawcy wyłączamy jego domenę z badań.
+
+ Nie wypełniaj
+ Domena
+ E-mail
+ Wiadomość (opcjonalnie)
+ Chcę wyłączyć domenę z badań
+ Wyślij
+
+Administratorem danych jest TGV Sp. z o.o. Dane z formularza wykorzystujemy tylko do odpowiedzi na Twoją wiadomość. Szczegóły w polityce prywatności.
+
+Możesz też napisać na kontakt@uwazni.org.pl. Odpowiadamy w ciągu jednego dnia roboczego.
+
+---
+
+URL: https://uwazni.org.pl/en/panel/
+
+uwazni.org.plPolish Attention Panel
+
+ For business
+ For publishers
+ For panelists
+
+ PL
+
+Information for publishers and administrators
+
+## uwazni.org.pl panel traffic on your site
+
+This is a translation for information purposes. The binding version is the Polish Informacja o ruchu panelu.
+
+If you see visits marked uwazni.org.pl in your server logs or analytics, they are visits of the uwazni.org.pl research panel. Here is what they are, how to recognise them and how to separate them.
+
+## 1. What this traffic is
+
+uwazni.org.pl runs attention research on websites. On behalf of clients with whom we have signed agreements, research panel visits go to selected pages, and we measure which parts of the content are read and where reading stops.
+
+## 2. How to recognise it
+
+CopyUser-Agent contains:
+uwazni.org.pl/panel (+https://uwazni.org.pl/panel)
+
+HTTP header on the studied site:
+x-uwazni-panelist
+
+Referrer:
+uwazni.org.pl
+
+URL parameter:
+utm_source=uwazni
+
+## 3. What a panel visit does
+
+- loads the page and handles the consent banner,
+
+- reads the content and scrolls the page,
+
+- follows internal links.
+
+A panel visit does not click ads, fill in forms, log in or create accounts. The number of visits per URL has a daily limit.
+
+## 4. How to separate this traffic
+
+If you want to see panel visits separately:
+
+- Google Analytics 4: create a segment or comparison filter where the session source is uwazni or the referrer contains uwazni.org.pl.
+
+- Server and CDN logs: filter requests where the User-Agent contains uwazni.org.pl/panel or the x-uwazni-panelist header is present.
+
+- Other analytics systems and ad servers: if the system lets you tag traffic by User-Agent, header or URL parameter, use the identifiers from section 2.
+
+## 5. Contact and domain opt-out
+
+Have questions, or don't want your domain included in studies? Write to us and give your domain. At a publisher's request we exclude their domain from studies.
+
+ Leave empty
+ Domain
+ Email
+ Message (optional)
+ I want my domain excluded from studies
+ Send
+
+The data controller is TGV Sp. z o.o. We use form data only to reply to your message. Details in the privacy policy.
+
+You can also write to kontakt@uwazni.org.pl. We reply within one business day.

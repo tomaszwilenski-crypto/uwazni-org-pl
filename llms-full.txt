@@ -1066,7 +1066,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Uwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagi
+Uwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1126,7 +1126,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-Attention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costs
+Attention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
 
 ---
@@ -1180,7 +1180,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagi
+Co to jest pomiar uwagiWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1234,7 +1234,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costs
+What is attention measurementAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
 
 ---
@@ -1288,7 +1288,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagi
+Co to jest pomiar uwagiUwaga a viewabilityPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1342,7 +1342,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costs
+What is attention measurementAttention vs viewabilityAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
 
 ---
@@ -1396,7 +1396,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagi
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1450,7 +1450,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive SharePanel quality and verificationSample size for attention researchHow much attention research costs
+What is attention measurementAttention vs viewabilityAttentive SharePanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
 
 ---
@@ -1516,7 +1516,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyIle osób potrzeba do badaniaIle kosztuje badanie uwagi
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1582,7 +1582,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelSample size for attention researchHow much attention research costs
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
 
 ---
@@ -1638,7 +1638,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle kosztuje badanie uwagi
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1694,7 +1694,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationHow much attention research costs
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
 Configure a study
 
 ---
@@ -1756,7 +1756,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badania
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
 Skonfiguruj badanie
 
 ---
@@ -1818,5 +1818,505 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention research
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/badanie-uwagi-a-hotjar-i-clarity.html
+
+Baza wiedzy
+
+## Badanie uwagi a Hotjar i Microsoft Clarity
+
+Hotjar i Microsoft Clarity pokazują, jak z Twojej strony korzysta ruch, który już na nią trafia, a badanie uwagi pokazuje, jak przeczyta ją grupa, którą sam wybierasz, także zanim strona zostanie opublikowana.
+
+Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+
+## Co robią mapy ciepła
+
+Hotjar i Microsoft Clarity to narzędzia instalowane na stronie. Pokazują mapy kliknięć i przewijania oraz nagrania sesji osób, które odwiedziły stronę. Clarity jest bezpłatne, Hotjar ma plan bezpłatny i plany płatne. To dobre narzędzia do stałej obserwacji ruchu.
+
+## Czego mapy ciepła nie pokażą
+
+- Kim są odwiedzający. Widzisz zachowanie ruchu, ale nie wiesz, czy to Twoja grupa docelowa.
+
+- Strony przed publikacją. Bez ruchu nie ma danych, więc nowego landing page nie sprawdzisz przed kampanią.
+
+- Konkretnej grupy. Nie zbadasz, jak czytają seniorzy, lekarze albo decydenci B2B, jeśli nie trafiają na stronę w wystarczającej liczbie.
+
+- Uczciwego testu A/B przy małym ruchu. Na stronach z małym ruchem różnice między wersjami długo nie są wiarygodne.
+
+## Porównanie
+
+ | | | Hotjar, Clarity | Badanie uwagi
+
+ | Kogo badasz | Ruch, który już masz | Grupę, którą wybierasz
+
+ | Kiedy | Po publikacji, przy ruchu | Przed i po publikacji
+
+ | Instalacja | Skrypt na stronie | Bez instalacji
+
+ | Test A/B | Wymaga ruchu na obu wersjach | Ta sama grupa, osobne próby
+
+ | Koszt | Bezpłatnie lub abonament | Za badanie, od 1 000 zł netto
+
+## Kiedy co wybrać
+
+Do stałej obserwacji strony wystarczą mapy ciepła. Badanie uwagi ma sens, gdy chcesz sprawdzić stronę przed kampanią, zbadać konkretną grupę albo porównać wersje bez czekania na ruch. Najlepiej działają razem: badanie przed startem, mapy ciepła po starcie. Szczegóły metody opisujemy w tekście Co to jest pomiar uwagi.
+
+## Częste pytania
+
+Czy badanie uwagi zastępuje Hotjara lub Clarity?+
+Nie. To uzupełnienie. Mapy ciepła obserwują ruch, który masz, a badanie pokazuje wybraną grupę, także przed publikacją.
+Czy muszę instalować skrypt do badania?+
+Nie. Wystarczy adres strony albo dostęp testowy do strony niepublicznej.
+Czy wyniki badania widać w Google Analytics?+
+Tak. Wizyty z badania mają parametr utm_source=uwazni, więc łatwo je odfiltrować.
+
+Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
+LinkedIn
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/attention-research-vs-hotjar-clarity.html
+
+Knowledge base
+
+## Attention research vs Hotjar and Microsoft Clarity
+
+Hotjar and Microsoft Clarity show how the traffic that already reaches your page uses it, while attention research shows how a group you choose reads it, even before the page is published.
+
+Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+
+## What heatmaps do
+
+Hotjar and Microsoft Clarity are tools installed on your site. They show click and scroll maps and session recordings of people who visited the page. Clarity is free, Hotjar has a free plan and paid plans. They are good tools for ongoing traffic observation.
+
+## What heatmaps cannot show
+
+- Who the visitors are. You see traffic behaviour, but not whether it is your target group.
+
+- A page before publication. No traffic means no data, so you cannot test a new landing page before a campaign.
+
+- A specific group. You cannot study how seniors, doctors or B2B decision-makers read, unless they reach your page in sufficient numbers.
+
+- A fair A/B test with low traffic. On low-traffic pages, differences between versions take a long time to become reliable.
+
+## Comparison
+
+ | | | Hotjar, Clarity | Attention research
+
+ | Who you study | The traffic you already have | The group you choose
+
+ | When | After publication, with traffic | Before and after publication
+
+ | Installation | Script on the site | None
+
+ | A/B test | Needs traffic on both versions | Same group, separate samples
+
+ | Cost | Free or subscription | Per study, from PLN 1,000 net
+
+## When to choose which
+
+For ongoing observation, heatmaps are enough. Attention research makes sense when you want to test a page before a campaign, study a specific group or compare versions without waiting for traffic. They work best together: a study before launch, heatmaps after. More on the method in What is attention measurement.
+
+## Frequently asked questions
+
+Does attention research replace Hotjar or Clarity?+
+No. It complements them. Heatmaps observe the traffic you have, a study shows a chosen group, even before publication.
+Do I need to install a script for the study?+
+No. A page URL or test access to a non-public page is enough.
+Are study results visible in Google Analytics?+
+Yes. Study visits carry utm_source=uwazni, so they are easy to filter.
+
+Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
+LinkedIn
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/badanie-uwagi-a-testy-ux.html
+
+Baza wiedzy
+
+## Badanie uwagi a testy użyteczności (UX)
+
+Test użyteczności sprawdza, czy kilka osób poradzi sobie z zadaniem na stronie, a badanie uwagi sprawdza na większej próbie z wybranej grupy, co ludzie naprawdę czytają, gdzie odpadają i w co klikają.
+
+Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+
+## Co mierzy test UX
+
+W teście użyteczności uczestnik dostaje zadanie, np. „znajdź cennik i zamów pakiet”, a badacz obserwuje, gdzie się gubi. Często uczestnik mówi na głos, co myśli, a sesja jest nagrywana. Platformy do testów UX rozliczają się zwykle za uczestnika lub w kredytach zależnych od długości testu.
+
+## Co mierzy badanie uwagi
+
+W badaniu uwagi uczestnik korzysta ze strony naturalnie, bez instrukcji krok po kroku. Wynik powstaje z zachowania większej grupy: które sekcje przeczytała, które przewinęła, w co kliknęła i jaka część czytała uważnie.
+
+ | | | Test UX | Badanie uwagi
+
+ | Pytanie | Czy użytkownik wykona zadanie? | Czy grupa przeczyta i zrozumie stronę?
+
+ | Typowa próba | 5–20 osób | 50–500 osób
+
+ | Wynik | Problemy jakościowe, nagrania | Liczby: odpadanie sekcja po sekcji, kliknięcia, Wskaźnik Uważnych
+
+ | Dobór uczestników | Według kraju, języka i kryteriów platformy | Polskie grupy docelowe dobierane kwotowo według GUS
+
+## Kiedy co wybrać
+
+Test UX wybierz, gdy projektujesz ścieżkę i szukasz miejsc, w których ludzie się gubią. Badanie uwagi wybierz, gdy treść jest gotowa i chcesz wiedzieć, czy Twoja grupa ją przeczyta, oraz porównać wersje na liczbach. Jeśli Twoją grupą są Polacy, sprawdź, czy panel platformy UX pokryje ją w Polsce w potrzebnej liczbie. Więcej o doborze próby w tekście Ile osób potrzeba do badania.
+
+## Częste pytania
+
+Czy badanie uwagi zastępuje testy UX?+
+Nie. Odpowiada na inne pytanie. Test UX znajduje problemy w ścieżce, badanie uwagi mierzy, jak grupa czyta treść.
+Czy w badaniu uwagi są nagrania sesji?+
+Nie. Nie używamy kamery ani nagrań ekranu. Wynik to zbiorcze dane o zachowaniu grupy.
+Czy mogę dodać pytania jak w teście UX?+
+Tak, do 15 pytań po zadaniu, np. czy oferta jest jasna.
+
+Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
+LinkedIn
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/attention-research-vs-ux-testing.html
+
+Knowledge base
+
+## Attention research vs usability (UX) testing
+
+A usability test checks whether a few people can complete a task on a page, while attention research checks on a larger sample from a chosen group what people actually read, where they drop off and what they click.
+
+Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+
+## What a UX test measures
+
+In a usability test the participant gets a task, such as "find the pricing and order a plan", and the researcher observes where they get lost. Participants often think aloud and the session is recorded. UX testing platforms usually charge per participant or in credits depending on test length.
+
+## What attention research measures
+
+In attention research the participant uses the page naturally, without step-by-step instructions. The result comes from the behaviour of a larger group: which sections they read, which they scrolled past, what they clicked and what share read attentively.
+
+ | | | UX test | Attention research
+
+ | Question | Can the user complete the task? | Will the group read and understand the page?
+
+ | Typical sample | 5–20 people | 50–500 people
+
+ | Output | Qualitative issues, recordings | Numbers: section-by-section drop-off, clicks, Attentive Share
+
+ | Participant selection | By country, language and platform criteria | Polish target groups, quota-matched to national statistics
+
+## When to choose which
+
+Choose a UX test when you are designing a journey and looking for places where people get lost. Choose attention research when the content is ready and you want to know whether your group will read it, and to compare versions with numbers. If your audience is in Poland, check whether a UX platform's panel covers it in the numbers you need. More on sample size in How many people does an attention study need.
+
+## Frequently asked questions
+
+Does attention research replace UX testing?+
+No. It answers a different question. A UX test finds problems in a journey, attention research measures how a group reads content.
+Are there session recordings in attention research?+
+No. We use no cameras or screen recordings. The result is aggregated behavioural data for the group.
+Can I add questions like in a UX test?+
+Yes, up to 15 questions after the task, for example whether the offer is clear.
+
+Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
+LinkedIn
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/badanie-uwagi-a-eye-tracking.html
+
+Baza wiedzy
+
+## Badanie uwagi a eye-tracking
+
+Eye-tracking mierzy, gdzie dokładnie patrzy człowiek, ale wymaga kamery lub urządzenia i zwykle małej próby, a badanie uwagi w przeglądarce mierzy zachowanie na stronie bez kamery i na większej grupie.
+
+Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+
+## Rodzaje eye-trackingu
+
+- Laboratoryjny: specjalne urządzenie śledzi ruch gałek ocznych z dużą dokładnością. Wymaga obecności uczestnika w laboratorium.
+
+- Przez kamerę internetową: oprogramowanie szacuje kierunek wzroku z obrazu kamery uczestnika. Mniej dokładny, ale zdalny. Wymaga zgody na użycie kamery.
+
+## Porównanie
+
+ | | | Eye-tracking | Badanie uwagi w przeglądarce
+
+ | Co mierzy | Kierunek wzroku, punkty fiksacji | Widoczność sekcji, aktywność, przewijanie, kliknięcia
+
+ | Kamera | Tak | Nie
+
+ | Typowa próba | Kilkanaście do kilkudziesięciu osób | 50–500 osób
+
+ | Dokładność | Poziom pojedynczego elementu | Poziom sekcji strony
+
+ | Najlepszy do | Projektu kreacji, opakowania, układu ekranu | Oceny treści i stron, testów A/B, porównania grup
+
+## Kiedy co wybrać
+
+Eye-tracking wybierz, gdy potrzebujesz wiedzieć, na który element kreacji pada wzrok. Badanie uwagi w przeglądarce wybierz, gdy chcesz sprawdzić, jak grupa czyta całą stronę lub artykuł, i porównać wersje na większej próbie. Szczegóły metody opisujemy w tekście Metodologia.
+
+## Częste pytania
+
+Czy badanie bez kamery jest wiarygodne?+
+Tak, na poziomie sekcji strony. Nie wskaże pojedynczego punktu, na który padł wzrok, ale pokaże, które fragmenty grupa przeczytała, a które przewinęła.
+Dlaczego nie używacie kamery?+
+Bo pozwala to badać większe grupy, w naturalnych warunkach i bez zbierania obrazu twarzy uczestników.
+Czy można połączyć obie metody?+
+Tak. Eye-tracking na małej próbie do kreacji, badanie uwagi na dużej próbie do treści i testów A/B.
+
+Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
+LinkedIn
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXSłownik pomiaru uwagiTesty stron na polskich grupach
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/attention-research-vs-eye-tracking.html
+
+Knowledge base
+
+## Attention research vs eye-tracking
+
+Eye-tracking measures exactly where a person looks but requires a camera or device and usually a small sample, while browser-based attention research measures behaviour on the page without a camera and on a larger group.
+
+Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+
+## Types of eye-tracking
+
+- Lab-based: a dedicated device tracks eye movement with high precision. Participants must attend a lab.
+
+- Webcam-based: software estimates gaze direction from the participant's webcam image. Less precise, but remote. Requires consent to use the camera.
+
+## Comparison
+
+ | | | Eye-tracking | Browser-based attention research
+
+ | What it measures | Gaze direction, fixation points | Section visibility, activity, scrolling, clicks
+
+ | Camera | Yes | No
+
+ | Typical sample | A dozen to a few dozen people | 50–500 people
+
+ | Precision | Single element | Page section
+
+ | Best for | Creative, packaging, screen layout design | Content and page assessment, A/B tests, group comparison
+
+## When to choose which
+
+Choose eye-tracking when you need to know which creative element draws the eye. Choose browser-based attention research when you want to see how a group reads a whole page or article and compare versions on a larger sample. More on the method in Methodology.
+
+## Frequently asked questions
+
+Is research without a camera reliable?+
+Yes, at the level of page sections. It will not pinpoint a single gaze point, but it shows which parts the group read and which it scrolled past.
+Why do you not use a camera?+
+It lets us study larger groups in natural conditions, without collecting images of participants' faces.
+Can both methods be combined?+
+Yes. Eye-tracking on a small sample for creative, attention research on a large sample for content and A/B tests.
+
+Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
+LinkedIn
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention measurement glossaryUser testing with Polish audiences
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/slownik-pomiaru-uwagi.html
+
+Baza wiedzy
+
+## Słownik pomiaru uwagi
+
+Słownik zbiera podstawowe pojęcia pomiaru uwagi w reklamie i treściach, od viewability po aCPM, z krótką definicją każdego z nich.
+
+Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+
+## Pojęcia
+
+Active attention (uwaga aktywna)Czas, w którym odbiorca patrzy bezpośrednio na reklamę lub treść.Passive attention (uwaga bierna)Kontakt z reklamą lub treścią w polu widzenia, ale bez bezpośredniego patrzenia na nią.Attentive seconds (sekundy uwagi)Łączny czas uwagi poświęconej reklamie lub treści, liczony w sekundach.APM (attention per mille)Liczba sekund uwagi na 1000 odsłon. Pozwala porównać jakość kontaktu między nośnikami.aCPM (attention CPM)Koszt tysiąca odsłon skorygowany o uwagę. Jedna z proponowanych formuł to CPM pomnożony przez wskaźnik uwagi.Viewability (widoczność)Techniczna widoczność reklamy na ekranie. Według standardu MRC i IAB: 50% powierzchni przez co najmniej 1 sekundę dla displayu i 2 sekundy dla wideo.Czas aktywnej uwagiCzas, w którym treść jest widoczna na ekranie, a użytkownik jest aktywny na karcie przeglądarki.Wskaźnik UważnychOdsetek badanej grupy, który przeczytał stronę uważnie.
+
+## Jak czytać te pojęcia
+
+Pojęcia z reklamy, takie jak APM i aCPM, opisują uwagę poświęconą odsłonom reklam. W badaniach treści i stron częściej używa się czasu aktywnej uwagi i odsetka osób czytających uważnie. Rynek wciąż ujednolica definicje, więc porównując wyniki różnych dostawców, sprawdzaj, jak każdy z nich liczy dany wskaźnik. Więcej w tekstach Co to jest pomiar uwagi i Uwaga a viewability.
+
+## Częste pytania
+
+Czym różni się APM od aCPM?+
+APM mówi, ile sekund uwagi przypada na 1000 odsłon. aCPM to koszt tysiąca odsłon skorygowany o uwagę, czyli łączy cenę z jakością kontaktu.
+Czy wskaźniki uwagi różnych dostawców są porównywalne?+
+Nie zawsze. Dostawcy liczą je różnymi metodami, dlatego rynek pracuje nad wspólnymi definicjami.
+Który wskaźnik jest najważniejszy przy badaniu strony?+
+Zwykle odsetek osób czytających uważnie oraz miejsca, w których grupa przestaje czytać.
+
+Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
+LinkedIn
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingTesty stron na polskich grupach
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/attention-measurement-glossary.html
+
+Knowledge base
+
+## Attention measurement glossary
+
+This glossary collects the core terms of attention measurement in advertising and content, from viewability to aCPM, with a short definition of each.
+
+Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+
+## Terms
+
+Active attentionTime during which the viewer looks directly at an ad or content.Passive attentionContact with an ad or content within the field of view, without looking at it directly.Attentive secondsTotal attention given to an ad or content, measured in seconds.APM (attention per mille)Attentive seconds per 1,000 impressions. Used to compare contact quality across media.aCPM (attention CPM)Cost per thousand impressions adjusted for attention. One proposed formula is CPM multiplied by an attention metric.ViewabilityTechnical visibility of an ad on screen. Under the MRC and IAB standard: 50% of pixels for at least 1 second for display and 2 seconds for video.Active attention timeTime during which content is visible on screen and the user is active in the browser tab.Attentive ShareThe percentage of the studied group that read a page attentively.
+
+## How to read these terms
+
+Advertising terms such as APM and aCPM describe attention paid to ad impressions. In content and page research, active attention time and the share of attentive readers are used more often. The market is still aligning definitions, so when comparing results from different vendors, check how each one calculates a given metric. More in What is attention measurement and Attention vs viewability.
+
+## Frequently asked questions
+
+What is the difference between APM and aCPM?+
+APM tells you how many attentive seconds there are per 1,000 impressions. aCPM is cost per thousand impressions adjusted for attention, combining price with contact quality.
+Are attention metrics from different vendors comparable?+
+Not always. Vendors calculate them in different ways, which is why the market is working on common definitions.
+Which metric matters most when testing a page?+
+Usually the share of attentive readers and the points where the group stops reading.
+
+Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
+LinkedIn
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingUser testing with Polish audiences
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/testy-stron-na-polskich-grupach.html
+
+Baza wiedzy
+
+## Testy stron na polskich grupach docelowych
+
+Jeśli wchodzisz na polski rynek albo prowadzisz kampanię w Polsce, możesz sprawdzić stronę na polskiej grupie docelowej dobranej kwotowo według GUS, zanim wydasz budżet na media.
+
+Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+
+## Dla kogo
+
+- Marki zagraniczne wchodzące do Polski, które chcą sprawdzić polską wersję strony.
+
+- Agencje międzynarodowe prowadzące kampanie dla klientów w Polsce.
+
+- Firmy SaaS i e-commerce lokalizujące produkt na polski rynek.
+
+## Co sprawdzisz
+
+- Czy polska grupa docelowa czyta stronę do kluczowej informacji, np. ceny lub oferty.
+
+- Która wersja tłumaczenia lub komunikatu działa lepiej, w teście A/B na tej samej grupie.
+
+- W co ludzie klikają i gdzie odpadają, sekcja po sekcji.
+
+## Jakie grupy
+
+Grupy demograficzne, np. dorośli 18–49 lub seniorzy 55+, grupy z zamiarem zakupowym (zakup auta, kredyt, zmiana operatora, remont) oraz grupy specjalistyczne: decydenci B2B oraz lekarze i farmaceuci po weryfikacji prawa wykonywania zawodu. Pełną listę znajdziesz w konfiguratorze.
+
+## Jak to działa
+
+Podajesz adres strony, wybierasz grupę i liczbę osób. Wizyty widzisz w Google Analytics po minucie od startu, a raport dostajesz po zakończeniu badania. Ceny są w złotych, a firmy z UE rozliczamy z odwrotnym obciążeniem VAT. Szczegóły w tekście Ile kosztuje badanie uwagi.
+
+## Częste pytania
+
+Czy raport może być po angielsku?+
+Tak. Interfejs i raport są dostępne po polsku i po angielsku.
+Czy strona musi być po polsku?+
+Nie musi, ale najlepiej badać wersję, którą zobaczą polscy odbiorcy.
+Jak rozliczacie firmy spoza Polski?+
+Ceny podajemy w złotych netto. Firmy z UE rozliczamy z odwrotnym obciążeniem VAT.
+
+Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
+LinkedIn
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagi
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/user-testing-with-polish-audiences.html
+
+Knowledge base
+
+## User testing with Polish audiences
+
+If you are entering the Polish market or running a campaign in Poland, you can test your page with a Polish target audience, quota-matched to national statistics, before you spend your media budget.
+
+Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+
+## Who it is for
+
+- International brands entering Poland that want to test the Polish version of their site.
+
+- International agencies running campaigns for clients in Poland.
+
+- SaaS and e-commerce companies localising their product for the Polish market.
+
+## What you can check
+
+- Whether the Polish target group reads the page as far as the key information, such as price or offer.
+
+- Which translation or message works better, in an A/B test on the same group.
+
+- What people click and where they drop off, section by section.
+
+## Which audiences
+
+Demographic groups, such as adults 18–49 or seniors 55+, purchase-intent groups (buying a car, a loan, switching operator, renovation) and specialist groups: B2B decision-makers, and doctors and pharmacists with a verified licence to practise. The full list is in the configurator.
+
+## How it works
+
+You enter the page URL, choose a group and a sample size. You see the visits in Google Analytics a minute after launch and get the report when the study ends. Prices are in PLN, and EU businesses are invoiced under reverse charge. Details in How much does attention research cost.
+
+## Frequently asked questions
+
+Can the report be in English?+
+Yes. The interface and report are available in Polish and English.
+Does the page have to be in Polish?+
+Not necessarily, but it is best to test the version Polish audiences will see.
+How do you invoice companies outside Poland?+
+Prices are in PLN net. EU businesses are invoiced under reverse charge.
+
+Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
+LinkedIn
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossary
 Configure a study

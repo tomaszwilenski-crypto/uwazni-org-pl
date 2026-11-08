@@ -200,11 +200,23 @@ ol.steps li:not(:has(img))::before{position:static;margin:20px 20px 4px}
 .note{background:#FFF7E6;color:#7A4A06;border-radius:12px;padding:14px 16px;font-size:14px;margin:16px 0}
 
 /* footer */
-footer{background:var(--navy);color:var(--on-dark);padding:56px 0;font-size:15px;line-height:1.7}
-footer .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
-footer b{color:#fff}
-footer a{color:#fff}
-footer button.as-link{font:inherit;background:none;border:0;padding:0;color:#fff;text-decoration:underline;cursor:pointer;text-align:left}
+footer{background:var(--navy);color:var(--on-dark);padding:64px 0 0;font-size:15px;line-height:1.6}
+footer b{color:#fff;display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+footer a{color:#fff;text-decoration:none}footer a:hover{text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer ul a{color:var(--on-dark)}footer ul a:hover{color:#fff}
+.fgrid{display:grid;gap:40px 32px;grid-template-columns:1.6fr 1fr 1.2fr 1fr}
+.fbrand .brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:19px}
+.fbrand .mk{width:40px;height:auto}.fbrand .mk path{fill:#fff}.fbrand .nm small{display:block;font-weight:600;font-style:italic;font-size:12px;color:var(--on-dark)}
+.fbrand p{margin:16px 0 20px;max-width:340px}
+.fbrand .btn{padding:12px 18px;font-size:15px}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff;background:transparent}.btn-ghost:hover{border-color:#fff;text-decoration:none!important}
+.flang{display:inline-flex;align-items:center;gap:8px}.flang span{border:1.5px solid rgba(255,255,255,.45);border-radius:6px;padding:0 6px;font-size:12px;font-weight:800}
+.fbar{margin-top:48px;padding:20px 0 28px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;font-size:13px;color:var(--on-dark)}
+.fbar p{margin:0;max-width:760px}.fbar nav{display:flex;flex-wrap:wrap;gap:6px 20px}.fbar a{color:var(--on-dark)}
+footer button.as-link{font:inherit;background:none;border:0;padding:0;color:var(--on-dark);cursor:pointer;text-align:left}footer button.as-link:hover{color:#fff;text-decoration:underline}
+@media (max-width:980px){.fgrid{grid-template-columns:1fr 1fr}.fbrand{grid-column:1/-1}}
+@media (max-width:420px){.fgrid{gap:32px 20px}}
 .meth{margin-top:32px;padding-top:28px;border-top:1px solid #2E3F66}
 .meth p{max-width:880px}
 .meth p+p{margin-top:10px}
@@ -617,36 +629,48 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
 
 <footer>
   <div class="wrap">
-    <div class="cols">
-      <div class="stack" style="gap:2px">
-        <b style="font-size:17px">uwazni.org.pl</b>
-        <span>Operator: TGV Sp. z o.o., District Court for the Capital City of Warsaw, KRS 0000534661, share capital PLN 5,000</span>
-        <span>Tax ID (NIP) 5213684806 · Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warsaw</span>, Poland</span>
+    <div class="fgrid">
+      <div class="fbrand">
+        <a class="brand" href="index.html" style="color:#fff"><svg class="mk" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.1 194.9"><path fill="#14213D" fill-rule="evenodd" d="M162.2 91.2 158.6 86.9 154.9 84.2 150.0 82.1 146.1 81.1 140.9 80.5 125.8 81.1 120.5 83.1 115.4 86.8 111.5 88.8 108.4 89.4 105.2 89.2 101.0 87.8 97.0 84.5 94.4 80.9 92.5 76.2 84.1 76.1 83.0 75.6 81.9 69.1 82.6 68.6 112.0 68.5 115.6 69.0 118.4 70.0 123.8 73.2 131.0 73.4 131.4 72.1 130.4 69.5 126.9 64.4 121.5 60.2 116.1 58.2 111.2 57.9 32.2 58.1 28.5 58.8 28.4 61.1 29.5 64.0 33.2 69.2 38.8 73.8 42.6 75.6 45.1 76.0 45.6 76.8 34.4 88.2 27.5 97.1 18.6 112.4 12.6 126.0 7.5 141.8 2.5 165.0 0.5 182.0 0.1 194.4 0.8 194.8 56.8 194.5 57.2 193.2 57.4 189.5 58.5 182.1 60.4 174.8 62.5 168.6 66.5 160.0 73.4 149.1 80.5 140.5 85.8 135.2 90.6 131.1 97.4 126.1 104.0 122.0 109.5 119.1 114.2 117.2 114.5 117.8 111.5 123.4 109.6 129.0 108.4 135.1 107.9 142.4 108.5 151.6 109.5 156.6 112.5 165.5 115.6 171.6 119.4 177.2 122.4 180.8 127.8 185.9 131.8 188.8 137.4 191.8 142.6 193.8 146.4 194.8 147.4 194.6 148.0 192.6 148.2 186.5 140.2 183.9 133.8 179.9 127.4 173.8 122.6 166.9 119.5 160.0 117.5 152.9 116.5 145.5 116.8 138.2 118.4 130.2 121.4 123.5 125.1 118.1 129.8 114.0 136.0 111.1 141.4 110.0 150.0 109.8 157.4 110.6 161.6 110.6 163.2 109.6 164.1 108.0 165.0 104.0 165.0 100.6 164.1 95.6ZM44.9 12.9 49.5 31.8 54.6 50.0 113.9 50.2 118.9 51.1 124.9 53.5 126.1 50.6 136.9 12.5 136.0 12.4 110.9 24.0 109.8 24.0 93.1 2.4 91.0 0.0 90.5 0.0 70.2 24.0 69.5 24.0 45.9 12.9Z"/></svg><span class="nm">uwazni.org.pl<small>Polish Attention Panel</small></span></a>
+        <p>Attention research with selected groups of people in Poland: who reads your page, where they drop off and what they click.</p>
+        <div class="row"><a class="btn btn-red" href="for-business.html#konfigurator">Get a quote</a><a class="btn btn-ghost" href="index.html#join">Join the panel</a></div>
       </div>
-      <div class="stack" style="gap:2px">
-        <b>Contact</b>
-        <span>Business: <a data-email="sales" href="mailto:kontakt@uwazni.org.pl">kontakt@uwazni.org.pl</a></span>
-        <span>Panelists: <a data-email="support" href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a></span>
-      </div>
-      <nav aria-label="Documents" class="stack" style="gap:2px">
-        <b>Documents</b>
-        <a href="service-terms.html">Terms of service for business</a>
-        <a href="panel-terms.html">Panel terms</a>
-        <a href="privacy-policy.html">Privacy and cookie policy</a>
-        <button type="button" class="as-link" data-cookie-settings>Cookie settings</button>
-        <a href="methodology.html">Methodology</a>
+      <nav aria-label="Industry studies">
+        <b>Industry studies</b>
+        <ul>
+          <li><a href="attention-research-b2b.html">B2B</a></li>
+          <li><a href="attention-research-pharma.html">Pharma</a></li>
+          <li><a href="attention-research-telecom.html">Telecoms</a></li>
+          <li><a href="attention-research-banking.html">Banking and fintech</a></li>
+          <li><a href="attention-research-automotive.html">Automotive</a></li>
+          <li><a href="attention-research-home-improvement.html">Home improvement</a></li>
+          <li><a href="attention-research-parents.html">Parents</a></li>
+          <li><a href="attention-research-premium-brands.html">Premium brands</a></li>
+        </ul>
       </nav>
-      <nav aria-label="Knowledge" class="stack" style="gap:2px">
+      <nav aria-label="Knowledge">
         <b>Knowledge</b>
-        <a href="knowledge-base.html">Knowledge base</a>
-        <a href="what-is-attention-measurement.html">What is attention measurement</a>
-        <a href="attention-vs-viewability.html">Attention vs viewability</a>
-        <a href="attentive-share.html">Attentive Share</a>
-        <a href="attention-panel-vs-survey-panel.html">Attention panel vs survey panel</a>
-        <a href="panel-quality.html">Panel quality and verification</a>
-        <a href="sample-size-for-attention-research.html">Sample size for attention research</a>
-        <a href="attention-research-cost.html">How much attention research costs</a>
+        <ul>
+          <li><a href="knowledge-base.html">Knowledge base</a></li>
+          <li><a href="what-is-attention-measurement.html">What is attention measurement</a></li>
+          <li><a href="attentive-share.html">Attentive Share</a></li>
+          <li><a href="attention-research-cost.html">How much attention research costs</a></li>
+          <li><a href="sample-size-for-attention-research.html">Sample size for attention research</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+        </ul>
       </nav>
+      <div>
+        <b>Contact</b>
+        <ul>
+          <li>Business:<br><a data-email="sales" href="mailto:kontakt@uwazni.org.pl">kontakt@uwazni.org.pl</a></li>
+          <li>Panelists:<br><a data-email="support" href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a></li>
+          <li style="margin-top:12px"><a class="flang" href="../badanie-uwagi-b2b.html" hreflang="pl" lang="pl"><span>PL</span>Wersja polska</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbar">
+      <p>© 2026 TGV Sp. z o.o. · District Court for the Capital City of Warsaw, KRS 0000534661 · Tax ID (NIP) 5213684806 · share capital PLN 5,000 · Al. Niepodległości 54/34, 02-626 Warsaw, Poland</p>
+      <nav aria-label="Documents"><a href="service-terms.html">Terms of service</a><a href="panel-terms.html">Panel terms</a><a href="privacy-policy.html">Privacy and cookies</a><button type="button" class="as-link" data-cookie-settings>Cookie settings</button></nav>
     </div>
   </div>
 </footer>

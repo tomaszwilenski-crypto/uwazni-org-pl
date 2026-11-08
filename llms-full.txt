@@ -28,6 +28,7 @@ Badania dla firm / B2B i content marketing
 - Strona cennika i porównanie pakietów
 - Artykuł ekspercki lub newsletter
 - Oferta wysyłana do klienta jako strona www
+ Raport: co napędza i co hamuje decyzje decydentów B2BWzrost otwiera rozmowę, zaufanie ją zamyka, a cena jest dopiero szóstą barierą. Wnioski z analizy 79 publicznych rozmów z właścicielami firm i menedżerami. Przeczytaj raport
 
 ## Co dostajesz w raporcie
 
@@ -91,6 +92,7 @@ Attention studies for business / B2B and content marketing
 - Pricing page and plan comparison
 - Expert article or newsletter
 - A proposal sent to a client as a web page
+ Report: what drives and what blocks B2B decision-makersGrowth opens the conversation, trust closes it, and price is only the sixth barrier. Takeaways from 79 public conversations with business owners and managers. Read the report
 
 ## What you get in the report
 
@@ -1066,7 +1068,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Uwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Uwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1126,7 +1128,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-Attention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+Attention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1180,7 +1182,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1234,7 +1236,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1288,7 +1290,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1342,7 +1344,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1396,7 +1398,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1450,7 +1452,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive SharePanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive SharePanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1516,7 +1518,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1582,7 +1584,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1638,7 +1640,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1694,7 +1696,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1756,7 +1758,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1818,7 +1820,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1878,7 +1880,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -1938,7 +1940,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -1988,7 +1990,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -2038,7 +2040,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -2090,7 +2092,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -2142,7 +2144,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -2178,7 +2180,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -2214,7 +2216,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingUser testing with Polish audiencesIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -2266,7 +2268,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiCzy artykuł sponsorowany jest czytany
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -2318,7 +2320,7 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryIs a sponsored article actually read
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryIs a sponsored article actually readReport: B2B decision-makers
 Configure a study
 
 ---
@@ -2378,7 +2380,7 @@ Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Po
 LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
-Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupach
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachRaport: decydenci B2B
 Skonfiguruj badanie
 
 ---
@@ -2438,7 +2440,133 @@ Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Gr
 LinkedIn
 More in the knowledge base · Knowledge base
 
-What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiences
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesReport: B2B decision-makers
+Configure a study
+
+---
+
+URL: https://uwazni.org.pl/raport-decydenci-b2b.html
+
+Baza wiedzy
+
+## Decydenci B2B: co napędza ich decyzje, a co je hamuje
+
+Decydentów B2B do działania najczęściej pcha wzrost firmy, ale kupują od tych, którym ufają, a najbardziej hamują ich regulacje, długi proces decyzji i ryzyko wdrożenia. Tak wynika z analizy 79 publicznych rozmów z właścicielami firm i menedżerami.
+
+Opracowanie: zespół uwazni.org.pl · Aktualizacja: 7 listopada 2026
+
+## Trzy wnioski z raportu
+
+- Wzrost otwiera rozmowę, zaufanie ją zamyka. Wzrost i skala pojawiają się w 86% rozmów, ale relacja i zaufanie w 77%. Decydent B2B kupuje od ludzi, a nie od funkcji produktu.
+
+- Cena nie jest głównym hamulcem. Cena i budżet są dopiero na szóstym miejscu barier (28%). Częściej padają regulacje (48%), długi proces decyzji (44%) i ryzyko wdrożenia (40%).
+
+- Decydent boi się nie produktu, tylko wdrożenia. Ryzyko wdrożenia i brak kompetencji zespołu pojawiają się w co drugiej, trzeciej rozmowie. Treść, która pokazuje, jak wygląda pierwszy miesiąc, trafia w realny lęk.
+
+## Najczęstsze motywacje
+wzrost i skala86%relacja i zaufanie77%innowacja i przewaga68%bezpieczeństwo i ciągłość66%efektywność i automatyzacja50%Źródło: analiza 79 publicznych rozmów z polskimi właścicielami firm i menedżerami (YouTube, podcasty biznesowe), 2024–2026. Odsetek rozmów, w których pojawił się dany wątek. Wyniki opisują analizowane rozmowy, nie całą populację.
+
+## Co jest w pełnym raporcie
+
+- pełna lista 9 motywacji i 9 barier z porównaniem,
+
+- wydarzenia, które uruchamiają decyzje zakupowe,
+
+- cztery typy decydentów i ich udział w rozmowach,
+
+- jak mówią decydenci: rejestr języka i co z tego wynika dla treści,
+
+- 6 wniosków dla marek i wydawców, którzy piszą do decydentów B2B.
+
+Pobierz pełny raport (PDF)
+
+Nie wypełniaj
+E-mail służbowy
+Firma
+Chcę dostawać kolejne raporty uwazni.org.pl (raz na kwartał)
+Pobierz raport
+
+Dane z formularza wykorzystujemy do wysłania raportu i, za Twoją zgodą, kolejnych raportów. Szczegóły w polityce prywatności.
+
+Pobierz PDF
+
+Chcesz sprawdzić, jak decydenci B2B czytają Twoją stronę? Zobacz badanie uwagi decydentów B2B.
+
+## Częste pytania
+
+Na jakich danych opiera się raport?+
+Na analizie 79 publicznych rozmów z polskimi właścicielami firm i menedżerami, głównie z podcastów i wywiadów biznesowych na YouTube z lat 2024–2026. To raport jakościowy: odsetki opisują analizowane rozmowy, nie całą populację decydentów.
+Czy raport cytuje wypowiedzi konkretnych osób?+
+Nie. Raport pokazuje zagregowane wątki i parafrazy, bez nazwisk, cytatów i linków do źródeł.
+Jak często ukazują się raporty uwazni.org.pl?+
+Planujemy raporty dla kolejnych grup co kwartał. Możesz zapisać się na nie w formularzu pobrania.
+
+Więcej w bazie wiedzy · Baza wiedzy
+
+Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaIle kosztuje badanie uwagiBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytany
+Skonfiguruj badanie
+
+---
+
+URL: https://uwazni.org.pl/en/report-b2b-decision-makers.html
+
+Knowledge base
+
+## B2B decision-makers: what drives their decisions and what holds them back
+
+Polish B2B decision-makers are most often driven by company growth, but they buy from people they trust, and they are held back most by regulation, long decision processes and implementation risk. This is what an analysis of 79 public conversations with business owners and managers shows.
+
+Written by the uwazni.org.pl team · Updated: 7 November 2026
+
+## Three takeaways from the report
+
+- Growth opens the conversation, trust closes it. Growth and scale come up in 86% of conversations, relationship and trust in 77%. B2B decision-makers buy from people, not product features.
+
+- Price is not the main barrier. Price and budget rank only sixth among barriers (28%). Regulation (48%), long decision processes (44%) and implementation risk (40%) come up more often.
+
+- They fear implementation, not the product. Implementation risk and a team lacking skills come up in roughly every second or third conversation. Content showing what the first month looks like hits a real fear.
+
+## Most common motivations
+growth and scale86%relationship and trust77%innovation and edge68%security and continuity66%efficiency and automation50%Source: analysis of 79 public conversations with Polish business owners and managers (YouTube, business podcasts), 2024–2026. Share of conversations in which a theme appeared. Results describe the analysed conversations, not the whole population.
+
+## What the full report contains
+
+- the full list of 9 motivations and 9 barriers, compared,
+
+- events that trigger purchase decisions,
+
+- four types of decision-makers and their share of conversations,
+
+- how decision-makers talk: language register and what it means for content,
+
+- 6 takeaways for brands and publishers writing for B2B decision-makers.
+
+Download the full report (PDF)
+
+Leave empty
+Work email
+Company
+Send me future uwazni.org.pl reports (quarterly)
+Get the report
+
+We use form data to send the report and, with your consent, future reports. Details in the privacy policy.
+
+Download PDF
+
+Want to see how B2B decision-makers read your page? See attention research with B2B decision-makers.
+
+## Frequently asked questions
+
+What data is the report based on?+
+An analysis of 79 public conversations with Polish business owners and managers, mainly business podcasts and interviews on YouTube from 2024–2026. It is a qualitative report: percentages describe the analysed conversations, not the whole population of decision-makers.
+Does the report quote specific people?+
+No. It shows aggregated themes and paraphrases, without names, quotes or links to sources.
+How often are uwazni.org.pl reports published?+
+We plan reports on further groups every quarter. You can sign up in the download form.
+
+More in the knowledge base · Knowledge base
+
+What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchHow much attention research costsAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually read
 Configure a study
 
 ---

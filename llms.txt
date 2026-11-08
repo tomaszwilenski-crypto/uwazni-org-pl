@@ -30,6 +30,11 @@
 - [Testy stron na polskich grupach docelowych](https://uwazni.org.pl/testy-stron-na-polskich-grupach.html): Jeśli wchodzisz na polski rynek albo prowadzisz kampanię w Polsce, możesz sprawdzić stronę na polskiej grupie docelowej dobranej kwotowo według GUS, zanim wydasz budżet na media.
 - [Czy artykuł sponsorowany jest czytany?](https://uwazni.org.pl/czy-artykul-sponsorowany-jest-czytany.html): To, czy artykuł sponsorowany jest czytany, sprawdzisz dopiero wtedy, gdy zmierzysz uwagę grupy docelowej akapit po akapicie, bo odsłony, kliknięcia i czas na stronie mówią tylko, że artykuł się wyświetlił.
 
+## Raporty
+
+- [Raport: decydenci B2B](https://uwazni.org.pl/raport-decydenci-b2b.html): raport jakościowy z analizy 79 publicznych rozmów z polskimi właścicielami firm i menedżerami (2024–2026). Najczęstsze motywacje: wzrost i skala (86% rozmów), relacja i zaufanie (77%). Najczęstsze bariery: regulacje i prawo (48%), długi proces decyzji (44%), finansowanie (40%), ryzyko wdrożenia (40%); cena dopiero szósta (28%). Pełny raport PDF do pobrania po podaniu e-maila.
+- [Report: B2B decision-makers (EN)](https://uwazni.org.pl/en/report-b2b-decision-makers.html)
+
 ## Dla wydawców
 
 - [uwazni.org.pl dla wydawców](https://uwazni.org.pl/dla-wydawcow.html): łączymy ludzi zainteresowanych tematem z artykułami sponsorowanymi i natywnymi wydawców; raport uwagi dla reklamodawcy, pretest A/B, bezpłatny pilotaż.

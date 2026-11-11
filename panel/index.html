@@ -627,7 +627,11 @@ Witryna odsyłająca:
 uwazni.org.pl
 
 Parametr w adresie:
-utm_source=uwazni</code></pre></div>
+utm_source=uwazni
+
+Adres IP źródła:
+34.118.72.185</code></pre></div>
+<p>Wizyty panelu wykonywane z naszego serwera w Warszawie wychodzą ze stałego adresu IP <b>34.118.72.185</b>. Zmianę adresu będziemy publikować na tej stronie z wyprzedzeniem. Sam adres IP nie wystarcza do rozpoznania ruchu panelu: część wizyt może pochodzić z infrastruktury Cloudflare, dlatego opieraj się przede wszystkim na User-Agencie i nagłówku powyżej.</p>
 
 <h2>3. Co robi wizyta panelu</h2>
 <ul>
@@ -641,7 +645,8 @@ utm_source=uwazni</code></pre></div>
 <p>Jeśli chcesz widzieć wizyty panelu osobno:</p>
 <ul>
 <li><b>Google Analytics 4:</b> utwórz segment lub filtr porównania, w którym źródło sesji to uwazni albo witryna odsyłająca zawiera uwazni.org.pl.</li>
-<li><b>Logi serwera i CDN:</b> filtruj żądania, w których User-Agent zawiera uwazni.org.pl/panel albo występuje nagłówek x-uwazni-panelist.</li>
+<li><b>Logi serwera i CDN:</b> filtruj żądania, w których User-Agent zawiera uwazni.org.pl/panel, występuje nagłówek x-uwazni-panelist albo adres źródłowy to 34.118.72.185.</li>
+<li><b>Lista dozwolonych adresów (WAF, CDN, ochrona przed botami):</b> jeśli chcesz, aby wizyty panelu nie były blokowane, dodaj adres 34.118.72.185 wraz z warunkiem, że User-Agent zawiera uwazni.org.pl/panel.</li>
 <li><b>Inne systemy analityczne i adserwery:</b> jeśli system pozwala oznaczać ruch po User-Agent, nagłówku lub parametrze w adresie, użyj oznaczeń z punktu 2.</li>
 </ul>
 

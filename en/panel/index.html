@@ -628,7 +628,11 @@ Referrer:
 uwazni.org.pl
 
 URL parameter:
-utm_source=uwazni</code></pre></div>
+utm_source=uwazni
+
+Source IP address:
+34.118.72.185</code></pre></div>
+<p>Panel visits run from our server in Warsaw come from the fixed IP address <b>34.118.72.185</b>. We will publish any change of the address on this page in advance. The IP address alone is not enough to identify panel traffic: some visits may come from Cloudflare infrastructure, so rely first of all on the User-Agent and the header above.</p>
 
 <h2>3. What a panel visit does</h2>
 <ul>
@@ -642,7 +646,8 @@ utm_source=uwazni</code></pre></div>
 <p>If you want to see panel visits separately:</p>
 <ul>
 <li><b>Google Analytics 4:</b> create a segment or comparison filter where the session source is uwazni or the referrer contains uwazni.org.pl.</li>
-<li><b>Server and CDN logs:</b> filter requests where the User-Agent contains uwazni.org.pl/panel or the x-uwazni-panelist header is present.</li>
+<li><b>Server and CDN logs:</b> filter requests where the User-Agent contains uwazni.org.pl/panel, the x-uwazni-panelist header is present or the source address is 34.118.72.185.</li>
+<li><b>Allowlists (WAF, CDN, bot protection):</b> if you want panel visits not to be blocked, add the address 34.118.72.185 together with a condition that the User-Agent contains uwazni.org.pl/panel.</li>
 <li><b>Other analytics systems and ad servers:</b> if the system lets you tag traffic by User-Agent, header or URL parameter, use the identifiers from section 2.</li>
 </ul>
 

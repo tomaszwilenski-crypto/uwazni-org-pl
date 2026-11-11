@@ -42,8 +42,8 @@
 
 ## Ruch panelu (dla administratorów)
 
-- [Informacja o ruchu panelu](https://uwazni.org.pl/panel/): jak rozpoznać wizyty panelu badawczego uwazni.org.pl. User-Agent zawiera "uwazni.org.pl/panel (+https://uwazni.org.pl/panel)", nagłówek HTTP x-uwazni-panelist, referrer uwazni.org.pl, parametr utm_source=uwazni. Wizyty nie klikają reklam, nie wypełniają formularzy, mają dzienny limit; domenę można wyłączyć z badań.
-- [Panel traffic information (EN)](https://uwazni.org.pl/en/panel/)
+- [Informacja o ruchu panelu](https://uwazni.org.pl/panel/): jak rozpoznać wizyty panelu badawczego uwazni.org.pl. User-Agent zawiera "uwazni.org.pl/panel (+https://uwazni.org.pl/panel)", nagłówek HTTP x-uwazni-panelist, referrer uwazni.org.pl, parametr utm_source=uwazni, stały adres IP źródła 34.118.72.185 (wizyty wykonywane z serwera w Warszawie). Wizyty nie klikają reklam, nie wypełniają formularzy, mają dzienny limit; domenę można wyłączyć z badań.
+- [Panel traffic information (EN)](https://uwazni.org.pl/en/panel/): how to recognise visits of the uwazni.org.pl research panel. The User-Agent contains "uwazni.org.pl/panel (+https://uwazni.org.pl/panel)", the HTTP header x-uwazni-panelist, referrer uwazni.org.pl, URL parameter utm_source=uwazni, fixed source IP address 34.118.72.185 (visits run from a server in Warsaw). Visits do not click ads or fill in forms, have a daily limit; a domain can be excluded from studies.
 
 ## Badania dla branż
 

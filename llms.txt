@@ -59,9 +59,11 @@
 ## Dla panelistów
 
 - [Płatne zadania: czytanie artykułów i przeglądanie stron](https://uwazni.org.pl/): rejestracja, stawki, zasady i FAQ.
-- Stawki: 3 zł za artykuł do 3 minut, 5 zł za stronę do 5 minut, 9 zł za serwis lub wideo do 10 minut, +2 zł za każde 5 pytań ankiety.
-- Wypłata od 20 zł: BLIK, przelew lub karty podarunkowe. Bez instalowania aplikacji, zadania w zwykłej przeglądarce.
-- Kto może dołączyć: pełnoletnie osoby mieszkające w Polsce. Jedno konto na osobę, weryfikacja telefonu.
+- Model: punkty za uważne czytanie, 1 pkt = 1 gr. Zadanie to artykuł z tematów wybranych przez panelistę, po którym jest pytanie o treść. Temat, czas i stawkę widać przed zgłoszeniem.
+- Stawki (Złoty / Srebrny / Nowy): uważne czytanie, ok. 3 min: 20 / 14 / 10 pkt (0,20 / 0,14 / 0,10 zł). Czytanie i interakcja, ok. 3,5 min: 35 / 25 / 18 pkt. Czytanie i 3 pytania, ok. 5 min: 120 / 85 pkt (od statusu Srebrny). Czytanie i ankieta, ok. 8 min: 300 / 210 pkt (od statusu Srebrny). W grupach trudno dostępnych stawki są wyższe o 50%. Do 3 zł za zadanie.
+- Statusy: Nowy (po zapisie i potwierdzeniu e-maila), Srebrny (10 zaliczonych zadań, min. 90% poprawnych odpowiedzi, profil w 80%), Złoty (40 zaliczonych zadań, min. 95% poprawnych odpowiedzi, pełny profil, potwierdzony telefon). Status liczony z ostatnich 20 zadań. Wybór uczestników: dopasowanie do grupy, status, czas od ostatniego zadania, bez losowania. Pełny profil to 200 pkt.
+- Wypłata: pierwsza od 5 zł, kolejne od 20 zł, przelewem na konto w polskim banku w ciągu 5 dni roboczych. BLIK i karty podarunkowe: wkrótce. Polecenie: 300 pkt (3 zł), gdy polecona osoba wypłaci pierwsze 20 zł.
+- Kto może dołączyć: pełnoletnie osoby mieszkające w Polsce. Jedno konto na osobę, telefon potwierdzany SMS-em przed pierwszą wypłatą. Panel jeszcze nie wystartował: trwa zapis na listę (e-mail, rok urodzenia, tematy). Panel prowadzi TGV Sp. z o.o.
 
 ## Dokumenty
 
@@ -85,7 +87,7 @@ uwazni.org.pl is a Polish attention research panel. Companies commission a study
 
 - [Attention research for Polish audiences and A/B tests](https://uwazni.org.pl/en/for-business.html): 4-step configurator, pricing in PLN and FAQ. Metrics: active attention time, drop-off by page zone, clicks on page elements, Attentive Share (share of people who read attentively), A/B comparison, optional survey. Study visits appear in the client's Google Analytics about a minute after launch, tagged utm_source=uwazni.
 - Pricing (base group, net): article up to 3 min PLN 12, page up to 5 min PLN 20, website or video up to 10 min PLN 35 per person. Packages: Pilot PLN 1,000 (50 people), Standard PLN 3,600 (200 people), Pro PLN 8,500 (500 people). Minimum order PLN 1,000 net. International clients welcome; EU businesses invoiced under reverse charge.
-- [Paid online tasks for people living in Poland](https://uwazni.org.pl/en/): PLN 3–9 per task of 3–10 minutes, payouts from PLN 20 via BLIK, bank transfer or gift cards.
+- [Paid reading tasks for people living in Poland](https://uwazni.org.pl/en/): points for attentive reading, 1 pt = 1 grosz, up to PLN 3 per task (3 to 8 minutes). Rates depend on status (Gold, Silver, New) and are shown before you apply. Payouts by bank transfer, first from PLN 5, later from PLN 20. Waiting list open, the panel launches soon. Run by TGV Sp. z o.o.
 - Documents (English translations, Polish versions binding): [Terms of service](https://uwazni.org.pl/en/service-terms.html), [Panel terms](https://uwazni.org.pl/en/panel-terms.html), [Privacy policy](https://uwazni.org.pl/en/privacy-policy.html).
 
 ## Industry studies (English)

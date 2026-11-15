@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Paid online tasks in Poland: read and earn | uwazni.org.pl</title>
-<meta name="description" content="Earn money reading articles and browsing websites: PLN 3–9 per task (3–10 min). Nothing to install, payouts from PLN 20 via BLIK or bank transfer.">
+<meta name="description" content="Read articles on your topics and earn points for careful reading. Up to PLN 3 per task, payouts from PLN 5. The panel is run by TGV Sp. z o.o.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://uwazni.org.pl/en/">
 <link rel="alternate" hreflang="pl-PL" href="https://uwazni.org.pl/">
@@ -18,7 +18,7 @@
 <meta property="og:locale:alternate" content="pl_PL">
 <meta property="og:site_name" content="uwazni.org.pl">
 <meta property="og:title" content="Paid online tasks in Poland: read and earn | uwazni.org.pl">
-<meta property="og:description" content="Earn money reading articles and browsing websites: PLN 3–9 per task (3–10 min). Nothing to install, payouts from PLN 20 via BLIK or bank transfer.">
+<meta property="og:description" content="Read articles on your topics and earn points for careful reading. Up to PLN 3 per task, payouts from PLN 5. The panel is run by TGV Sp. z o.o.">
 <meta property="og:url" content="https://uwazni.org.pl/en/">
 <meta property="og:image" content="https://uwazni.org.pl/og-panel-en.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -27,7 +27,7 @@
 <meta property="og:image:alt" content="Your attention is worth something. Paid tasks in the uwazni.org.pl panel">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Paid online tasks in Poland: read and earn | uwazni.org.pl">
-<meta name="twitter:description" content="Earn money reading articles and browsing websites: PLN 3–9 per task (3–10 min). Nothing to install, payouts from PLN 20 via BLIK or bank transfer.">
+<meta name="twitter:description" content="Read articles on your topics and earn points for careful reading. Up to PLN 3 per task, payouts from PLN 5. The panel is run by TGV Sp. z o.o.">
 <meta name="twitter:image" content="https://uwazni.org.pl/og-panel-en.jpg">
 <meta name="twitter:image:alt" content="Your attention is worth something. Paid tasks in the uwazni.org.pl panel">
 <meta name="theme-color" content="#14213D">
@@ -592,8 +592,47 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
 .rapbar .wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .rapbar p{margin:0;flex:1;min-width:240px;color:var(--navy)}
 .rapbar .tag{background:var(--red);color:#fff;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+select{font:inherit;font-size:16px;padding:12px 14px;border:2px solid var(--line-2);border-radius:10px;min-height:46px;width:100%;color:var(--text);background:#fff}
+select:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.topics{border:0;margin:0;padding:0;min-width:0}
+.topics legend{font-size:14px;font-weight:700;padding:0;margin-bottom:4px}
+.topics .chk{display:flex;gap:10px;align-items:center;font-weight:500;font-size:15px;min-height:36px;cursor:pointer}
+.topics .chk input{width:20px;height:20px;margin:0;flex:none}
+.tbl table th[scope=row]{font-size:15px;text-transform:none;letter-spacing:0;color:var(--text);font-weight:700}
+.tbl table td{white-space:normal}
+@media(max-width:719px){
+section{scroll-margin-top:136px}
+header.site{--sw:0px;transition:clip-path .25s ease}
+header.site::after{content:"";position:absolute;left:0;right:0;bottom:var(--sw);height:1px;background:var(--line);opacity:0;pointer-events:none;transition:opacity .25s}
+header.site.sw-hidden{clip-path:inset(0 0 var(--sw) 0)}
+header.site.sw-hidden::after{opacity:1}
+header.site .switch{transition:transform .25s ease,opacity .2s ease,visibility 0s}
+header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hidden;transition:transform .25s ease,opacity .2s ease,visibility 0s .25s}
+}
+@media(max-width:640px){
+.tbl.rates{background:none;padding:0;overflow:visible}
+.tbl.rates table,.tbl.rates tbody,.tbl.rates thead{display:block}
+.tbl.rates thead{display:none}
+.tbl.rates tr{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:0;align-items:baseline;background:#fff;border-radius:16px;padding:14px 16px;margin-bottom:12px}
+.tbl.rates th[scope=row]{grid-column:1;grid-row:1;display:block;border:0;border-bottom:1px solid var(--line);padding:0 12px 10px 0;font-size:17px}
+.tbl.rates td.tm{grid-column:2;grid-row:1;display:block;border:0;border-bottom:1px solid var(--line);padding:0 0 10px;font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;text-align:right}
+.tbl.rates td.tm::before{display:none}
+.tbl.rates th[scope=row],.tbl.rates td.tm{align-self:stretch}
+.tbl.rates td.tm{padding-top:3px}
+.tbl.rates td:not(.tm){grid-column:1 / -1;display:flex;justify-content:space-between;gap:12px;padding:10px 0;border:0;border-bottom:1px solid var(--line);text-align:right}
+.tbl.rates td:not(.tm):last-child{border-bottom:0;padding-bottom:0}
+.tbl.rates td:not(.tm)::before{content:attr(data-label);font-weight:700;color:var(--muted);text-align:left}
+.tbl.rates .v{white-space:nowrap}
+.tbl.rates .zl i{display:none}
+.tbl.rates .zl::before{content:"\00a0\00b7\00a0"}
+}
+#regForm .consent{min-height:44px;align-items:center}
+#regForm .consent input{width:24px;height:24px;margin:0}
+#regForm .consent label{padding:10px 0;cursor:pointer}
+.topics .chk{min-height:44px}
+.topics .chk input{width:24px;height:24px}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "sameAs": ["https://www.linkedin.com/company/uwazni-org-pl/"], "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "alternateName": ["uwazni", "Polski Panel Uważnych", "Polish Attention Panel"], "slogan": "Polish Attention Panel", "description": "Polish attention research panel: selected groups of people living in Poland read and click client pages; attention is measured section by section.", "knowsAbout": ["attention measurement", "pomiar uwagi", "attention research", "A/B testing", "online research panel", "Attentive Share", "Wskaźnik Uważnych"], "areaServed": {"@type": "Country", "name": "Poland"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/en/#page", "url": "https://uwazni.org.pl/en/", "name": "Paid online tasks in Poland: read and earn | uwazni.org.pl", "description": "Earn money reading articles and browsing websites: PLN 3–9 per task (3–10 min). Nothing to install, payouts from PLN 20 via BLIK or bank transfer.", "inLanguage": "en", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-08", "primaryImageOfPage": "https://uwazni.org.pl/og-panel-en.jpg"}, {"@type": "FAQPage", "@id": "https://uwazni.org.pl/en/#faq", "mainEntity": [{"@type": "Question", "name": "Is this legal and safe?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The panel is run by TGV Sp. z o.o., a company registered in Poland (KRS 0000534661). The rules are set out in the panel terms."}}, {"@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. You open tasks in your usual browser, on a phone or computer."}}, {"@type": "Question", "name": "How much will I really earn?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on how many tasks match your profile. Every task shows its pay rate before you start."}}, {"@type": "Question", "name": "What if a task is rejected?", "acceptedAnswer": {"@type": "Answer", "text": "We reject a task when there was no real attention, for example the browser tab was inactive or the answer to a check question was wrong. You will be told the reason. You have 14 days to appeal, and every appeal is reviewed by a person."}}, {"@type": "Question", "name": "Who am I browsing websites for?", "acceptedAnswer": {"@type": "Answer", "text": "For companies and publishers who want to know how people really read and watch their content. We do not share your personal data with them."}}, {"@type": "Question", "name": "Do I have to pay tax?", "acceptedAnswer": {"@type": "Answer", "text": "Income from the panel may be taxable. Where the law requires it, we will send you a tax statement for the year. Details are in the panel terms."}}, {"@type": "Question", "name": "How do I delete my account?", "acceptedAnswer": {"@type": "Answer", "text": "Write to pomoc@uwazni.org.pl. We will delete your account and data, and pay out any balance from PLN 20 before deletion."}}, {"@type": "Question", "name": "Where can I get help?", "acceptedAnswer": {"@type": "Answer", "text": "Write to pomoc@uwazni.org.pl. We reply within one business day."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "sameAs": ["https://www.linkedin.com/company/uwazni-org-pl/"], "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "alternateName": ["uwazni", "Polski Panel Uważnych", "Polish Attention Panel"], "slogan": "Polish Attention Panel", "description": "Polish attention research panel: selected groups of people living in Poland read and click client pages; attention is measured section by section.", "knowsAbout": ["attention measurement", "pomiar uwagi", "attention research", "A/B testing", "online research panel", "Attentive Share", "Wskaźnik Uważnych"], "areaServed": {"@type": "Country", "name": "Poland"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/en/#page", "url": "https://uwazni.org.pl/en/", "name": "Paid online tasks in Poland: read and earn | uwazni.org.pl", "description": "Read articles on your topics and earn points for careful reading. Up to PLN 3 per task, payouts from PLN 5. The panel is run by TGV Sp. z o.o.", "inLanguage": "en", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-15", "primaryImageOfPage": "https://uwazni.org.pl/og-panel-en.jpg"}, {"@type": "FAQPage", "@id": "https://uwazni.org.pl/en/#faq", "mainEntity": [{"@type": "Question", "name": "How much can I earn per task?", "acceptedAnswer": {"@type": "Answer", "text": "From 10 pts (PLN 0.10) for reading alone to 300 pts (PLN 3) for reading with a survey. The rate depends on the type of task and your status, and you see it before you apply."}}, {"@type": "Question", "name": "Is this a job?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is something extra for a few minutes when you have time. The number of tasks depends on how many studies match your topics."}}, {"@type": "Question", "name": "When do the first tasks start?", "acceptedAnswer": {"@type": "Answer", "text": "We launch soon. People on the list get an email invitation first."}}, {"@type": "Question", "name": "Why do you ask about the content of the article?", "acceptedAnswer": {"@type": "Answer", "text": "Because we pay for attentive reading. The question is about a fact from the text and helps tell reading from scrolling."}}, {"@type": "Question", "name": "How do you choose participants for a task?", "acceptedAnswer": {"@type": "Answer", "text": "Fit with the group the study is looking for comes first, then your status, then the time since your last task. No lottery."}}, {"@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. A browser is enough."}}, {"@type": "Question", "name": "What happens to my data?", "acceptedAnswer": {"@type": "Answer", "text": "On the list we collect only your email, year of birth and topics. Clients only get aggregate results and we do not sell data. To have your data deleted, email pomoc@uwazni.org.pl. Details in the privacy policy."}}, {"@type": "Question", "name": "Who can join?", "acceptedAnswer": {"@type": "Answer", "text": "Adults living in Poland. One person can have one account."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#tresc">Skip to content</a>
@@ -621,38 +660,29 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
 <section style="padding-top:48px">
   <div class="wrap split">
     <div class="main stack" style="gap:24px">
-      <h1>Your attention is worth something.</h1>
-      <p class="lead" style="font-size:20px">Read articles, browse websites and watch content on topics that interest you. We match tasks to your interests. You get paid for every task you complete. No long surveys and nothing to install.</p>
-      <div class="row"><a class="btn btn-red" href="#join" style="font-size:17px">Join for free</a><a class="btn btn-line" href="#how" style="font-size:17px">How does it work?</a></div>
+      <h1>Up to PLN 3 per task. The more attention, the more we pay.</h1>
+      <p class="lead" style="font-size:20px">We pick articles on your topics. You read for a few minutes, answer a question about the text and earn points. 1 pt = 1 grosz.</p>
+      <div class="row"><a class="btn btn-red" href="#join" style="font-size:17px">Join the waiting list</a><a class="btn btn-line" href="#how" style="font-size:17px">How does it work?</a></div>
+      <p class="muted" style="margin:0">We launch soon. People on the list get the invitation first.</p>
       <p class="herocount" id="heroCount" hidden></p>
-      <dl style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;border-top:1px solid var(--line);padding-top:16px;max-width:560px;margin:0">
-        <div class="stack" style="gap:4px"><dt class="muted small" style="order:2">for 5 minutes</dt><dd style="margin:0;font-size:24px;font-weight:800;order:1">PLN 5</dd></div>
-        <div class="stack" style="gap:4px"><dt class="muted small" style="order:2">per task</dt><dd style="margin:0;font-size:24px;font-weight:800;order:1">3–10 min</dd></div>
-        <div class="stack" style="gap:4px"><dt class="muted small" style="order:2">payout</dt><dd style="margin:0;font-size:24px;font-weight:800;order:1">from PLN 20</dd></div>
-      </dl>
     </div>
     <div class="side hero-art">
       <img class="illus" src="../img/panel-hero.webp" srcset="../img/panel-hero-800.webp 800w, ../img/panel-hero.webp 1200w" sizes="(min-width:1000px) 620px, 100vw" alt="A woman reading an article on her smartphone on a Warsaw tram" width="1200" height="900" fetchpriority="high" decoding="async" onerror="this.remove()">
+      <div class="card" style="margin-top:16px;gap:6px"><span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red)">Example task</span><p style="font-size:18px;font-weight:800;line-height:1.35;margin:0;color:var(--navy)">Technology · approx. 3 min · 20-120 pts (PLN 0.20-1.20)</p></div>
+      <p class="muted small" style="margin:10px 0 0">A task may include a question about the text or an extra activity. You earn more points for every extra part.</p>
     </div>
   </div>
 </section>
 
 <section id="how" class="alt">
   <div class="wrap">
-    <div class="head"><h2>How does it work?</h2><p class="lead">Three steps. Sign up now and we will let you know when the first tasks are ready.</p></div>
+    <div class="head"><h2>How does it work?</h2><p class="lead">Four steps. Sign up now and we will let you know when tasks start.</p></div>
     <div class="grid">
-      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><line x1="19" x2="19" y1="8" y2="14" /><line x1="22" x2="16" y1="11" y2="11" /></svg></span><span class="num" aria-hidden="true">1</span></div><h3>Sign up</h3><p>All you need is an email address. Before your first task you will confirm your phone number and fill in a short profile: a few questions about you, about 3 minutes.</p></div>
-      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span class="num" aria-hidden="true">2</span></div><h3>Get tasks</h3><p>We pick articles, websites and videos that match your profile. We will notify you when something is waiting.</p></div>
-      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="num" aria-hidden="true">3</span></div><h3>Get paid</h3><p>Every accepted task adds to your balance. Withdraw whenever you like, from PLN 20.</p></div>
+      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><line x1="19" x2="19" y1="8" y2="14" /><line x1="22" x2="16" y1="11" y2="11" /></svg></span><span class="num" aria-hidden="true">1</span></div><h3>Sign up</h3><p>Sign up and choose your topics.</p></div>
+      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span class="num" aria-hidden="true">2</span></div><h3>Get invitations</h3><p>You only get invitations to articles on your topics. You see the topic, the time and the rate before you apply.</p></div>
+      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><span class="num" aria-hidden="true">3</span></div><h3>Read and answer</h3><p>You read an article on the publisher's site and answer a question about its content.</p></div>
+      <div class="card"><div class="ihead"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="num" aria-hidden="true">4</span></div><h3>Points and payout</h3><p>A completed task means points on your account. Payout by bank transfer from PLN 5.</p></div>
     </div>
-    <h3 style="margin:48px 0 16px;font-size:24px">What does a single task look like?</h3>
-    <ol class="steps">
-      <li><img class="illus sm" src="../img/krok-1-zaproszenie.webp" alt="" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><b>You get an invitation</b><span class="muted">By email or text message, with a description, duration and pay rate.</span></li>
-      <li><img class="illus sm" src="../img/krok-2-link.webp" alt="" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><b>You open the link</b><span class="muted">In your usual browser, on a phone or computer. Nothing to install.</span></li>
-      <li><img class="illus sm" src="../img/krok-3-czytanie.webp" alt="" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><b>You read and click</b><span class="muted">Use the website as you normally would and click on whatever interests you. Attention matters, not speed.</span></li>
-      <li><img class="illus sm" src="../img/krok-4-ankieta.webp" alt="" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><b>Sometimes a short survey</b><span class="muted">A few questions after the task, paid extra.</span></li>
-      <li><img class="illus sm" src="../img/krok-5-saldo.webp" alt="" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><b>Your balance grows</b><span class="muted">Once the task is checked, the amount goes to your account.</span></li>
-    </ol>
   </div>
 </section>
 
@@ -660,35 +690,41 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
   <div class="wrap">
     <div class="head"><h2>Why uwazni.org.pl instead of yet more surveys?</h2></div>
     <div class="grid">
-      <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><h3>You do what you already do</h3><p class="muted">You read and watch naturally. Sometimes there is a short survey after the task, paid extra.</p></div>
-      <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><h3>Short</h3><p class="muted">A task takes 3 to 10 minutes. Do it on the tram, on a break or in the evening.</p></div>
-      <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><h3>Clear rules</h3><p class="muted">Before you start, you see how much you will earn and how long it takes. We pay in Polish zloty, not in points.</p></div>
+      <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><h3>You do what you already do</h3><p class="muted">You read articles on topics that interest you. Sometimes there is also a short survey, paid extra.</p></div>
+      <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><h3>Short</h3><p class="muted">A task takes 3 to 8 minutes. Do it on the tram, on a break or in the evening.</p></div>
+      <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><h3>Clear rules</h3><p class="muted">Before you apply, you see the topic, the time and the rate. Points convert simply: 1 pt = 1 grosz.</p></div>
       <div class="stack" style="gap:10px"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><h3>No spam</h3><p class="muted">We only write when a task is waiting for you. Every email has an unsubscribe link.</p></div>
     </div>
   </div>
 </section>
 
 <section id="earnings" class="dark">
-  <div class="wrap split">
+  <div class="wrap">
     <div class="main stack">
-      <h2>How much will you earn?</h2>
-      <div class="tbl" style="color:var(--navy)"><table>
-        <thead><tr><th scope="col">Task</th><th scope="col" class="r">Pay</th></tr></thead>
+      <h2>Rates per task</h2>
+      <div class="tbl rates" style="color:var(--navy)"><table>
+        <thead><tr><th scope="col">Task</th><th scope="col">Time</th><th scope="col">Gold</th><th scope="col">Silver</th><th scope="col">New</th></tr></thead>
         <tbody>
-          <tr><td>Read an article, up to 3 min</td><td class="r">PLN 3</td></tr>
-          <tr><td>Browse a page, up to 5 min</td><td class="r">PLN 5</td></tr>
-          <tr><td>Browse a website or watch a video, up to 10 min</td><td class="r">PLN 9</td></tr>
-          <tr><td>Short survey after the task, per 5 questions</td><td class="r">+PLN 2</td></tr>
+          <tr><th scope="row">Attentive reading</th><td class="tm" data-label="Time"><span class="v">approx. 3 min</span></td><td data-label="Gold"><span class="v"><span class="pt">20 pts</span><span class="zl"><i> (</i>PLN 0.20<i>)</i></span></span></td><td data-label="Silver"><span class="v"><span class="pt">14 pts</span><span class="zl"><i> (</i>PLN 0.14<i>)</i></span></span></td><td data-label="New"><span class="v"><span class="pt">10 pts</span><span class="zl"><i> (</i>PLN 0.10<i>)</i></span></span></td></tr>
+          <tr><th scope="row">Reading and interaction</th><td class="tm" data-label="Time"><span class="v">approx. 3.5 min</span></td><td data-label="Gold"><span class="v"><span class="pt">35 pts</span><span class="zl"><i> (</i>PLN 0.35<i>)</i></span></span></td><td data-label="Silver"><span class="v"><span class="pt">25 pts</span><span class="zl"><i> (</i>PLN 0.25<i>)</i></span></span></td><td data-label="New"><span class="v"><span class="pt">18 pts</span><span class="zl"><i> (</i>PLN 0.18<i>)</i></span></span></td></tr>
+          <tr><th scope="row">Reading and 3 questions</th><td class="tm" data-label="Time"><span class="v">approx. 5 min</span></td><td data-label="Gold"><span class="v"><span class="pt">120 pts</span><span class="zl"><i> (</i>PLN 1.20<i>)</i></span></span></td><td data-label="Silver"><span class="v"><span class="pt">85 pts</span><span class="zl"><i> (</i>PLN 0.85<i>)</i></span></span></td><td data-label="New"><span class="v">after reaching Silver</span></td></tr>
+          <tr><th scope="row">Reading and survey</th><td class="tm" data-label="Time"><span class="v">approx. 8 min</span></td><td data-label="Gold"><span class="v"><span class="pt">300 pts</span><span class="zl"><i> (</i>PLN 3.00<i>)</i></span></span></td><td data-label="Silver"><span class="v"><span class="pt">210 pts</span><span class="zl"><i> (</i>PLN 2.10<i>)</i></span></span></td><td data-label="New"><span class="v">after reaching Silver</span></td></tr>
         </tbody></table></div>
-      <p style="font-size:15px">People in specialist groups, for example business decision-makers, get higher rates. This is extra income, not a full-time job.</p>
+      <p style="font-size:15px">In hard-to-reach groups, rates are 50% higher.</p>
+      <p style="font-size:15px">Applying does not guarantee a place. If you are not selected this time, you get priority for the next task in the same category.</p>
     </div>
-    <div class="side" style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px">
-      <span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red)">Estimate your month</span>
-      <label for="perWeek">Tasks per week: <output id="perWeekOut" for="perWeek">3</output></label>
-      <input id="perWeek" class="range" type="range" min="1" max="15" value="3">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:12px"><span>Per month</span><b style="font-size:32px;color:var(--red)" id="monthOut" aria-live="polite"></b></div>
-      <p class="muted small">Example for 5-minute tasks. The number of tasks depends on how many studies match your profile, so this is not a guaranteed income.</p>
+  </div>
+</section>
+
+<section id="statuses" class="alt">
+  <div class="wrap">
+    <div class="head"><h2>Statuses: the better you read, the earlier you get tasks</h2></div>
+    <div class="grid">
+      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><line x1="19" x2="19" y1="8" y2="14" /><line x1="22" x2="16" y1="11" y2="11" /></svg></span><h3>New</h3><p>After signing up and confirming your email. You get tasks last.</p></div>
+      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M2 21a8 8 0 0 1 13.292-6" /><circle cx="10" cy="8" r="5" /><path d="m16 19 2 2 4-4" /></svg></span><h3>Silver</h3><p>10 completed tasks, at least 90% correct answers, profile 80% complete. Tasks before people with New status, higher rates and access to questions and surveys.</p></div>
+      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><h3>Gold</h3><p>40 completed tasks, at least 95% correct answers, full profile, confirmed phone number. You get tasks first, at the highest rates.</p></div>
     </div>
+    <p class="muted" style="margin-top:20px">Your status is calculated from your last 20 tasks, so it can also go down.</p>
   </div>
 </section>
 
@@ -697,10 +733,12 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
     <div class="main stack">
       <h2>A full profile means more tasks</h2>
       <p class="lead">Every study looks for specific people: of a certain age, from a given town, with particular purchase plans or a role at work. The better we know you, the more often you match.</p>
+      <p class="lead" style="font-weight:700;color:var(--navy)">You get 200 pts for a full profile.</p>
     </div>
     <div class="side box" style="padding:24px;gap:14px">
-      <div style="display:flex;justify-content:space-between;font-weight:700"><span>Example profile</span><span style="color:var(--red)">60%</span></div>
+      <div style="display:flex;justify-content:space-between;font-weight:700"><span>Example: profile completion</span><span style="color:var(--red)">60%</span></div>
       <div class="progress" role="progressbar" aria-label="Profile completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><i style="width:60%"></i></div>
+      <span class="muted small" style="font-style:italic">This is an illustrative mock-up, not your profile.</span>
       <span>Age and location: done</span>
       <span>Household: done</span>
       <span class="muted">Work and role in the company</span>
@@ -711,12 +749,13 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
 
 <section class="alt">
   <div class="wrap">
-    <div class="head"><h2>Payouts without the hassle</h2><p class="lead">Withdraw from PLN 20. You receive the money within 5 business days of your request.</p></div>
+    <div class="head"><h2>Payouts without the hassle</h2><p class="lead">Your first payout is from PLN 5, later ones from PLN 20. Bank transfer to a Polish bank account within 5 business days.</p></div>
     <div class="grid">
-      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><h3 style="font-size:22px">BLIK</h3><p>To your phone number, the fastest option.</p></div>
-      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg></span><h3 style="font-size:22px">Bank transfer</h3><p>To your account at any Polish bank.</p></div>
-      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 7v14" /><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" /><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5" /><rect x="3" y="7" width="18" height="4" rx="1" /></svg></span><h3 style="font-size:22px">Gift cards</h3><p>For selected stores.</p></div>
+      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg></span><h3 style="font-size:22px">Bank transfer</h3><p>To an account at a Polish bank.</p></div>
+      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><h3 style="font-size:22px">BLIK</h3><p>Coming soon.</p></div>
+      <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 7v14" /><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" /><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5" /><rect x="3" y="7" width="18" height="4" rx="1" /></svg></span><h3 style="font-size:22px">Gift cards</h3><p>Coming soon.</p></div>
     </div>
+    <p style="margin-top:20px">Before your first payout you confirm your phone number by SMS, so that one person has one account.</p>
     <div class="paystats" id="payStats" hidden>
       <div class="ps-tiles" id="psTiles"></div>
       <div class="ticker" id="ticker" hidden>
@@ -758,10 +797,10 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
   <div class="wrap">
     <div class="head"><h2>We pay for real attention</h2><p style="font-size:18px">Our results have to be reliable. That is why the rules are simple and the same for everyone.</p></div>
     <div class="grid">
-      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M2 21a8 8 0 0 1 13.292-6" /><circle cx="10" cy="8" r="5" /><path d="m16 19 2 2 4-4" /></svg></span><h3>One account per person</h3><p>Duplicate accounts are blocked together with their balance.</p></div>
-      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><h3>Phone verification</h3><p>One text message at sign-up. It protects your balance and the whole panel.</p></div>
-      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><h3>Check questions</h3><p>Sometimes we ask about the content of the task. Attentive panelists get more tasks.</p></div>
-      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 3v18" /><path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /><path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M7 21h10" /></svg></span><h3>Right to appeal</h3><p>Task rejected? Write to us within 14 days. Every appeal is reviewed by a person.</p></div>
+      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M2 21a8 8 0 0 1 13.292-6" /><circle cx="10" cy="8" r="5" /><path d="m16 19 2 2 4-4" /></svg></span><h3>One account per person</h3><p>You confirm your phone number by SMS before your first payout. We block duplicate accounts.</p></div>
+      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><h3>A question about the text after every article</h3><p>The question is about a fact from the text. If you read carefully, you will answer with ease.</p></div>
+      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 3v18" /><path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /><path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M7 21h10" /></svg></span><h3>We pay only for completed tasks</h3><p>Task rejected? Write to us within 14 days, and a human always reviews the appeal.</p></div>
+      <div class="ruled"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><h3>Adults living in Poland only</h3><p>By signing up you confirm that you are 18 or older and live in Poland.</p></div>
     </div>
   </div>
 </section>
@@ -769,18 +808,22 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
 <section>
   <div class="wrap">
     <div class="head"><h2>Your data is safe</h2></div>
-    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
-      <div class="card soft"><span class="ibox navy"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></svg></span><h3>What we collect</h3><p>The profile data you give us, and whether and for how long a task was carried out.</p></div>
-      <div class="card soft"><span class="ibox navy"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" /><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" /><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" /><path d="m2 2 20 20" /></svg></span><h3>What we don't do</h3><p>We do not record your screen or camera. We do not track you outside tasks. We do not sell your personal data, and companies only receive aggregated results.</p></div>
-      <div class="card soft"><span class="ibox navy"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 5H3" /><path d="M12 19H3" /><path d="M14 3v4" /><path d="M16 17v4" /><path d="M21 12h-9" /><path d="M21 19h-5" /><path d="M21 5h-7" /><path d="M8 10v4" /><path d="M8 12H3" /></svg></span><h3>You are in control</h3><p>We comply with the GDPR. We will delete your account and data on request: just write to <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>. Details in the <a href="privacy-policy.html#panelists">privacy policy</a>.</p></div>
-    </div>
+    <div class="card soft" style="max-width:880px"><span class="ibox navy"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></svg></span><p>On the list we collect only your email, year of birth and topics (and a group, if you choose one when signing up). We do not ask for your ID number, health, religion or views. Clients only get aggregate results, never your data. We do not sell data. To opt out and have your data deleted, send one email to <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>. <a href="privacy-policy.html#panelists">Details in the privacy policy.</a></p></div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
     <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><h2 style="font-size:30px">Who can join?</h2><p>Any adult living in Poland with a phone or computer. Most tasks are on Polish-language websites, so you need to read Polish comfortably.We are looking for people of all ages, from big cities and small towns. Doctors and pharmacists can join the specialist group after their licence to practise is verified.</p></div>
-    <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><line x1="19" x2="19" y1="8" y2="14" /><line x1="22" x2="16" y1="11" y2="11" /></svg></span><h2 style="font-size:30px">Refer and earn</h2><p>After your first tasks you will get your own referral link. For every person who joins through it and completes their first 3 tasks, you get PLN 10.</p></div>
+    <div class="card"><span class="ibox"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><line x1="19" x2="19" y1="8" y2="14" /><line x1="22" x2="16" y1="11" y2="11" /></svg></span><h2 style="font-size:30px">Refer and earn</h2><p>After your first tasks you will get your own referral link. For every person you refer you get 300 pts (PLN 3) once they withdraw their first PLN 20.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Who runs the panel</h2></div>
+    <p style="max-width:880px">The uwazni.org.pl panel is run by TGV Sp. z o.o., Al. Niepodległości 54/34, 02-626 Warsaw, Poland, KRS 0000534661, NIP 5213684806. Contact: <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>.</p>
+    <p style="margin-top:16px"><a class="btn btn-line" href="https://www.linkedin.com/company/uwazni-org-pl/" rel="noopener">uwazni.org.pl on LinkedIn</a></p>
   </div>
 </section>
 
@@ -788,14 +831,14 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
   <div class="wrap">
     <div class="head"><h2>Frequently asked questions</h2></div>
     <div class="faq">
-      <details><summary>Is this legal and safe?<span class="plus" aria-hidden="true">+</span></summary><p>Yes. The panel is run by TGV Sp. z o.o., a company registered in Poland (KRS 0000534661). The rules are set out in the <a href="panel-terms.html">panel terms</a>.</p></details>
-      <details><summary>Do I need to install anything?<span class="plus" aria-hidden="true">+</span></summary><p>No. You open tasks in your usual browser, on a phone or computer.</p></details>
-      <details><summary>How much will I really earn?<span class="plus" aria-hidden="true">+</span></summary><p>It depends on how many tasks match your profile. Every task shows its pay rate before you start.</p></details>
-      <details><summary>What if a task is rejected?<span class="plus" aria-hidden="true">+</span></summary><p>We reject a task when there was no real attention, for example the browser tab was inactive or the answer to a check question was wrong. You will be told the reason. You have 14 days to appeal, and every appeal is reviewed by a person.</p></details>
-      <details><summary>Who am I browsing websites for?<span class="plus" aria-hidden="true">+</span></summary><p>For companies and publishers who want to know how people really read and watch their content. We do not share your personal data with them.</p></details>
-      <details><summary>Do I have to pay tax?<span class="plus" aria-hidden="true">+</span></summary><p>Income from the panel may be taxable. Where the law requires it, we will send you a tax statement for the year. Details are in the <a href="panel-terms.html">panel terms</a>.</p></details>
-      <details><summary>How do I delete my account?<span class="plus" aria-hidden="true">+</span></summary><p>Write to <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>. We will delete your account and data, and pay out any balance from PLN 20 before deletion.</p></details>
-      <details><summary>Where can I get help?<span class="plus" aria-hidden="true">+</span></summary><p>Write to <a data-email="support" href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>. We reply within one business day.</p></details>
+      <details><summary>How much can I earn per task?<span class="plus" aria-hidden="true">+</span></summary><p>From 10 pts (PLN 0.10) for reading alone to 300 pts (PLN 3) for reading with a survey. The rate depends on the type of task and your status, and you see it before you apply.</p></details>
+      <details><summary>Is this a job?<span class="plus" aria-hidden="true">+</span></summary><p>No. It is something extra for a few minutes when you have time. The number of tasks depends on how many studies match your topics.</p></details>
+      <details><summary>When do the first tasks start?<span class="plus" aria-hidden="true">+</span></summary><p>We launch soon. People on the list get an email invitation first.</p></details>
+      <details><summary>Why do you ask about the content of the article?<span class="plus" aria-hidden="true">+</span></summary><p>Because we pay for attentive reading. The question is about a fact from the text and helps tell reading from scrolling.</p></details>
+      <details><summary>How do you choose participants for a task?<span class="plus" aria-hidden="true">+</span></summary><p>Fit with the group the study is looking for comes first, then your status, then the time since your last task. No lottery.</p></details>
+      <details><summary>Do I need to install anything?<span class="plus" aria-hidden="true">+</span></summary><p>No. A browser is enough.</p></details>
+      <details><summary>What happens to my data?<span class="plus" aria-hidden="true">+</span></summary><p>On the list we collect only your email, year of birth and topics. Clients only get aggregate results and we do not sell data. To have your data deleted, email <a href="mailto:pomoc@uwazni.org.pl">pomoc@uwazni.org.pl</a>. Details in the <a href="privacy-policy.html#panelists">privacy policy</a>.</p></details>
+      <details><summary>Who can join?<span class="plus" aria-hidden="true">+</span></summary><p>Adults living in Poland. One person can have one account.</p></details>
     </div>
   </div>
 </section>
@@ -803,19 +846,35 @@ a.bhub:hover{border-color:var(--red)} a.bhub b{font-size:18px;color:var(--navy)}
 <section id="join" class="cta">
   <div class="wrap split">
     <div class="main stack" style="gap:16px">
-      <h2 style="font-size:clamp(34px,5vw,56px)">Start earning from your attention</h2>
-      <p style="font-size:19px">Signing up takes a minute. You will complete your profile before your first task.</p>
+      <h2 style="font-size:clamp(34px,5vw,56px)">Join the list before we launch</h2>
+      <p style="font-size:19px">Signing up takes a minute. You complete your profile before your first task.</p>
     </div>
     <form class="side" id="regForm" novalidate style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px" aria-labelledby="regTitle">
-      <h3 id="regTitle">Join the panel</h3>
+      <h3 id="regTitle">Join the waiting list</h3>
       <p class="grpsel hidden" id="grpSel">Signing up as: <b id="grpName"></b> <button type="button" class="as-link" id="grpClear">change</button></p><input type="hidden" id="pgrp">
       <label for="pmail">Email address</label>
       <input id="pmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+      <label for="pyear">Year of birth</label>
+      <select id="pyear" required data-ph="Select year"></select>
+      <fieldset class="topics" id="topics">
+        <legend>Your topics</legend>
+        <p class="muted small" id="topicsHint" style="margin:0 0 8px;color:var(--text-2)!important">Choose 3 to 5 topics. Selected: {n}.</p>
+        <label class="chk"><input type="checkbox" name="interest" value="tech"><span>Technology</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="biznes"><span>Business and finance</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="auto"><span>Cars and motoring</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="zdrowie"><span>Health and lifestyle</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="dom"><span>Home and family</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="podroze"><span>Travel</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="kultura"><span>Culture and entertainment</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="sport"><span>Sport</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="zakupy"><span>Shopping and fashion</span></label>
+        <label class="chk"><input type="checkbox" name="interest" value="spoleczenstwo"><span>Politics and society</span></label>
+      </fieldset>
       <div class="hp" aria-hidden="true"><label for="pweb">Website</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
       <div class="consent"><input id="zgodaP" type="checkbox" required><label for="zgodaP">I am 18 or older and I accept the <a href="panel-terms.html">panel terms</a>. (required)</label></div>
       <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">I want to receive emails about bonuses and panel news. I can withdraw this consent at any time. (optional)</label></div>
-      <p class="rodo">The data controller is TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warsaw</span>, Poland. We process your data to create and run your panel account and to pay you (Art. 6(1)(b) GDPR) and, with your consent, for marketing (Art. 6(1)(a) GDPR). We keep the data until your account is deleted, and billing data for as long as the law requires. You have the right to access, rectify and erase your data, to restrict processing, to object, to data portability and to lodge a complaint with the President of the Polish Data Protection Office (UODO). Details in the <a href="privacy-policy.html#panelists">privacy policy</a>.</p>
-      <button type="submit" class="btn btn-navy" style="font-size:17px">Join for free</button>
+      <p class="rodo">The data controller is TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warsaw</span>, Poland. We process your email, year of birth, topics and chosen group to tell you when the panel starts and to invite you to create an account (Art. 6(1)(b) GDPR, steps taken at your request before entering into a contract) and, with your consent, for marketing (Art. 6(1)(a) GDPR). We keep list data until you create an account, or for up to 12 months from sign-up if you do not. You can ask us to delete it earlier. You have the right to access, rectify and erase your data, to restrict processing, to object, to data portability and to lodge a complaint with the President of the Polish Data Protection Office (UODO). Details in the <a href="privacy-policy.html#panelists">privacy policy</a>.</p>
+      <button type="submit" class="btn btn-navy" style="font-size:17px">Join the waiting list</button>
       <div class="msg hidden" role="status"></div>
     </form>
   </div>
@@ -1004,17 +1063,32 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
   }); });
   document.getElementById('grpClear').addEventListener('click',function(){ gIn.value=''; gSel.classList.add('hidden'); document.getElementById('szukamy')&&document.getElementById('szukamy').scrollIntoView({behavior:'smooth'}); document.getElementById('wanted')&&document.getElementById('wanted').scrollIntoView({behavior:'smooth'}); });
 
-  /* Earnings calculator: 5-minute tasks, 4.3 weeks per month */
-  var pw = document.getElementById('perWeek');
-  function earn(){ var n = +pw.value; document.getElementById('perWeekOut').textContent = n; document.getElementById('monthOut').textContent = 'approx. ' + money(n * 5 * 4.3); }
-  pw.addEventListener('input', earn); earn();
+  /* Rok urodzenia i tematy */
+  var yr = document.getElementById('pyear'), cy = new Date().getFullYear();
+  var o0 = document.createElement('option'); o0.value = ''; o0.textContent = yr.dataset.ph; yr.appendChild(o0);
+  for (var y = cy - 18; y >= 1930; y--) { var o = document.createElement('option'); o.value = y; o.textContent = y; yr.appendChild(o); }
+  var tp = Array.prototype.slice.call(document.querySelectorAll('#topics input[name=interest]'));
+  var tHint = document.getElementById('topicsHint');
+  function topicCount(){ return tp.filter(function(c){ return c.checked; }).length; }
+  function topicCheck(){
+    var n = topicCount();
+    tp[0].setCustomValidity(n < 3 ? 'Choose at least 3 topics.' : (n > 5 ? 'Choose at most 5 topics.' : ''));
+    tHint.textContent = 'Choose 3 to 5 topics. Selected: {n}.'.replace('{n}', n);
+  }
+  tp.forEach(function(c){ c.addEventListener('change', function(){
+    if (topicCount() > 5) { c.checked = false; }
+    topicCheck();
+  }); });
+  topicCheck();
+  document.getElementById('regForm').addEventListener('reset', function(){ setTimeout(topicCheck, 0); });
 
   /* Sign-up */
   document.getElementById('regForm').addEventListener('submit', function(e){
     e.preventDefault();
     var f = this; f.querySelector('.msg').classList.remove('hidden');
-    submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', lang:'en', email:f.querySelector('#pmail').value, adult:true, group:gIn.value, marketingConsent:f.querySelector('#mktP').checked},
-      'Done, you are on the list. We will email you when the first tasks are ready.');
+    topicCheck();
+    submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', lang:'en', email:f.querySelector('#pmail').value, adult:true, birthYear:+yr.value, interests:tp.filter(function(c){ return c.checked; }).map(function(c){ return c.value; }), group:gIn.value, marketingConsent:f.querySelector('#mktP').checked},
+      'Done. You are on the list. We will email you when tasks start for your topics.');
   });
 })();
 /* Statystyki i wypłaty z pliku stats.json (aktualizowany ręcznie, docelowo z systemu).
@@ -1092,6 +1166,33 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
 
     if(shown){ document.getElementById('psNote').textContent = (pool.length>=MIN_TICKER ? T.note+' ' : '') + asof[0].toUpperCase()+asof.slice(1)+'.'; box.hidden=false; }
   }).catch(function(){});
+})();
+</script>
+<script>
+/* Mobilny nagłówek: pasek przełącznika chowa się przy przewijaniu w dół i wraca w górę. Układ się nie zmienia (clip-path), więc brak CLS. */
+(function(){
+  var h = document.querySelector('header.site'), sw = h && h.querySelector('.switch'); if (!h || !sw) return;
+  var mq = matchMedia('(max-width:719px)'), last = scrollY, tick = false;
+  function measure(){
+    h.style.setProperty('--sw', '0px');
+    var hb = h.getBoundingClientRect(), bottom = 0;
+    h.querySelectorAll('.brand, nav.links').forEach(function(e){ bottom = Math.max(bottom, e.getBoundingClientRect().bottom - hb.top); });
+    var pad = parseFloat(getComputedStyle(h.querySelector('.wrap')).paddingBottom) || 0;
+    h.style.setProperty('--sw', Math.max(0, Math.round(hb.height - bottom - pad - 1)) + 'px');
+  }
+  function set(hide){ h.classList.toggle('sw-hidden', hide); }
+  function onScroll(){
+    tick = false;
+    if (!mq.matches) { set(false); last = scrollY; return; }
+    var y = scrollY, d = y - last;
+    if (y <= h.offsetHeight) { set(false); last = y; return; }
+    if (d > 6) { set(true); last = y; } else if (d < -6) { set(false); last = y; }
+  }
+  addEventListener('scroll', function(){ if (!tick) { tick = true; requestAnimationFrame(onScroll); } }, {passive:true});
+  addEventListener('resize', function(){ measure(); onScroll(); });
+  addEventListener('load', measure);
+  h.addEventListener('focusin', function(){ set(false); });
+  measure();
 })();
 </script>
 </body>

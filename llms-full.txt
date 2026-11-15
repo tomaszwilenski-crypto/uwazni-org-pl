@@ -18,7 +18,7 @@ Badania dla firm / B2B i content marketing
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaDecydenci B2B
- Cena za osobę120 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -42,7 +42,7 @@ Właściciele, członkowie zarządów i kierownicy, którzy decydują lub wspó�
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 120 zł netto za osobę. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -53,7 +53,7 @@ Do oceny jednej strony wystarcza zwykle 50 osób, do porównania dwóch wersji p
 Czy mogę przetestować materiał przed publikacją?+
 Tak. Przekaż dostęp testowy do strony niepublicznej. Uczestnicy są zobowiązani do zachowania poufności treści zadań.
 Czy mogę dodać ankietę o zrozumieniu oferty?+
-Tak, do 15 pytań po zadaniu, np. czy oferta jest jasna i czy uczestnik poprosiłby o kontakt.
+Tak, do 10 pytań po zadaniu (poziom 4), np. czy oferta jest jasna i czy uczestnik poprosiłby o kontakt.
 
  Inne branże
 
@@ -82,7 +82,7 @@ Attention studies for business / B2B and content marketing
  Configure a study for this groupSee a sample report
 
  GroupB2B decision-makers
- Price per personPLN 120 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -106,7 +106,7 @@ Owners, board members and managers who make or co-make purchase decisions in the
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 120 net per person. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -117,7 +117,7 @@ About 50 people are usually enough to assess one page, and 50 per version to com
 Can I test material before publication?+
 Yes. Provide test access to a non-public page. Participants are bound to keep task content confidential.
 Can I add a survey on how well the offer is understood?+
-Yes, up to 15 questions after the task, for example whether the offer is clear and whether the participant would ask to be contacted.
+Yes, up to 10 questions after the task (level 4), for example whether the offer is clear and whether the participant would ask to be contacted.
 
  Other industries
 
@@ -139,14 +139,14 @@ Badania dla firm / Farmacja i ochrona zdrowia
 
 ## Badanie uwagi lekarzy i farmaceutów
 
- Badanie uwagi lekarzy i farmaceutów to test, w którym osoby z potwierdzonym prawem wykonywania zawodu czytają Twój serwis, artykuł lub materiał edukacyjny, a Ty widzisz, które fragmenty przeczytały uważnie, a które pominęły.
+ Badanie uwagi lekarzy i farmaceutów to test, w którym osoby o deklarowanym zawodzie lekarza lub farmaceuty czytają Twój serwis, artykuł lub materiał edukacyjny, a Ty widzisz, które fragmenty przeczytały uważnie, a które pominęły.
 
  Czy lekarz zauważy kluczową informację, czy przewinie ją w kilka sekund?
 
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaLekarze i farmaceuci
- Cena za osobę240 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -165,22 +165,22 @@ Wskaźnik UważnychJaka część grupy czytała uważnie, a jaka tylko przelecia
 Wersja A kontra BDwie wersje obok siebie, na osobnych próbach z tej samej grupy.
 
 ## Kogo badamy
-Lekarze i farmaceuci, którym przed dopuszczeniem do zadań weryfikujemy prawo wykonywania zawodu. Specjalizację i miejsce pracy ustalamy w ofercie.
+Lekarze i farmaceuci według zawodu deklarowanego przez uczestników. Specjalizację i miejsce pracy ustalamy w ofercie.
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 240 zł netto za osobę. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
- Jak weryfikujecie prawo wykonywania zawodu?+
-Przed dopuszczeniem do zadań sprawdzamy numer prawa wykonywania zawodu w publicznym rejestrze. Bez pozytywnej weryfikacji osoba nie trafia do tej grupy.
+ Skąd wiadomo, że uczestnik jest lekarzem lub farmaceutą?+
+Zawód deklaruje uczestnik przy zapisie. Nie weryfikujemy go w rejestrach.
 Czy badanie spełnia wymogi Prawa farmaceutycznego?+
 Badanie służy ocenie, jak czytany jest materiał, a nie jego dystrybucji. Materiał pokazywany lekarzom musi jednak spełniać przepisy o reklamie produktów leczniczych kierowanej do osób uprawnionych do wystawiania recept. Za treść materiału odpowiada zleceniodawca. Zalecamy, żeby przed badaniem zatwierdził go Twój dział prawny lub medyczny.
 Czy uczestnicy widzą, kto zlecił badanie?+
 Nie musi tak być. Możesz zlecić badanie bez ujawniania marki, o ile materiał nie wymaga podania podmiotu odpowiedzialnego.
 Dlaczego ta grupa jest droższa?+
-Lekarzy i farmaceutów jest mało, ich czas jest drogi, a weryfikacja zawodu wymaga dodatkowej pracy. Dlatego mnożnik tej grupy wynosi ×12.
+Lekarzy i farmaceutów jest mało, a ich czas jest drogi. Taką grupę zwykle traktujemy jako trudno dostępną: cena poziomu rośnie wtedy o 50%, co potwierdzamy w wycenie.
 
  Inne branże
 
@@ -202,14 +202,14 @@ Attention studies for business / Pharma and healthcare
 
 ## Attention research with doctors and pharmacists
 
- Attention research with doctors and pharmacists is a test in which people in Poland with a verified licence to practise read your website, article or educational material, and you see which parts they read attentively and which they skipped.
+ Attention research with doctors and pharmacists is a test in which people in Poland with a declared profession as a doctor or pharmacist read your website, article or educational material, and you see which parts they read attentively and which they skipped.
 
  Will a doctor notice the key information, or scroll past it in seconds?
 
  Configure a study for this groupSee a sample report
 
  GroupDoctors and pharmacists
- Price per personPLN 240 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -228,22 +228,22 @@ Attentive ShareWhat share of the group read attentively and what share only skim
 Version A vs BTwo versions side by side, on separate samples from the same group.
 
 ## Who we study
-Doctors and pharmacists whose licence to practise we verify before they can take part. Speciality and place of work are agreed in the proposal.
+Doctors and pharmacists according to the profession declared by participants. Speciality and place of work are agreed in the proposal.
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 240 net per person. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
- How do you verify the licence to practise?+
-Before admitting someone to tasks we check their licence number in the public register. Without positive verification the person is not included in this group.
+ How do you know a participant is a doctor or pharmacist?+
+The participant declares their profession at sign-up. We do not check it in registers.
 Does the study comply with Polish pharmaceutical law?+
 The study assesses how material is read; it does not distribute it. Material shown to doctors must still comply with the rules on advertising medicinal products to people authorised to prescribe. The client is responsible for the content. We recommend that your legal or medical team approves it before the study.
 Do participants see who commissioned the study?+
 Not necessarily. You can run the study without revealing the brand, unless the material requires naming the responsible entity.
 Why is this group more expensive?+
-Doctors and pharmacists are few, their time is costly and verifying the licence takes extra work. That is why this group has a ×12 multiplier.
+Doctors and pharmacists are few and their time is costly. We usually treat such a group as hard to reach: the level price is then 50% higher, which we confirm in the quote.
 
  Other industries
 
@@ -272,7 +272,7 @@ Badania dla firm / Telekomunikacja
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaSeniorzy 55+, zmieniający operatora
- Cena za osobę39 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -295,7 +295,7 @@ Osoby w wieku 55 lat i więcej, które planują zmianę operatora. Możesz wybra
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 39 zł netto za osobę, z filtrem zamiaru zakupowego. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -335,7 +335,7 @@ Attention studies for business / Telecoms
  Configure a study for this groupSee a sample report
 
  GroupSeniors 55+, switching operator
- Price per personPLN 39 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -358,7 +358,7 @@ People aged 55 and over who are planning to switch operator. You can also choose
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 39 net per person, with the purchase intent filter. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -398,7 +398,7 @@ Badania dla firm / Banki i fintech
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaDorośli 18–49, planujący kredyt
- Cena za osobę30 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -421,7 +421,7 @@ Osoby, które planują kredyt, w tym hipoteczny. Domyślnie dorośli 18–49, al
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 30 zł netto za osobę, z filtrem zamiaru zakupowego. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -432,7 +432,7 @@ Nie podają prawdziwych danych w formularzach. Widzisz, ile osób doszło do wni
 Czy mogę przetestować kampanię przed startem?+
 Tak. Przekaż dostęp testowy do strony niepublicznej. Treść zadań objęta jest poufnością.
 Czy mogę dodać pytania o zrozumienie oferty?+
-Tak, do 15 pytań po zadaniu, np. jaki jest koszt kredytu według uczestnika.
+Tak. Poziom 3 to 3 pytania, a poziom 4 ankieta do 10 pytań, np. jaki jest koszt kredytu według uczestnika.
 
  Inne branże
 
@@ -461,7 +461,7 @@ Attention studies for business / Banking and fintech
  Configure a study for this groupSee a sample report
 
  GroupAdults 18–49, planning a loan
- Price per personPLN 30 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -484,7 +484,7 @@ People planning a loan, including a mortgage. Adults 18–49 by default, but you
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 30 net per person, with the purchase intent filter. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -495,7 +495,7 @@ They do not enter real data in forms. You see how many people reached the applic
 Can I test a campaign before launch?+
 Yes. Provide test access to a non-public page. Task content is confidential.
 Can I add questions on how well the offer is understood?+
-Yes, up to 15 questions after the task, for example what the participant thinks the loan costs.
+Yes. Level 3 has 3 questions and level 4 a survey of up to 10 questions, for example what the participant thinks the loan costs.
 
  Other industries
 
@@ -524,7 +524,7 @@ Badania dla firm / Motoryzacja
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaMężczyźni 25–49, planujący zakup auta
- Cena za osobę33 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -547,7 +547,7 @@ Osoby, które planują zakup samochodu. Domyślnie mężczyźni 25–49, ale fil
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 33 zł netto za osobę, z filtrem zamiaru zakupowego. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -587,7 +587,7 @@ Attention studies for business / Automotive
  Configure a study for this groupSee a sample report
 
  GroupMen 25–49, planning to buy a car
- Price per personPLN 33 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -610,7 +610,7 @@ People planning to buy a car. Men 25–49 by default, but you can combine the ca
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 33 net per person, with the purchase intent filter. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -650,7 +650,7 @@ Badania dla firm / Dom, remont, budownictwo
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaDorośli 18–49, w trakcie remontu
- Cena za osobę30 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -673,7 +673,7 @@ Osoby, które remontują lub urządzają mieszkanie albo dom. Domyślnie dorośl
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 30 zł netto za osobę, z filtrem zamiaru zakupowego. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -713,7 +713,7 @@ Attention studies for business / Home improvement and building
  Configure a study for this groupSee a sample report
 
  GroupAdults 18–49, renovating a home
- Price per personPLN 30 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -736,7 +736,7 @@ People renovating or furnishing a flat or house. Adults 18–49 by default, and 
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 30 net per person, with the purchase intent filter. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -776,7 +776,7 @@ Badania dla firm / Marki dla rodziców i dzieci
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaRodzice dzieci 0–12
- Cena za osobę24 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -799,7 +799,7 @@ Rodzice co najmniej jednego dziecka w wieku 0–12 lat. Wiek dziecka możesz zaw
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 24 zł netto za osobę. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -810,7 +810,7 @@ Tak. Wydawca pokaże reklamodawcy, ile rodziców doczytało artykuł sponsorowan
 Czy w badaniu biorą udział dzieci?+
 Nie. W panelu są wyłącznie osoby pełnoletnie.
 Ile kosztuje osoba w tej grupie?+
-Mnożnik grupy rodziców wynosi ×1,2 względem grupy bazowej. Dokładną cenę policzy konfigurator.
+Od 0,50 zł netto za osobę, zależnie od poziomu badania (poziomy 1-4: 0,50, 1,00, 2,50 i 5,50 zł). Dokładną cenę policzy konfigurator.
 
  Inne branże
 
@@ -839,7 +839,7 @@ Attention studies for business / Brands for parents and children
  Configure a study for this groupSee a sample report
 
  GroupParents of children 0–12
- Price per personPLN 24 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -862,7 +862,7 @@ Parents of at least one child aged 0–12. The child age range can be narrowed i
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 24 net per person. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -873,7 +873,7 @@ Yes. A publisher can show an advertiser how many parents read a sponsored articl
 Do children take part in the study?+
 No. The panel includes adults only.
 How much does one person in this group cost?+
-The parents group has a ×1.2 multiplier relative to the base group. The configurator calculates the exact price.
+From PLN 0.50 net per person, depending on the study level (levels 1-4: PLN 0.50, 1.00, 2.50 and 5.50). The configurator calculates the exact price.
 
  Other industries
 
@@ -902,7 +902,7 @@ Badania dla firm / Marki premium
  Skonfiguruj badanie dla tej grupyZobacz przykładowy raport
 
  GrupaZamożni miejscy, ABC1 25–54
- Cena za osobę40 zł netto za osobę
+ Cena za osobęod 0,50 zł netto
  Pierwsze wizytypo minucie od startu
 
 ## Co możesz przetestować
@@ -925,7 +925,7 @@ Mieszkańcy dużych miast w wieku 25–54 lata z grupy ABC1: wyższe wykształce
 Grupę dobieramy według kryteriów z konfiguratora i potwierdzamy jej dostępność oraz termin startu w ofercie, w ciągu jednego dnia roboczego.
 
 ## Ile to kosztuje
-Strona do 5 minut w tej grupie kosztuje 40 zł netto za osobę. Artykuł do 3 minut jest tańszy, a serwis lub wideo do 10 minut droższy. Od 200 osób rabat 10%, od 500 osób 15%. Minimalne zamówienie to 1 000 zł netto.
+Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania (od uważnego czytania do ankiety), liczby osób i tego, czy grupa jest trudno dostępna (+50%). Zobacz cennik.
 
 ## Częste pytania
 
@@ -936,7 +936,7 @@ Tak, jeśli Twoi klienci w Polsce korzystają z wersji angielskiej. Uczestników
 Czy mogę porównać dwie wersje strony głównej?+
 Tak, w teście A/B z osobną próbą dla każdej wersji.
 Ile kosztuje osoba w tej grupie?+
-Mnożnik grupy ABC1 wynosi ×2 względem grupy bazowej. Dokładną cenę policzy konfigurator.
+Od 0,50 zł netto za osobę, zależnie od poziomu badania (poziomy 1-4: 0,50, 1,00, 2,50 i 5,50 zł). Dokładną cenę policzy konfigurator.
 
  Inne branże
 
@@ -965,7 +965,7 @@ Attention studies for business / Premium brands
  Configure a study for this groupSee a sample report
 
  GroupAffluent urban, ABC1 25–54
- Price per personPLN 40 net per person
+ Price per personfrom PLN 0.50 net
  First visitsa minute after launch
 
 ## What you can test
@@ -988,7 +988,7 @@ Residents of large cities aged 25–54 in the ABC1 group: higher education and i
 We select the group using the configurator criteria and confirm its availability and start date in the proposal, within one business day.
 
 ## What it costs
-A page of up to 5 minutes in this group costs PLN 40 net per person. An article of up to 3 minutes costs less, a website or video of up to 10 minutes more. 10% off from 200 people, 15% off from 500. Minimum order PLN 1,000 net.
+A study costs from PLN 0.50 net per person who completed it. The price depends on the study level (from attentive reading to a survey), the number of people and whether the group is hard to reach (+50%). See pricing.
 
 ## Frequently asked questions
 
@@ -999,7 +999,7 @@ Yes, if your customers in Poland use the English version. We select participants
 Can I compare two versions of the home page?+
 Yes, in an A/B test with a separate sample for each version.
 How much does one person in this group cost?+
-The ABC1 group has a ×2 multiplier relative to the base group. The configurator calculates the exact price.
+From PLN 0.50 net per person, depending on the study level (levels 1-4: PLN 0.50, 1.00, 2.50 and 5.50). The configurator calculates the exact price.
 
  Other industries
 
@@ -1383,7 +1383,7 @@ Gdy strona, artykuł lub kampania już istnieje i chcesz wiedzieć, czy grupa do
 
 ## Połączenie obu metod
 
-Najpełniejszy obraz daje zadanie na stronie zakończone krótką ankietą. Zachowanie mówi, co ludzie zrobili, a ankieta mówi, co zrozumieli. W uwazni.org.pl ankieta do 15 pytań jest opcją w konfiguratorze. Więcej o samej metodzie w tekście Co to jest pomiar uwagi.
+Najpełniejszy obraz daje zadanie na stronie zakończone krótką ankietą. Zachowanie mówi, co ludzie zrobili, a ankieta mówi, co zrozumieli. W uwazni.org.pl ankieta do 10 pytań jest jednym z poziomów badania. Więcej o samej metodzie w tekście Co to jest pomiar uwagi.
 
 ## Częste pytania
 
@@ -1392,7 +1392,7 @@ Nie. Odpowiada na inne pytanie. Ankieta mówi, co ludzie deklarują, panel uwagi
 Czy uczestnicy panelu uwagi wiedzą, że są badani?+
 Tak. Biorą udział w płatnym zadaniu i znają jego zasady. Dlatego wyniki porównujemy między wersjami i grupami, a nie traktujemy ich jak ruchu organicznego.
 Czy mogę dodać pytania do zadania?+
-Tak, do 15 pytań po zadaniu.
+Tak, do 10 pytań po zadaniu (poziom 4).
 
 Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
 LinkedIn
@@ -1437,7 +1437,7 @@ When a page, article or campaign already exists and you want to know whether you
 
 ## Combining both
 
-The fullest picture comes from a task on the page followed by a short survey. Behaviour shows what people did and the survey shows what they understood. At uwazni.org.pl a survey of up to 15 questions is an option in the configurator. More on the method in What is attention measurement.
+The fullest picture comes from a task on the page followed by a short survey. Behaviour shows what people did and the survey shows what they understood. At uwazni.org.pl a survey of up to 10 questions is one of the study levels. More on the method in What is attention measurement.
 
 ## Frequently asked questions
 
@@ -1446,7 +1446,7 @@ No. It answers a different question. A survey says what people declare, an atten
 Do attention panel participants know they are being studied?+
 Yes. They take part in a paid task and know its rules. That is why results are compared across versions and groups rather than treated as organic traffic.
 Can I add questions to the task?+
-Yes, up to 15 questions after the task.
+Yes, up to 10 questions after the task (level 4).
 
 Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
 LinkedIn
@@ -1475,7 +1475,7 @@ Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileńsk
 
 - Prawdziwe dane w profilu, aktualizowane przy zmianie.
 
-- W grupie lekarzy i farmaceutów: weryfikacja prawa wykonywania zawodu przed dopuszczeniem do zadań.
+- W grupie lekarzy i farmaceutów: zawód deklarowany przez uczestnika przy zapisie.
 
 ## Dobór do grupy
 
@@ -1541,7 +1541,7 @@ Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of t
 
 - True profile data, updated when it changes.
 
-- In the doctors and pharmacists group: licence to practise verified before admission to tasks.
+- In the doctors and pharmacists group: profession declared by the participant at sign-up.
 
 ## Selection for a group
 
@@ -1707,55 +1707,55 @@ Baza wiedzy
 
 ## Ile kosztuje badanie uwagi?
 
-Badanie uwagi w uwazni.org.pl kosztuje od 1 000 zł netto, a cena zależy od trzech rzeczy: długości zadania, grupy docelowej i liczby osób.
+Badanie uwagi w uwazni.org.pl kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena zależy od poziomu badania, liczby osób i tego, czy grupa jest trudno dostępna.
 
-Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileński, Przewodniczący Grupy ds. Standaryzacji Pomiaru Uważności w IAB Polska · Aktualizacja: 7 listopada 2026
+Opracowanie: zespół uwazni.org.pl · Aktualizacja: 15 listopada 2026
 
-## Cena za osobę w grupie bazowej
+## Cena za osobę według poziomu badania
 
- | | Rodzaj zadania | Cena netto za osobę
+ | | Poziom | Co badamy | Cena netto za osobę
 
- | Artykuł, do 3 minut | 12 zł
+ | 1. Uważne czytanie | Osoba z wybranej grupy czyta artykuł z potwierdzoną uwagą. Dostajesz raport uwagi, a wizyty widzisz w GA4. | 0,50 zł
 
- | Strona lub landing page, do 5 minut | 20 zł
+ | 2. Czytanie i interakcja | Jak poziom 1 plus kliknięcie w link wewnętrzny, start wideo albo kliknięcie w reklamę kampanii sprzedanej bezpośrednio (za zgodą wydawcy). | 1,00 zł
 
- | Serwis lub wideo, do 10 minut | 35 zł
+ | 3. Czytanie i 3 pytania | Jak poziom 1 plus 3 pytania: zapamiętanie przekazu i marki, ocena treści. | 2,50 zł
 
-## Co podnosi cenę
+ | 4. Czytanie i ankieta | Jak poziom 1 plus ankieta do 10 pytań, ok. 5 minut. | 5,50 zł
 
-- Grupa docelowa: mnożnik od ×1,0 (np. dorośli 18–49) do ×12 (lekarze i farmaceuci). Na przykład rodzice ×1,2, seniorzy 55+ ×1,3, grupa ABC1 ×2, decydenci B2B ×6.
+## Co wpływa na cenę
 
-- Filtr zamiaru zakupowego (zakup auta, kredyt, zmiana operatora, remont): ×1,5.
+- Poziom badania: od 0,50 zł do 5,50 zł za osobę. Poziomy 1 i 2 wymagają co najmniej 1 000 osób (od 500 zł netto), poziomy 3 i 4 co najmniej 100 osób.
 
-- Ankieta po zadaniu: 5, 10 lub 15 pytań, dopłata rośnie z liczbą pytań i mnożnikiem grupy.
+- Grupa trudno dostępna (np. seniorzy 65+, decydenci B2B): +50% ceny poziomu.
 
-## Co obniża cenę
+- Liczba osób: cena za osobę razy liczba osób. W teście A/B każda wersja ma osobną próbę o tej samej liczebności.
 
-Rabat 10% od 200 osób i 15% od 500 osób. Minimalne zamówienie to 1 000 zł netto.
+## Termin realizacji
+
+Standard to 5 000 osób na artykuł w 7 dni i 15 000 osób w 14-21 dni. Przy poziomach 3 i 4 termin zależy od dostępności grupy i potwierdzamy go w wycenie.
 
 ## Przykładowe wyceny
 
- | | Pakiet | Zakres | Cena netto
+ | | Zakres | Cena netto
 
- | Pilot | 50 osób, strona do 5 minut, grupa bazowa | 1 000 zł
+ | 5 000 osób, poziom 1 | 2 500 zł
 
- | Standard | 200 osób, strona do 5 minut, grupa bazowa | 3 600 zł
+ | 15 000 osób, poziom 1 | 7 500 zł
 
- | Pro | 500 osób, strona do 5 minut, grupa bazowa | 8 500 zł
+ | 300 osób, poziom 3 | 750 zł
 
-Do cen netto dolicza się VAT 23%. Dokładną cenę dla Twojej grupy i zadania policzy konfigurator, bez rejestracji. Ile osób wybrać, opisujemy w tekście Ile osób potrzeba do badania.
+Do cen netto dolicza się VAT 23%. Dokładną cenę dla Twojej grupy i poziomu policzy konfigurator, bez rejestracji, a pełny cennik jest w sekcji Cennik. Ile osób wybrać, opisujemy w tekście Ile osób potrzeba do badania.
 
 ## Częste pytania
 
-Jaka jest minimalna kwota zamówienia?+
-1 000 zł netto, czyli np. 50 osób oglądających stronę do 5 minut w grupie bazowej.
+Jakie są minimalne zamówienia?+
+Poziomy 1 i 2: co najmniej 1 000 osób, czyli od 500 zł netto. Poziomy 3 i 4: co najmniej 100 osób. Termin realizacji poziomów 3 i 4 zależy od dostępności grupy i potwierdzamy go w wycenie.
 Dlaczego grupa B2B lub lekarzy jest droższa?+
-Takich osób jest mniej, ich czas jest droższy, a weryfikacja roli lub prawa zawodu wymaga dodatkowej pracy.
+Takich osób jest mniej, a ich czas jest droższy. Dla grup trudno dostępnych cena poziomu rośnie o 50%.
 Czy cena obejmuje raport?+
 Tak. Cena obejmuje rekrutację, zadanie, kontrolę jakości i raport z wynikami.
 
-Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
-LinkedIn
 Więcej w bazie wiedzy · Baza wiedzy
 
 Co to jest pomiar uwagiUwaga a viewabilityWskaźnik UważnychPanel uwagi a panel ankietowyJakość panelu i weryfikacjaIle osób potrzeba do badaniaBadanie uwagi a Hotjar i ClarityBadanie uwagi a testy UXBadanie uwagi a eye-trackingSłownik pomiaru uwagiTesty stron na polskich grupachCzy artykuł sponsorowany jest czytanyRaport: decydenci B2B
@@ -1769,55 +1769,55 @@ Knowledge base
 
 ## How much does attention research cost?
 
-An attention study at uwazni.org.pl costs from PLN 1,000 net, and the price depends on three things: task length, target group and number of people.
+An attention study at uwazni.org.pl costs from PLN 0.50 net per person who completed the study. The price depends on the study level, the number of people and whether the group is hard to reach.
 
-Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of the Attention Measurement Standardisation Group, IAB Polska · Updated: 7 November 2026
+Written by the uwazni.org.pl team · Updated: 15 November 2026
 
-## Price per person in the base group
+## Price per person by study level
 
- | | Task type | Net price per person
+ | | Level | What we study | Net price per person
 
- | Article, up to 3 minutes | PLN 12
+ | 1. Attentive reading | A person from the chosen group reads an article with confirmed attention. You get an attention report and see the visits in GA4. | PLN 0.50
 
- | Page or landing page, up to 5 minutes | PLN 20
+ | 2. Reading and interaction | Like level 1, plus a click on an internal link, a video start or a click on an ad from a campaign sold directly (with the publisher's consent). | PLN 1.00
 
- | Website or video, up to 10 minutes | PLN 35
+ | 3. Reading and 3 questions | Like level 1, plus 3 questions: recall of the message and brand, assessment of the content. | PLN 2.50
 
-## What raises the price
+ | 4. Reading and survey | Like level 1, plus a survey of up to 10 questions, about 5 minutes. | PLN 5.50
 
-- Target group: a multiplier from ×1.0 (e.g. adults 18–49) to ×12 (doctors and pharmacists). For example parents ×1.2, seniors 55+ ×1.3, ABC1 ×2, B2B decision-makers ×6.
+## What affects the price
 
-- Purchase intent filter (buying a car, a loan, switching operator, renovation): ×1.5.
+- Study level: from PLN 0.50 to PLN 5.50 per person. Levels 1 and 2 need at least 1,000 people (from PLN 500 net), levels 3 and 4 at least 100 people.
 
-- Survey after the task: 5, 10 or 15 questions; the surcharge grows with the number of questions and the group multiplier.
+- Hard-to-reach group (e.g. seniors 65+, B2B decision-makers): +50% of the level price.
 
-## What lowers the price
+- Number of people: the price per person times the number of people. In an A/B test each version has its own sample of the same size.
 
-10% off from 200 people and 15% off from 500. Minimum order PLN 1,000 net.
+## Delivery time
+
+The standard is 5,000 people per article in 7 days and 15,000 people in 14-21 days. For levels 3 and 4 the timing depends on group availability and we confirm it in the quote.
 
 ## Example quotes
 
- | | Package | Scope | Net price
+ | | Scope | Net price
 
- | Pilot | 50 people, page up to 5 minutes, base group | PLN 1,000
+ | 5,000 people, level 1 | PLN 2,500
 
- | Standard | 200 people, page up to 5 minutes, base group | PLN 3,600
+ | 15,000 people, level 1 | PLN 7,500
 
- | Pro | 500 people, page up to 5 minutes, base group | PLN 8,500
+ | 300 people, level 3 | PLN 750
 
-Polish VAT of 23% is added to net prices; EU businesses are invoiced under reverse charge. The configurator calculates the exact price for your group and task, without sign-up. For how many people to choose, see How many people does an attention study need.
+Polish VAT of 23% is added to net prices; EU businesses are invoiced under reverse charge. The configurator calculates the exact price for your group and level, without sign-up, and the full price list is in the Pricing section. For how many people to choose, see How many people does an attention study need.
 
 ## Frequently asked questions
 
-What is the minimum order?+
-PLN 1,000 net, for example 50 people viewing a page of up to 5 minutes in the base group.
+What are the minimum orders?+
+Levels 1 and 2: at least 1,000 people, which is from PLN 500 net. Levels 3 and 4: at least 100 people. Delivery time for levels 3 and 4 depends on group availability and we confirm it in the quote.
 Why are B2B and doctor groups more expensive?+
-There are fewer such people, their time is more costly and verifying role or licence takes extra work.
+There are fewer such people and their time is more costly. For hard-to-reach groups the level price is 50% higher.
 Does the price include the report?+
 Yes. The price covers recruitment, the task, quality control and the results report.
 
-Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
-LinkedIn
 More in the knowledge base · Knowledge base
 
 What is attention measurementAttention vs viewabilityAttentive ShareAttention panel vs survey panelPanel quality and verificationSample size for attention researchAttention research vs Hotjar and ClarityAttention research vs UX testingAttention research vs eye-trackingAttention measurement glossaryUser testing with Polish audiencesIs a sponsored article actually readReport: B2B decision-makers
@@ -1861,7 +1861,7 @@ Hotjar i Microsoft Clarity to narzędzia instalowane na stronie. Pokazują mapy 
 
  | Test A/B | Wymaga ruchu na obu wersjach | Ta sama grupa, osobne próby
 
- | Koszt | Bezpłatnie lub abonament | Za badanie, od 1 000 zł netto
+ | Koszt | Bezpłatnie lub abonament | Za osobę, od 0,50 zł netto
 
 ## Kiedy co wybrać
 
@@ -1921,7 +1921,7 @@ Hotjar and Microsoft Clarity are tools installed on your site. They show click a
 
  | A/B test | Needs traffic on both versions | Same group, separate samples
 
- | Cost | Free or subscription | Per study, from PLN 1,000 net
+ | Cost | Free or subscription | Per person, from PLN 0.50 net
 
 ## When to choose which
 
@@ -1984,7 +1984,7 @@ Nie. Odpowiada na inne pytanie. Test UX znajduje problemy w ścieżce, badanie u
 Czy w badaniu uwagi są nagrania sesji?+
 Nie. Nie używamy kamery ani nagrań ekranu. Wynik to zbiorcze dane o zachowaniu grupy.
 Czy mogę dodać pytania jak w teście UX?+
-Tak, do 15 pytań po zadaniu, np. czy oferta jest jasna.
+Tak, do 10 pytań po zadaniu (poziom 4), np. czy oferta jest jasna.
 
 Konsultacja merytorycznaTomasz WileńskiPrzewodniczy Grupie ds. Standaryzacji Pomiaru Uważności w IAB Polska. Od ponad 20 lat w marketingu internetowym w Europie Środkowo-Wschodniej, założyciel agencji Interactive Solutions.
 LinkedIn
@@ -2034,7 +2034,7 @@ No. It answers a different question. A UX test finds problems in a journey, atte
 Are there session recordings in attention research?+
 No. We use no cameras or screen recordings. The result is aggregated behavioural data for the group.
 Can I add questions like in a UX test?+
-Yes, up to 15 questions after the task, for example whether the offer is clear.
+Yes, up to 10 questions after the task (level 4), for example whether the offer is clear.
 
 Expert reviewTomasz WileńskiChairs the Attention Measurement Standardisation Group at IAB Polska. More than 20 years in digital marketing in Central and Eastern Europe, founder of the Interactive Solutions agency.
 LinkedIn
@@ -2249,7 +2249,7 @@ Opracowanie: zespół uwazni.org.pl · Konsultacja merytoryczna: Tomasz Wileńsk
 
 ## Jakie grupy
 
-Grupy demograficzne, np. dorośli 18–49 lub seniorzy 55+, grupy z zamiarem zakupowym (zakup auta, kredyt, zmiana operatora, remont) oraz grupy specjalistyczne: decydenci B2B oraz lekarze i farmaceuci po weryfikacji prawa wykonywania zawodu. Pełną listę znajdziesz w konfiguratorze.
+Grupy demograficzne, np. dorośli 18-49 lub seniorzy 55+, grupy z zamiarem zakupowym (zakup auta, kredyt, zmiana operatora, remont) oraz grupy specjalistyczne: decydenci B2B oraz lekarze i farmaceuci (deklarowany zawód). Pełną listę znajdziesz w konfiguratorze.
 
 ## Jak to działa
 
@@ -2301,7 +2301,7 @@ Written by the uwazni.org.pl team · Expert review: Tomasz Wileński, Chair of t
 
 ## Which audiences
 
-Demographic groups, such as adults 18–49 or seniors 55+, purchase-intent groups (buying a car, a loan, switching operator, renovation) and specialist groups: B2B decision-makers, and doctors and pharmacists with a verified licence to practise. The full list is in the configurator.
+Demographic groups, such as adults 18-49 or seniors 55+, purchase-intent groups (buying a car, a loan, switching operator, renovation) and specialist groups: B2B decision-makers, and doctors and pharmacists (declared profession). The full list is in the configurator.
 
 ## How it works
 

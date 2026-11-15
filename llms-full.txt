@@ -176,7 +176,7 @@ Badanie kosztuje od 0,50 zł netto za osobę, która zaliczyła badanie. Cena za
  Skąd wiadomo, że uczestnik jest lekarzem lub farmaceutą?+
 Zawód deklaruje uczestnik przy zapisie. Nie weryfikujemy go w rejestrach.
 Czy badanie spełnia wymogi Prawa farmaceutycznego?+
-Badanie służy ocenie, jak czytany jest materiał, a nie jego dystrybucji. Materiał pokazywany lekarzom musi jednak spełniać przepisy o reklamie produktów leczniczych kierowanej do osób uprawnionych do wystawiania recept. Za treść materiału odpowiada zleceniodawca. Zalecamy, żeby przed badaniem zatwierdził go Twój dział prawny lub medyczny.
+Badanie służy ocenie, jak czytany jest materiał, a nie jego dystrybucji. Materiał pokazywany lekarzom musi jednak spełniać przepisy o reklamie produktów leczniczych kierowanej do osób uprawnionych do wystawiania recept. Za treść materiału odpowiada zleceniodawca. Zalecamy, żeby przed badaniem zatwierdził go Twój dział prawny lub medyczny. Ponieważ zawodu uczestników nie weryfikujemy w rejestrach, materiałów reklamowych leków na receptę nie badamy bez wcześniejszego uzgodnienia sposobu potwierdzenia uprawnień.
 Czy uczestnicy widzą, kto zlecił badanie?+
 Nie musi tak być. Możesz zlecić badanie bez ujawniania marki, o ile materiał nie wymaga podania podmiotu odpowiedzialnego.
 Dlaczego ta grupa jest droższa?+
@@ -239,7 +239,7 @@ A study costs from PLN 0.50 net per person who completed it. The price depends o
  How do you know a participant is a doctor or pharmacist?+
 The participant declares their profession at sign-up. We do not check it in registers.
 Does the study comply with Polish pharmaceutical law?+
-The study assesses how material is read; it does not distribute it. Material shown to doctors must still comply with the rules on advertising medicinal products to people authorised to prescribe. The client is responsible for the content. We recommend that your legal or medical team approves it before the study.
+The study assesses how material is read; it does not distribute it. Material shown to doctors must still comply with the rules on advertising medicinal products to people authorised to prescribe. The client is responsible for the content. We recommend that your legal or medical team approves it before the study. Since we do not verify participants' profession in registers, we do not study advertising materials for prescription medicines without first agreeing how entitlement will be confirmed.
 Do participants see who commissioned the study?+
 Not necessarily. You can run the study without revealing the brand, unless the material requires naming the responsible entity.
 Why is this group more expensive?+

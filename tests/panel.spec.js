@@ -652,3 +652,20 @@ test.describe('oświadczenie o pełnoletności (krok 2)', () => {
     await noHorizontalScroll(page);
   });
 });
+
+test.describe('zgoda #zgodaP bez części o 18 latach', () => {
+  for (const [name, url, text, links] of [
+    ['PL', '/', 'Akceptuję regulamin panelu i politykę prywatności. (wymagane)', [['regulamin panelu', /regulamin-panelu\.html$/], ['politykę prywatności', /polityka-prywatnosci\.html#panelisci$/]]],
+    ['EN', '/en/', 'I accept the panel terms and the privacy policy. (required)', [['panel terms', /panel-terms\.html$/], ['privacy policy', /privacy-policy\.html#panelists$/]]],
+  ]) test(`${name}: treść i linki, pełnoletność tylko w osobnym checkboxie`, async ({ page }) => {
+    await mock(page, {});
+    await page.goto(url);
+    await fillStep1(page);
+    const label = page.locator('label[for=zgodaP]');
+    await expect(label).toHaveText(text);
+    for (const [t, re] of links) await expect(label.getByRole('link', { name: t })).toHaveAttribute('href', re);
+    await expect(label).not.toContainText(/18/);
+    await expect(page.locator('label[for=adultP]')).toContainText('18');
+    await expect(page.locator('#zgodaP')).toHaveAttribute('required', '');
+  });
+});

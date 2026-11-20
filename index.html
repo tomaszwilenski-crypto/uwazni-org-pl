@@ -632,6 +632,7 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
 .topics .chk{min-height:44px}
 .topics .chk input{width:24px;height:24px}
 </style>
+<link rel="stylesheet" href="assets/panel.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "sameAs": ["https://www.linkedin.com/company/uwazni-org-pl/"], "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "alternateName": ["uwazni", "Polski Panel Uważnych", "Polish Attention Panel"], "slogan": "Polski Panel Uważnych", "description": "Polski panel badań uwagi: wybrane grupy Polaków czytają i klikają strony klientów, a uwagę mierzymy sekcja po sekcji.", "knowsAbout": ["attention measurement", "pomiar uwagi", "attention research", "A/B testing", "online research panel", "Attentive Share", "Wskaźnik Uważnych"], "areaServed": {"@type": "Country", "name": "Poland"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/#page", "url": "https://uwazni.org.pl/", "name": "Płatne zadania online: czytaj i zarabiaj | uwazni.org.pl", "description": "Czytaj artykuły z Twoich tematów i dostawaj punkty za uważne czytanie. Do 3 zł za zadanie, wypłata od 5 zł. Panel prowadzi TGV Sp. z o.o.", "inLanguage": "pl-PL", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-15", "primaryImageOfPage": "https://uwazni.org.pl/og-panel.jpg"}, {"@type": "FAQPage", "@id": "https://uwazni.org.pl/#faq", "mainEntity": [{"@type": "Question", "name": "Ile mogę dostać za zadanie?", "acceptedAnswer": {"@type": "Answer", "text": "Od 10 pkt (0,10 zł) za samo czytanie do 300 pkt (3 zł) za czytanie z ankietą. Stawka zależy od rodzaju zadania i Twojego statusu, a widzisz ją przed zgłoszeniem."}}, {"@type": "Question", "name": "Czy to praca?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. To dodatkowe zajęcie na kilka minut, kiedy masz czas. Liczba zadań zależy od tego, ile badań pasuje do Twoich tematów."}}, {"@type": "Question", "name": "Kiedy pierwsze zadania?", "acceptedAnswer": {"@type": "Answer", "text": "Startujemy wkrótce. Osoby z listy dostaną e-mail z zaproszeniem jako pierwsze."}}, {"@type": "Question", "name": "Dlaczego pytacie o treść artykułu?", "acceptedAnswer": {"@type": "Answer", "text": "Bo płacimy za uważne czytanie. Pytanie dotyczy faktu z tekstu i pozwala odróżnić czytanie od przewijania."}}, {"@type": "Question", "name": "Jak wybieracie uczestników do zadania?", "acceptedAnswer": {"@type": "Answer", "text": "Najpierw liczy się dopasowanie do grupy, której szuka badanie, potem status, potem czas od Twojego ostatniego zadania. Bez losowania."}}, {"@type": "Question", "name": "Czy muszę coś instalować?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Wystarczy przeglądarka."}}, {"@type": "Question", "name": "Co dzieje się z moimi danymi?", "acceptedAnswer": {"@type": "Answer", "text": "Na liście zbieramy tylko e-mail, rok urodzenia i Twoje tematy. Klienci dostają wyłącznie wyniki zbiorcze, a my nie sprzedajemy danych. Usunięcie danych: e-mail na pomoc@uwazni.org.pl. Szczegóły w polityce prywatności."}}, {"@type": "Question", "name": "Kto może dołączyć?", "acceptedAnswer": {"@type": "Answer", "text": "Osoby pełnoletnie mieszkające w Polsce. Jedna osoba może mieć jedno konto."}}]}]}</script>
 </head>
 <body>
@@ -846,17 +847,23 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
 <section id="dolacz" class="cta">
   <div class="wrap split">
     <div class="main stack" style="gap:16px">
-      <h2 style="font-size:clamp(34px,5vw,56px)">Zapisz się na listę, zanim ruszymy</h2>
-      <p style="font-size:19px">Zapis zajmuje minutę. Profil uzupełnisz przed pierwszym zadaniem.</p>
+      <h2 style="font-size:clamp(34px,5vw,56px)">Dołącz do panelu</h2>
+      <p style="font-size:19px">Zapis zajmuje minutę. Wyślemy Ci link do potwierdzenia adresu e-mail.</p>
     </div>
-    <form class="side" id="regForm" novalidate style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px" aria-labelledby="regTitle">
-      <h3 id="regTitle">Zapisz się na listę</h3>
-      <p class="grpsel hidden" id="grpSel">Zapisujesz się jako: <b id="grpName"></b> <button type="button" class="as-link" id="grpClear">zmień</button></p><input type="hidden" id="pgrp">
-      <label for="pmail">Adres e-mail</label>
+    <form class="side" id="regForm" data-turnstile novalidate style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px" aria-labelledby="regTitle">
+      <h3 id="regTitle">Dołącz do panelu</h3>
+      <p class="grpsel hidden" id="grpSel">Zapisujesz się jako: <b id="grpName"></b> <button type="button" class="as-link" id="grpClear">zmień</button></p><input type="hidden" id="pgrp"><input type="hidden" id="pref" autocomplete="off">
+      <div class="step stack" data-step="1" style="gap:14px">
+        <p class="stepno">Krok 1 z 2</p>
+        <label for="pmail">Adres e-mail</label>
       <input id="pmail" type="email" placeholder="ty@przyklad.pl" autocomplete="email" required>
       <label for="pyear">Rok urodzenia</label>
       <select id="pyear" required data-ph="Wybierz rok"></select>
-      <fieldset class="topics" id="topics">
+        <div class="actions"><button type="button" class="btn btn-navy" data-next style="font-size:17px;width:100%">Dalej</button></div>
+      </div>
+      <div class="step stack hidden" data-step="2" style="gap:14px">
+        <p class="stepno">Krok 2 z 2</p>
+        <fieldset class="topics" id="topics">
         <legend>Twoje tematy</legend>
         <p class="muted small" id="topicsHint" style="margin:0 0 8px;color:var(--text-2)!important">Wybierz od 3 do 5 tematów. Wybrano: {n}.</p>
         <label class="chk"><input type="checkbox" name="interest" value="tech"><span>Technologia</span></label>
@@ -870,11 +877,13 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
         <label class="chk"><input type="checkbox" name="interest" value="zakupy"><span>Zakupy i moda</span></label>
         <label class="chk"><input type="checkbox" name="interest" value="spoleczenstwo"><span>Polityka i społeczeństwo</span></label>
       </fieldset>
-      <div class="hp" aria-hidden="true"><label for="pweb">Strona</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
-      <div class="consent"><input id="zgodaP" type="checkbox" required><label for="zgodaP">Mam ukończone 18 lat i akceptuję <a href="regulamin-panelu.html">regulamin panelu</a> i <a href="polityka-prywatnosci.html#panelisci">politykę prywatności</a>. (wymagane)</label></div>
-      <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">Chcę dostawać e-mailem informacje o bonusach i nowościach w panelu. Zgodę mogę w każdej chwili cofnąć. (opcjonalnie)</label></div>
-      <p class="rodo">Administratorem danych jest TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warszawa</span>. Przetwarzamy e-mail, rok urodzenia, tematy i wybraną grupę, aby poinformować Cię o starcie panelu i zaprosić do założenia konta (art. 6 ust. 1 lit. b RODO, działania na Twoje żądanie przed zawarciem umowy), a za Twoją zgodą także w celach marketingowych (art. 6 ust. 1 lit. a RODO). Dane z listy przechowujemy do założenia konta, a jeśli go nie założysz, do 12 miesięcy od zapisu. Możesz zażądać usunięcia ich wcześniej. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu, przenoszenia oraz skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html#panelisci">polityce prywatności</a>.</p>
-      <button type="submit" class="btn btn-navy" style="font-size:17px">Zapisz się na listę</button>
+        <div class="hp" aria-hidden="true"><label for="pweb">Strona</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
+        <div class="consent"><input id="zgodaP" type="checkbox" required><label for="zgodaP">Mam ukończone 18 lat i akceptuję <a href="regulamin-panelu.html">regulamin panelu</a> i <a href="polityka-prywatnosci.html#panelisci">politykę prywatności</a>. (wymagane)</label></div>
+        <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">Chcę dostawać e-mailem informacje o bonusach i nowościach w panelu. Zgodę mogę w każdej chwili cofnąć. (opcjonalnie)</label></div>
+        <p class="rodo">Administratorem danych jest TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warszawa</span>. Przetwarzamy e-mail, rok urodzenia, tematy i wybraną grupę, aby założyć Twoje konto w panelu, wysłać Ci link potwierdzający i dobierać zadania (art. 6 ust. 1 lit. b RODO, działania na Twoje żądanie przed zawarciem umowy), a za Twoją zgodą także w celach marketingowych (art. 6 ust. 1 lit. a RODO). Dane przechowujemy, dopóki masz konto, a jeśli nie potwierdzisz adresu e-mail, do 12 miesięcy od zapisu. Możesz zażądać usunięcia ich wcześniej. Formularz chroni przed automatami Cloudflare Turnstile. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu, przenoszenia oraz skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html#panelisci">polityce prywatności</a>.</p>
+        <div class="ts-slot"></div>
+        <div class="actions" style="display:flex;gap:10px;flex-wrap:wrap"><button type="button" class="btn btn-line" data-back>Wstecz</button><button type="submit" class="btn btn-navy" style="font-size:17px;flex:1 1 180px">Dołącz do panelu</button></div>
+      </div>
       <div class="msg hidden" role="status"></div>
     </form>
   </div>
@@ -951,6 +960,7 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
 </div>
 
 <script src="assets/forms.js"></script>
+<script src="assets/panel.js"></script>
 <script>
 function money(v){ var n = String(Math.round(v)); return IS_EN ? 'PLN ' + n.replace(/\B(?=(\d{3})+(?!\d))/g, ',') : n.replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0') + '\u00a0zł'; }
 function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100; return (a >= 2 && a <= 4 && (b < 12 || b > 14)) ? 'miejsca' : 'miejsc'; }
@@ -984,14 +994,6 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
   topicCheck();
   document.getElementById('regForm').addEventListener('reset', function(){ setTimeout(topicCheck, 0); });
 
-  /* Rejestracja */
-  document.getElementById('regForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var f = this; f.querySelector('.msg').classList.remove('hidden');
-    topicCheck();
-    submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', email:f.querySelector('#pmail').value, adult:true, birthYear:+yr.value, interests:tp.filter(function(c){ return c.checked; }).map(function(c){ return c.value; }), group:gIn.value, marketingConsent:f.querySelector('#mktP').checked},
-      'Gotowe. Jesteś na liście. Napiszemy, gdy ruszą zadania dla Twoich tematów.');
-  });
 })();
 /* Statystyki i wypłaty z pliku stats.json (aktualizowany ręcznie, docelowo z systemu).
    Każdy element jest ukryty, dopóki plik nie zawiera prawdziwych danych. */

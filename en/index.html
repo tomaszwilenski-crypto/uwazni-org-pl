@@ -632,6 +632,7 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
 .topics .chk{min-height:44px}
 .topics .chk input{width:24px;height:24px}
 </style>
+<link rel="stylesheet" href="../assets/panel.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "Organization", "name": "uwazni.org.pl", "url": "https://uwazni.org.pl/", "sameAs": ["https://www.linkedin.com/company/uwazni-org-pl/"], "legalName": "TGV Sp. z o.o.", "taxID": "5213684806", "address": {"@type": "PostalAddress", "streetAddress": "Al. Niepodległości 54/34", "postalCode": "02-626", "addressLocality": "Warszawa", "addressCountry": "PL"}, "@id": "https://uwazni.org.pl/#org", "logo": "https://uwazni.org.pl/logo.png", "email": "kontakt@uwazni.org.pl", "alternateName": ["uwazni", "Polski Panel Uważnych", "Polish Attention Panel"], "slogan": "Polish Attention Panel", "description": "Polish attention research panel: selected groups of people living in Poland read and click client pages; attention is measured section by section.", "knowsAbout": ["attention measurement", "pomiar uwagi", "attention research", "A/B testing", "online research panel", "Attentive Share", "Wskaźnik Uważnych"], "areaServed": {"@type": "Country", "name": "Poland"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "kontakt@uwazni.org.pl", "availableLanguage": ["pl", "en"]}, {"@type": "ContactPoint", "contactType": "customer support", "email": "pomoc@uwazni.org.pl", "availableLanguage": ["pl", "en"]}]}, {"@type": "WebSite", "@id": "https://uwazni.org.pl/#site", "url": "https://uwazni.org.pl/", "name": "uwazni.org.pl", "inLanguage": ["pl-PL", "en"], "publisher": {"@id": "https://uwazni.org.pl/#org"}}, {"@type": "WebPage", "@id": "https://uwazni.org.pl/en/#page", "url": "https://uwazni.org.pl/en/", "name": "Paid online tasks in Poland: read and earn | uwazni.org.pl", "description": "Read articles on your topics and earn points for careful reading. Up to PLN 3 per task, payouts from PLN 5. The panel is run by TGV Sp. z o.o.", "inLanguage": "en", "isPartOf": {"@id": "https://uwazni.org.pl/#site"}, "dateModified": "2026-11-15", "primaryImageOfPage": "https://uwazni.org.pl/og-panel-en.jpg"}, {"@type": "FAQPage", "@id": "https://uwazni.org.pl/en/#faq", "mainEntity": [{"@type": "Question", "name": "How much can I earn per task?", "acceptedAnswer": {"@type": "Answer", "text": "From 10 pts (PLN 0.10) for reading alone to 300 pts (PLN 3) for reading with a survey. The rate depends on the type of task and your status, and you see it before you apply."}}, {"@type": "Question", "name": "Is this a job?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is something extra for a few minutes when you have time. The number of tasks depends on how many studies match your topics."}}, {"@type": "Question", "name": "When do the first tasks start?", "acceptedAnswer": {"@type": "Answer", "text": "We launch soon. People on the list get an email invitation first."}}, {"@type": "Question", "name": "Why do you ask about the content of the article?", "acceptedAnswer": {"@type": "Answer", "text": "Because we pay for attentive reading. The question is about a fact from the text and helps tell reading from scrolling."}}, {"@type": "Question", "name": "How do you choose participants for a task?", "acceptedAnswer": {"@type": "Answer", "text": "Fit with the group the study is looking for comes first, then your status, then the time since your last task. No lottery."}}, {"@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. A browser is enough."}}, {"@type": "Question", "name": "What happens to my data?", "acceptedAnswer": {"@type": "Answer", "text": "On the list we collect only your email, year of birth and topics. Clients only get aggregate results and we do not sell data. To have your data deleted, email pomoc@uwazni.org.pl. Details in the privacy policy."}}, {"@type": "Question", "name": "Who can join?", "acceptedAnswer": {"@type": "Answer", "text": "Adults living in Poland. One person can have one account."}}]}]}</script>
 </head>
 <body>
@@ -846,17 +847,23 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
 <section id="join" class="cta">
   <div class="wrap split">
     <div class="main stack" style="gap:16px">
-      <h2 style="font-size:clamp(34px,5vw,56px)">Join the list before we launch</h2>
-      <p style="font-size:19px">Signing up takes a minute. You complete your profile before your first task.</p>
+      <h2 style="font-size:clamp(34px,5vw,56px)">Join the panel</h2>
+      <p style="font-size:19px">Signing up takes a minute. We email you a link to confirm your address.</p>
     </div>
-    <form class="side" id="regForm" novalidate style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px" aria-labelledby="regTitle">
-      <h3 id="regTitle">Join the waiting list</h3>
-      <p class="grpsel hidden" id="grpSel">Signing up as: <b id="grpName"></b> <button type="button" class="as-link" id="grpClear">change</button></p><input type="hidden" id="pgrp">
-      <label for="pmail">Email address</label>
+    <form class="side" id="regForm" data-turnstile novalidate style="background:#fff;color:var(--navy);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px" aria-labelledby="regTitle">
+      <h3 id="regTitle">Join the panel</h3>
+      <p class="grpsel hidden" id="grpSel">Signing up as: <b id="grpName"></b> <button type="button" class="as-link" id="grpClear">change</button></p><input type="hidden" id="pgrp"><input type="hidden" id="pref" autocomplete="off">
+      <div class="step stack" data-step="1" style="gap:14px">
+        <p class="stepno">Step 1 of 2</p>
+        <label for="pmail">Email address</label>
       <input id="pmail" type="email" placeholder="you@example.com" autocomplete="email" required>
       <label for="pyear">Year of birth</label>
       <select id="pyear" required data-ph="Select year"></select>
-      <fieldset class="topics" id="topics">
+        <div class="actions"><button type="button" class="btn btn-navy" data-next style="font-size:17px;width:100%">Next</button></div>
+      </div>
+      <div class="step stack hidden" data-step="2" style="gap:14px">
+        <p class="stepno">Step 2 of 2</p>
+        <fieldset class="topics" id="topics">
         <legend>Your topics</legend>
         <p class="muted small" id="topicsHint" style="margin:0 0 8px;color:var(--text-2)!important">Choose 3 to 5 topics. Selected: {n}.</p>
         <label class="chk"><input type="checkbox" name="interest" value="tech"><span>Technology</span></label>
@@ -870,11 +877,13 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
         <label class="chk"><input type="checkbox" name="interest" value="zakupy"><span>Shopping and fashion</span></label>
         <label class="chk"><input type="checkbox" name="interest" value="spoleczenstwo"><span>Politics and society</span></label>
       </fieldset>
-      <div class="hp" aria-hidden="true"><label for="pweb">Website</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
-      <div class="consent"><input id="zgodaP" type="checkbox" required><label for="zgodaP">I am 18 or older and I accept the <a href="panel-terms.html">panel terms</a> and the <a href="privacy-policy.html#panelists">privacy policy</a>. (required)</label></div>
-      <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">I want to receive emails about bonuses and panel news. I can withdraw this consent at any time. (optional)</label></div>
-      <p class="rodo">The data controller is TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warsaw</span>, Poland. We process your email, year of birth, topics and chosen group to tell you when the panel starts and to invite you to create an account (Art. 6(1)(b) GDPR, steps taken at your request before entering into a contract) and, with your consent, for marketing (Art. 6(1)(a) GDPR). We keep list data until you create an account, or for up to 12 months from sign-up if you do not. You can ask us to delete it earlier. You have the right to access, rectify and erase your data, to restrict processing, to object, to data portability and to lodge a complaint with the President of the Polish Data Protection Office (UODO). Details in the <a href="privacy-policy.html#panelists">privacy policy</a>.</p>
-      <button type="submit" class="btn btn-navy" style="font-size:17px">Join the waiting list</button>
+        <div class="hp" aria-hidden="true"><label for="pweb">Website</label><input id="pweb" type="text" tabindex="-1" autocomplete="off"></div>
+        <div class="consent"><input id="zgodaP" type="checkbox" required><label for="zgodaP">I am 18 or older and I accept the <a href="panel-terms.html">panel terms</a> and the <a href="privacy-policy.html#panelists">privacy policy</a>. (required)</label></div>
+        <div class="consent"><input id="mktP" type="checkbox"><label for="mktP">I want to receive emails about bonuses and panel news. I can withdraw this consent at any time. (optional)</label></div>
+        <p class="rodo">The data controller is TGV Sp. z o.o., Al. Niepodległości 54/34, <span style="white-space:nowrap">02-626 Warsaw</span>, Poland. We process your email, year of birth, topics and chosen group to create your panel account, send you a confirmation link and match tasks to you (Art. 6(1)(b) GDPR, steps taken at your request before entering into a contract) and, with your consent, for marketing (Art. 6(1)(a) GDPR). We keep your data while you have an account; if you do not confirm your email, for up to 12 months from sign-up. You can ask us to delete it earlier. The form is protected against bots by Cloudflare Turnstile. You have the right to access, rectify and erase your data, to restrict processing, to object, to data portability and to lodge a complaint with the President of the Polish Data Protection Office (UODO). Details in the <a href="privacy-policy.html#panelists">privacy policy</a>.</p>
+        <div class="ts-slot"></div>
+        <div class="actions" style="display:flex;gap:10px;flex-wrap:wrap"><button type="button" class="btn btn-line" data-back>Back</button><button type="submit" class="btn btn-navy" style="font-size:17px;flex:1 1 180px">Join the panel</button></div>
+      </div>
       <div class="msg hidden" role="status"></div>
     </form>
   </div>
@@ -951,6 +960,7 @@ header.site.sw-hidden .switch{transform:translateY(-8px);opacity:0;visibility:hi
 </div>
 
 <script src="../assets/forms.js"></script>
+<script src="../assets/panel.js"></script>
 <script>
 function money(v){ var n = String(Math.round(v)); return IS_EN ? 'PLN ' + n.replace(/\B(?=(\d{3})+(?!\d))/g, ',') : n.replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0') + '\u00a0zł'; }
 function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100; return (a >= 2 && a <= 4 && (b < 12 || b > 14)) ? 'miejsca' : 'miejsc'; }
@@ -984,14 +994,6 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
   topicCheck();
   document.getElementById('regForm').addEventListener('reset', function(){ setTimeout(topicCheck, 0); });
 
-  /* Sign-up */
-  document.getElementById('regForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var f = this; f.querySelector('.msg').classList.remove('hidden');
-    topicCheck();
-    submitForm(f, CONFIG.endpoints.register, {type:'panelist_signup', lang:'en', email:f.querySelector('#pmail').value, adult:true, birthYear:+yr.value, interests:tp.filter(function(c){ return c.checked; }).map(function(c){ return c.value; }), group:gIn.value, marketingConsent:f.querySelector('#mktP').checked},
-      'Done. You are on the list. We will email you when tasks start for your topics.');
-  });
 })();
 /* Statystyki i wypłaty z pliku stats.json (aktualizowany ręcznie, docelowo z systemu).
    Każdy element jest ukryty, dopóki plik nie zawiera prawdziwych danych. */

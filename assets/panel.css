@@ -1,0 +1,77 @@
+/* Strony konta panelisty (/zaloguj, /konto, /dolacz/sprawdz-poczte). Działa razem z bazowym CSS strony. */
+.app{max-width:640px;margin:0 auto;padding:40px 16px 88px;display:flex;flex-direction:column;gap:20px}
+.app h1{font-size:clamp(30px,5vw,44px);line-height:1.08}
+.app .lead{font-size:18px;color:var(--text-2);max-width:none}
+.app .card{border:1px solid var(--line);background:#fff}
+.app .card.soft{background:var(--bg-2);border-color:var(--bg-2)}
+.app .card h2{font-size:22px;letter-spacing:-.02em;line-height:1.2}
+.app form{display:flex;flex-direction:column;gap:14px}
+.app input[type=email],.app input[type=text],.app input[type=tel]{width:100%}
+.app select{font:inherit;font-size:16px;padding:12px 14px;border:2px solid var(--line-2);border-radius:10px;background:#fff;color:var(--text);min-height:48px}
+.app .btn{width:100%}
+@media(min-width:520px){.app .btn{width:auto}}
+.app .btn.full{width:100%}
+.app .btn-line[disabled],.app .btn[disabled]{opacity:.55;cursor:not-allowed}
+.app .btn.busy{cursor:wait}
+.app .txtbtn{font:inherit;align-self:flex-start;background:none;border:0;padding:10px 0;color:var(--red);font-weight:800;font-size:15px;min-height:44px;cursor:pointer;text-decoration:underline}
+.app .txtbtn[disabled]{color:var(--muted);cursor:default;text-decoration:none}
+.app .msg{margin:0}
+.app .notice{background:#EEF2FF;color:#1D2F7A;border-radius:12px;padding:14px 16px;font-size:15px;font-weight:600;line-height:1.5}
+.app .stat{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.app .stat b{font-size:40px;line-height:1;letter-spacing:-.03em}
+.app .stat span{font-size:18px;color:var(--text-2);font-weight:700}
+.app .progress{height:12px}
+.app .pbar{display:flex;justify-content:space-between;gap:12px;font-weight:700;font-size:15px}
+.app .chip.live{background:var(--red-soft);color:var(--red-dark);align-self:flex-start}
+.app .sample{border:2px dashed var(--line-2);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px;background:#fff}
+.app .sample .meta{display:flex;flex-wrap:wrap;gap:8px}
+.app .reflink{display:flex;gap:8px;flex-wrap:wrap}
+.app .reflink input{flex:1 1 220px;min-width:0;font-size:15px}
+.app .reflink .btn{flex:0 0 auto;min-height:48px}
+.app fieldset{border:0;margin:0;padding:0;min-width:0;display:flex;flex-direction:column;gap:8px}
+.app legend{font-size:20px;font-weight:800;letter-spacing:-.02em;padding:0;margin-bottom:8px}
+.app .choice{display:flex;gap:12px;align-items:center;min-height:52px;padding:10px 14px;border:2px solid var(--line-2);border-radius:12px;cursor:pointer;font-weight:600;font-size:16px;background:#fff}
+.app .choice input{width:22px;height:22px;margin:0;flex:none;accent-color:var(--red)}
+.app .choice:has(input:checked){border-color:var(--navy);background:var(--bg-2)}
+.app .choices.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.app .choices.two .choice{padding:10px}
+.app .acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.app .acts .spacer{flex:1}
+.app .danger{border-color:var(--red)}
+.app .btn-red[disabled]{background:var(--red)}
+.app dl{margin:0;display:grid;gap:8px}
+.app dl div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px;font-size:15px}
+.app dt{font-weight:700}
+.app dd{margin:0;color:var(--text-2);text-align:right}
+.app .rodo{margin:0}
+.ts-slot{min-height:0}
+.ts-slot:not(:empty){min-height:65px}
+nav.links a[aria-current=page]{border-bottom:3px solid var(--red);padding-bottom:2px}
+
+/* formularz zapisu #dolacz: dwa kroki, widoczny bez przewijania na telefonie */
+#regForm .step.hidden{display:none}
+#regForm .stepno{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0}
+#regForm .topics{display:grid;grid-template-columns:1fr 1fr;column-gap:10px}
+#regForm .topics legend,#regForm .topics #topicsHint{grid-column:1/-1}
+#regForm .topics .chk{min-height:44px;font-size:14px;gap:8px}
+#regForm .topics .chk input{width:22px;height:22px}
+#regForm .field-err{margin:0;font-size:14px;font-weight:700;color:var(--red-dark)}
+@media(max-width:719px){
+  #regForm{padding:20px!important;gap:12px!important}
+}
+#regForm .step{display:flex;flex-direction:column;gap:14px}
+#regForm .step.hidden{display:none!important}
+/* telefon: po wejściu na #dolacz krok 1 formularza mieści się na ekranie */
+@media(max-width:719px){
+  #dolacz.cta{padding:28px 0 40px;scroll-margin-top:88px}
+  #dolacz .split{gap:16px}
+  #dolacz .main h2{font-size:30px!important}
+  #dolacz .main p{font-size:16px!important}
+  #regForm h3{font-size:20px}
+  #regForm .grpsel{margin:0}
+  #regForm [data-step="1"]{gap:10px!important}
+}
+@media(max-width:560px){
+  body[data-page] header.site .wrap{grid-template-columns:minmax(0,1fr)}
+  body[data-page] header.site .wrap>nav.links{justify-content:space-between;gap:8px}
+}

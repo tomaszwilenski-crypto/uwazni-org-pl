@@ -4,6 +4,8 @@ module.exports = defineConfig({
   testDir: './tests',
   timeout: 30000,
   fullyParallel: true,
+  workers: 3,
+  retries: 1,   // Chrome czasem nie startuje przy dużej równoległości (błąd newPage), to nie błąd testów
   reporter: 'list',
   webServer: { command: 'python3 -m http.server 4173 >/dev/null 2>&1', port: 4173, reuseExistingServer: true },
   use: {

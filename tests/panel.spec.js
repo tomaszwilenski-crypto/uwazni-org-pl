@@ -458,7 +458,15 @@ test.describe('wylogowanie', () => {
     await page.route('https://api.uwazni.org.pl/api/panel/logout', (r) => r.abort());
     await page.goto('/konto/');
     await page.getByRole('button', { name: 'Wyloguj' }).click();
-    await expect(page.locator('.msg.err').first()).toContainText('Brak połączenia');
+    await expect(page.locator('[data-signout-err]')).toBeVisible();
+    expect(new URL(page.url()).pathname).toBe('/konto/');
+  });
+  for (const status of [403, 500]) test(`/logout ${status}: bez przekierowania, komunikat, przycisk aktywny`, async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME], 'POST /logout': () => [status, { error: 'origin_not_allowed' }] });
+    await page.goto('/konto/');
+    await page.getByRole('button', { name: 'Wyloguj' }).click();
+    await expect(page.locator('[data-signout-err]')).toHaveText('Nie udało się wylogować. Spróbuj ponownie.');
+    await expect(page.getByRole('button', { name: 'Wyloguj' })).toBeEnabled();
     expect(new URL(page.url()).pathname).toBe('/konto/');
   });
   test('brak przycisku na stronie logowania i sprawdz-poczte', async ({ page }) => {

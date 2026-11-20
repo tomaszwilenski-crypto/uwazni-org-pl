@@ -511,9 +511,10 @@ function initSignOut(){
     b.addEventListener('click', function(){
       b.disabled = true;
       api('POST', '/logout').then(function(r){
-        if (r.status === 0) {
+        if (!r.ok) {   // tylko 204 oznacza wyczyszczoną sesję; przy błędzie zostajemy na stronie
           b.disabled = false;
-          var a = app(); if (a) a.insertBefore(h('p', {class: 'msg err', role: 'alert', text: T.err.network}), a.firstChild);
+          var a = app();
+          if (a) { var old = a.querySelector('[data-signout-err]'); if (old) old.remove(); a.insertBefore(h('p', {class: 'msg err', role: 'alert', 'data-signout-err': true, text: EN ? 'Could not sign you out. Try again.' : 'Nie udało się wylogować. Spróbuj ponownie.'}), a.firstChild); }
           return;
         }
         store('uwazni_pending', null);

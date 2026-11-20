@@ -39,8 +39,8 @@ test.describe('rejestracja', () => {
     await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken === 'tok-mock');
     await page.click('#regForm button[type=submit]');
     await page.waitForURL('**/dolacz/sprawdz-poczte/');
-    expect(calls).toHaveLength(1);
-    expect(calls[0]).toMatchObject({ method: 'POST', path: '/register', contentType: 'application/json', body: {
+    expect(calls.filter((c) => c.method === 'POST')).toHaveLength(1);
+    expect(calls.find((c) => c.method === 'POST')).toMatchObject({ method: 'POST', path: '/register', contentType: 'application/json', body: {
       email: 'Ty@Przyklad.pl', birth_year: 1985, interests: ['tech', 'biznes', 'auto'],
       consents: { terms: true, privacy: true, marketing: true }, lang: 'pl', ref: 'AB12CD34', turnstile_token: 'tok-mock' } });
     const log = await page.evaluate(() => 0); // log fetch jest w poprzednim dokumencie, patrz test poniżej
@@ -67,7 +67,7 @@ test.describe('rejestracja', () => {
     await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
     await page.click('#regForm button[type=submit]');
     await page.waitForURL('**/en/join/check-email/');
-    expect(calls[0].body.lang).toBe('en');
+    expect(calls.find((c) => c.method === 'POST').body.lang).toBe('en');
     await expect(page.locator('h1')).toHaveText('Check your inbox');
   });
 
@@ -94,7 +94,7 @@ test.describe('rejestracja', () => {
     expect(await page.locator('#topics input:checked').count()).toBe(5);
     await page.locator('input[value=sport]').click();  // szósty temat: odrzucony
     expect(await page.locator('#topics input:checked').count()).toBe(5);
-    expect(calls).toHaveLength(0);
+    expect(calls.filter((c) => c.method !== 'GET')).toHaveLength(0);
     await shot(page, '03-dolacz-blad-walidacji');
   });
 
@@ -509,5 +509,48 @@ test.describe('spójne progi wypłat (regulamin: pierwsza od 5 zł, kolejne od 2
     for (const sel of ['meta[name=description]', 'meta[property="og:description"]']) expect(await page.locator(sel).getAttribute('content')).toMatch(re);
     expect(html).not.toMatch(bad);
     await expect(page.locator('#wyplaty, main').first()).toContainText(url === '/' ? 'Pierwsza wypłata od 5 zł, kolejne od 20 zł' : 'Your first payout is from PLN 5, later ones from PLN 20');
+  });
+});
+
+test.describe('strona główna: nawigacja zależna od sesji', () => {
+  const cases = [['PL', '/', '/konto/', '/konto/profil/', 'Moje konto', 'Zaloguj', 'Dołącz'], ['EN', '/en/', '/en/account/', '/en/account/profile/', 'My account', 'Log in', 'Join']];
+  for (const [name, url, acct, prof, mine, login, join] of cases) {
+    test(`${name}: 200 z /me: Moje konto zamiast logowania i dołączenia, hero na profil, jedno żądanie z credentials include`, async ({ page }) => {
+      const calls = await mock(page, { 'GET /me': () => [200, ME] });
+      await page.goto(url);
+      const navBtn = page.locator('nav.links a.btn-red');
+      await expect(navBtn).toHaveText(mine);
+      await expect(navBtn).toHaveAttribute('href', acct);
+      await expect(page.locator('nav.links a[data-login=panelist]')).toHaveCount(0);
+      await expect(page.locator('[data-hero-join]')).toHaveAttribute('href', prof);
+      expect(calls.filter((c) => c.method === 'GET' && c.path === '/me')).toHaveLength(1);
+      expect(calls).toHaveLength(1);
+      const log = await page.evaluate(() => window.__fetchLog);
+      expect(log.filter((l) => l.url.endsWith('/api/panel/me')).map((l) => l.credentials)).toEqual(['include']);
+    });
+    test(`${name}: 401 z /me: widok niezalogowany bez zmian`, async ({ page }) => {
+      await mock(page, { 'GET /me': () => [401, { error: 'unauthorized' }] });
+      await page.goto(url);
+      await page.waitForLoadState('networkidle');
+      await expect(page.locator('nav.links a[data-login=panelist]')).toHaveText(login);
+      await expect(page.locator('nav.links a.btn-red')).toHaveText(join);
+      await expect(page.locator('[data-hero-join]')).toHaveAttribute('href', url === '/' ? '#dolacz' : '#join');
+    });
+    test(`${name}: błąd sieci: widok niezalogowany, bez wyjątku`, async ({ page }) => {
+      const errors = []; page.on('pageerror', (e) => errors.push(e.message));
+      await mock(page, {});
+      await page.route('https://api.uwazni.org.pl/**', (r) => r.abort());
+      await page.goto(url);
+      await page.waitForLoadState('networkidle');
+      await expect(page.locator('nav.links a[data-login=panelist]')).toHaveText(login);
+      await expect(page.locator('nav.links a.btn-red')).toHaveText(join);
+      expect(errors).toEqual([]);
+    });
+  }
+  test('inne strony publiczne nie pytają o /me (np. regulamin, dla firm)', async ({ page }) => {
+    const calls = await mock(page, { 'GET /me': () => [200, ME] });
+    for (const u of ['/regulamin-panelu.html', '/dla-firm.html', '/en/for-business.html']) await page.goto(u);
+    await page.waitForLoadState('networkidle');
+    expect(calls).toHaveLength(0);
   });
 });

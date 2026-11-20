@@ -524,6 +524,16 @@ function initSignOut(){
   });
 }
 
+/* Strona główna: jeden GET /me. 200 = nawigacja „Moje konto” i hero na profil; 401 lub błąd = widok niezalogowany bez zmian. */
+function homeSession(){
+  api('GET', '/me').then(function(res){
+    if (!res.ok) return;
+    document.querySelectorAll('nav.links a[data-login=panelist]').forEach(function(a){ a.remove(); });
+    document.querySelectorAll('[data-nav-join]').forEach(function(a){ a.textContent = EN ? 'My account' : 'Moje konto'; a.setAttribute('href', PATHS.account); });
+    document.querySelectorAll('[data-hero-join]').forEach(function(a){ a.setAttribute('href', PATHS.profile); });
+  });
+}
+
 /* ===== Start ===== */
 document.addEventListener('DOMContentLoaded', function(){
   if (PAGE === 'login') pageLogin();
@@ -531,7 +541,7 @@ document.addEventListener('DOMContentLoaded', function(){
   else if (PAGE === 'account') pageAccount();
   else if (PAGE === 'profile') pageProfile();
   else if (PAGE === 'settings') pageSettings();
-  else { if (handleReturn()) return; initSignup(); }
+  else { if (handleReturn()) return; initSignup(); if (PAGE === 'home') homeSession(); }
   initSignOut();
   document.querySelectorAll('nav.links a[data-nav]').forEach(function(a){ if (a.dataset.nav === PAGE) a.setAttribute('aria-current', 'page'); });
 });

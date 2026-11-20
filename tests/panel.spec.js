@@ -497,3 +497,17 @@ test.describe('hero i teksty panelisty', () => {
     await expect(page.locator('main')).not.toContainText(/waiting list|We launch soon|People on the list/i);
   });
 });
+
+test.describe('spójne progi wypłat (regulamin: pierwsza od 5 zł, kolejne od 20 zł)', () => {
+  for (const [url, re, bad] of [
+    ['/', /pierwsza wypłata od 5 zł, kolejne od 20 zł/, /wypłata od 5 zł\./],
+    ['/en/', /first payout from PLN 5, later from PLN 20/, /payouts from PLN 5\./],
+  ]) test(`meta, og:description i sekcja wypłat ${url}`, async ({ page }) => {
+    await mock(page, {});
+    await page.goto(url);
+    const html = await page.content();
+    for (const sel of ['meta[name=description]', 'meta[property="og:description"]']) expect(await page.locator(sel).getAttribute('content')).toMatch(re);
+    expect(html).not.toMatch(bad);
+    await expect(page.locator('#wyplaty, main').first()).toContainText(url === '/' ? 'Pierwsza wypłata od 5 zł, kolejne od 20 zł' : 'Your first payout is from PLN 5, later ones from PLN 20');
+  });
+});

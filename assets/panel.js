@@ -21,7 +21,7 @@ var T = EN ? {
   },
   step:'Step {n} of {m}', next:'Next', back:'Back', skip:'Skip', saveNext:'Save and continue', saving:'Saving…', sending:'Sending…',
   join:'Join the panel', joinFail:'Could not sign you up.',
-  needEmail:'Enter your email address.', needYear:'Choose your year of birth.', needTopics:'Choose 3 to 5 topics.', needConsent:'Accept the panel terms and the privacy policy.', needVerify:'Complete the verification first.',
+  needAdult:'Confirm that you are 18 or older.', needEmail:'Enter your email address.', needYear:'Choose your year of birth.', needTopics:'Choose 3 to 5 topics.', needConsent:'Accept the panel terms and the privacy policy.', needVerify:'Complete the verification first.',
   pts:'pts', zl:function(n){ return 'PLN ' + n.toFixed(2); }
 } : {
   err:{
@@ -38,7 +38,7 @@ var T = EN ? {
   },
   step:'Krok {n} z {m}', next:'Dalej', back:'Wstecz', skip:'Pomiń', saveNext:'Zapisz i dalej', saving:'Zapisuję…', sending:'Wysyłam…',
   join:'Dołącz do panelu', joinFail:'Nie udało się zapisać.',
-  needEmail:'Wpisz adres e-mail.', needYear:'Wybierz rok urodzenia.', needTopics:'Wybierz od 3 do 5 tematów.', needConsent:'Zaznacz zgodę na regulamin i politykę prywatności.', needVerify:'Najpierw wykonaj weryfikację.',
+  needAdult:'Potwierdź, że masz ukończone 18 lat.', needEmail:'Wpisz adres e-mail.', needYear:'Wybierz rok urodzenia.', needTopics:'Wybierz od 3 do 5 tematów.', needConsent:'Zaznacz zgodę na regulamin i politykę prywatności.', needVerify:'Najpierw wykonaj weryfikację.',
   pts:'pkt', zl:function(n){ return n.toFixed(2).replace('.', ',') + ' zł'; }
 };
 
@@ -126,6 +126,10 @@ function initSignup(){
     if (!$('pyear').value) { fieldErr(1, T.needYear); $('pyear').focus(); return false; }
     return true;
   }
+  // przycisk zapisu aktywny dopiero po oświadczeniu o pełnoletności
+  var subBtn = f.querySelector('button[type=submit]'), adult = $('adultP');
+  function syncSubmit(){ subBtn.disabled = !adult.checked; }
+  adult.addEventListener('change', syncSubmit); syncSubmit();
   f.querySelector('[data-next]').addEventListener('click', function(){ clearErr(); if (step1Ok()) show(2); });
   f.querySelector('[data-back]').addEventListener('click', function(){ show(1); });
   // Enter w kroku 1 przechodzi dalej, nie wysyła formularza
@@ -138,6 +142,7 @@ function initSignup(){
     var btn = f.querySelector('button[type=submit]');
     var picked = topics();
     if (picked.length < 3 || picked.length > 5) { fieldErr(2, T.needTopics); return; }
+    if (!adult.checked) { fieldErr(2, T.needAdult); adult.focus(); return; }
     if (!$('zgodaP').checked) { fieldErr(2, T.needConsent); $('zgodaP').focus(); return; }
     var hp = $('pweb');
     if (hp && hp.value) { store('uwazni_pending', {email: $('pmail').value.trim().toLowerCase()}); location.href = PATHS.check; return; }  // spam: udajemy sukces, nic nie wysyłamy
@@ -145,7 +150,7 @@ function initSignup(){
     var email = $('pmail').value.trim();
     var body = {
       email: email, birth_year: +$('pyear').value, interests: picked,
-      consents: {terms: true, privacy: true, marketing: $('mktP').checked},
+      adult_declared: true, consents: {terms: true, privacy: true, marketing: $('mktP').checked},
       lang: EN ? 'en' : 'pl', turnstile_token: f.dataset.tsToken
     };
     if ($('pgrp') && $('pgrp').value) body.group = $('pgrp').value;
@@ -153,7 +158,7 @@ function initSignup(){
     btn.disabled = true; var label = btn.textContent; btn.textContent = T.sending;
     api('POST', '/register', body).then(function(res){
       if (res.status === 202) { store('uwazni_pending', {email: email.toLowerCase()}); location.href = PATHS.check; return; }
-      btn.disabled = false; btn.textContent = label; tsReset(f);
+      btn.textContent = label; syncSubmit(); tsReset(f);
       var m = errText(res);
       if (res.data.error === 'invalid_email' || res.data.error === 'invalid_birth_year' || res.data.error === 'underage') { show(1); fieldErr(1, m); }
       else fieldErr(2, m);

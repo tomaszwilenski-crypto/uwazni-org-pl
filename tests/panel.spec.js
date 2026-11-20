@@ -14,6 +14,7 @@ async function fillStep1(page, en) {
 }
 async function fillStep2(page) {
   for (const v of ['tech', 'biznes', 'auto']) await page.check(`input[value=${v}]`);
+  await page.check('#adultP');
   await page.check('#zgodaP');
 }
 
@@ -83,12 +84,13 @@ test.describe('rejestracja', () => {
     await page.click('[data-next]');
     await expect(page.locator('.field-err')).toHaveText('Wybierz rok urodzenia.');
     await page.selectOption('#pyear', '1990'); await page.click('[data-next]');
+    await page.check('#adultP');
     await page.click('#regForm button[type=submit]');
     await expect(page.locator('.field-err')).toHaveText('Wybierz od 3 do 5 tematów.');
     for (const v of ['tech', 'biznes', 'auto']) await page.check(`input[value=${v}]`);
     await page.click('#regForm button[type=submit]');
     await expect(page.locator('.field-err')).toHaveText('Zaznacz zgodę na regulamin i politykę prywatności.');
-    await page.check('#zgodaP');
+    await page.check('#zgodaP');   // zgoda zaznaczona po błędzie
     // maks. 5 tematów
     for (const v of ['zdrowie', 'dom']) await page.check(`input[value=${v}]`);
     expect(await page.locator('#topics input:checked').count()).toBe(5);
@@ -607,4 +609,46 @@ test.describe('strona główna: blok „masz już konto” zamiast formularza', 
       expect(cf.length).toBeGreaterThan(0);
     });
   }
+});
+
+test.describe('oświadczenie o pełnoletności (krok 2)', () => {
+  for (const [name, url, label] of [['PL', '/', 'Oświadczam, że mam ukończone 18 lat. (wymagane)'], ['EN', '/en/', 'I confirm I am 18 or older. (required)']]) {
+    test(`${name}: przycisk zapisu nieaktywny bez checkboxa, adult_declared: true w POST`, async ({ page }) => {
+      const calls = await mock(page, { 'POST /register': () => [202, { ok: true }] });
+      await page.goto(url);
+      await fillStep1(page);
+      for (const v of ['tech', 'biznes', 'auto']) await page.check(`input[value=${v}]`);
+      await page.check('#zgodaP');
+      await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
+      const btn = page.locator('#regForm button[type=submit]');
+      await expect(page.locator('label[for=adultP]')).toHaveText(label);
+      await expect(page.locator('#adultP')).toHaveAttribute('required', '');
+      await expect(btn).toBeDisabled();
+      await btn.click({ force: true });
+      expect(calls.filter((c) => c.method === 'POST')).toHaveLength(0);
+      await page.check('#adultP');
+      await expect(btn).toBeEnabled();
+      await page.uncheck('#adultP');
+      await expect(btn).toBeDisabled();
+      await page.check('#adultP');
+      await btn.click();
+      await page.waitForURL(/sprawdz-poczte|check-email/);
+      expect(calls.find((c) => c.method === 'POST').body).toMatchObject({ adult_declared: true, consents: { terms: true, privacy: true } });
+    });
+  }
+  test('po błędzie API przycisk zostaje aktywny, dopóki checkbox jest zaznaczony', async ({ page }) => {
+    await mock(page, { 'POST /register': () => [403, { error: 'turnstile_failed' }] });
+    await page.goto('/');
+    await fillStep1(page); await fillStep2(page);
+    await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
+    await page.click('#regForm button[type=submit]');
+    await expect(page.locator('.field-err')).toBeVisible();
+    await expect(page.locator('#regForm button[type=submit]')).toBeEnabled();
+  });
+  test('mobile 375 px: krok 2 bez poziomego przewijania', async ({ page }) => {
+    await mock(page, {});
+    await page.goto('/');
+    await fillStep1(page);
+    await noHorizontalScroll(page);
+  });
 });

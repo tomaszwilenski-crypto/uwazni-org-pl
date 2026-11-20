@@ -554,3 +554,53 @@ test.describe('strona główna: nawigacja zależna od sesji', () => {
     expect(calls).toHaveLength(0);
   });
 });
+
+test.describe('strona główna: blok „masz już konto” zamiast formularza', () => {
+  for (const [name, url, prof, h2, btn, anchor] of [
+    ['PL', '/', '/konto/profil/', 'Masz już konto w panelu.', 'Przejdź do profilu', '#dolacz'],
+    ['EN', '/en/', '/en/account/profile/', 'You already have a panel account.', 'Go to your profile', '#join'],
+  ]) {
+    test(`${name}: zalogowany: blok zamiast formularza, wszystkie CTA na profil, jedno /me, bez Turnstile`, async ({ page }) => {
+      const errors = [], cf = [];
+      page.on('pageerror', (e) => errors.push(e.message));
+      page.on('request', (r) => { if (r.url().includes('challenges.cloudflare.com')) cf.push(r.url()); });
+      const calls = await mock(page, { 'GET /me': () => [200, ME] });
+      await page.goto(url);
+      const box = page.locator('#haveaccount');
+      await expect(box.locator('h2')).toHaveText(h2);
+      await expect(box.getByRole('link', { name: btn })).toHaveAttribute('href', prof);
+      await expect(page.locator('#regForm')).toHaveCount(0);
+      await expect(page.locator(url === '/' ? '#dolacz' : '#join')).toHaveCount(1);   // sekcja zostaje, ma tylko blok
+      // brak linków do usuniętej kotwicy; nawigacja prowadzi do konta, reszta do profilu
+      await expect(page.locator(`a[href="${anchor}"]`)).toHaveCount(0);
+      await expect(page.locator('a[data-grp]').first()).toHaveAttribute('href', prof);
+      await expect(page.locator('[data-hero-join]')).toHaveAttribute('href', prof);
+      await expect(page.locator('footer a.btn-ghost')).toHaveAttribute('href', prof);
+      await expect(page.locator('[data-nav-join]')).toHaveAttribute('href', url === '/' ? '/konto/' : '/en/account/');
+      // klik w kartę grupy nie wywołuje błędu (formularza już nie ma)
+      await page.locator('a[data-grp]').first().evaluate((a) => a.addEventListener('click', (e) => e.preventDefault()));
+      await page.locator('a[data-grp]').first().click();
+      await page.waitForTimeout(600);
+      expect(calls.filter((c) => c.path === '/me')).toHaveLength(1);
+      expect(calls).toHaveLength(1);
+      expect(cf).toEqual([]);
+      expect(errors).toEqual([]);
+      await shot(page, `13-glowna-zalogowany-${name}`);
+    });
+    test(`${name}: niezalogowany: formularz na miejscu, CTA na kotwicę, Turnstile dopiero na kroku 2`, async ({ page }) => {
+      const cf = [];
+      page.on('request', (r) => { if (r.url().includes('challenges.cloudflare.com')) cf.push(r.url()); });
+      await mock(page, { 'GET /me': () => [401, { error: 'unauthorized' }] });
+      await page.goto(url);
+      await page.waitForLoadState('networkidle');
+      await expect(page.locator('#regForm')).toHaveCount(1);
+      await expect(page.locator('#haveaccount')).toHaveCount(0);
+      await expect(page.locator('[data-hero-join]')).toHaveAttribute('href', anchor);
+      await expect(page.locator('a[data-grp]').first()).toHaveAttribute('href', anchor);
+      expect(cf).toEqual([]);
+      await fillStep1(page);
+      await expect(page.locator('.ts-slot')).toContainText('turnstile mock');
+      expect(cf.length).toBeGreaterThan(0);
+    });
+  }
+});

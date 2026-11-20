@@ -970,8 +970,9 @@ function plMiejsc(n){ if (n === 1) return 'miejsce'; var a = n % 10, b = n % 100
   /* Grupy poszukiwane: wybór grupy przed zapisem */
   var gIn=document.getElementById('pgrp'), gSel=document.getElementById('grpSel');
   document.querySelectorAll('[data-grp]').forEach(function(a){ a.addEventListener('click',function(){
+    if(!document.getElementById('regForm')) return;   // zalogowany: formularza nie ma, link prowadzi do profilu
     gIn.value=a.dataset.grp; document.getElementById('grpName').textContent=a.dataset.grpName; gSel.classList.remove('hidden');
-    setTimeout(function(){ document.getElementById('pmail').focus({preventScroll:true}); },400);
+    setTimeout(function(){ var m=document.getElementById('pmail'); if(m) m.focus({preventScroll:true}); },400);
   }); });
   document.getElementById('grpClear').addEventListener('click',function(){ gIn.value=''; gSel.classList.add('hidden'); document.getElementById('szukamy')&&document.getElementById('szukamy').scrollIntoView({behavior:'smooth'}); document.getElementById('wanted')&&document.getElementById('wanted').scrollIntoView({behavior:'smooth'}); });
 

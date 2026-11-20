@@ -118,11 +118,14 @@ function tsRender(form){
   });
 }
 window.uwazniTurnstileReady = function(){ document.querySelectorAll('form[data-turnstile]').forEach(tsRender); };
-document.addEventListener('DOMContentLoaded', function(){
-  if (!CONFIG.turnstileSiteKey || !document.querySelector('form[data-turnstile]')) return;
+/* Skrypt Cloudflare ładujemy dopiero, gdy użytkownik dojdzie do kroku z widgetem (nie przy samym wejściu na stronę). */
+var _tsLoading = false;
+function tsLoad(){
+  if (_tsLoading || !CONFIG.turnstileSiteKey || !document.querySelector('form[data-turnstile]')) return;
+  _tsLoading = true;
   var s = document.createElement('script');
   s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=uwazniTurnstileReady';
   s.async = true; s.defer = true; document.head.appendChild(s);
-});
+}
 
 var IS_EN = document.documentElement.lang === 'en';

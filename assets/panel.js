@@ -115,7 +115,7 @@ function initSignup(){
   function show(n){
     cur = n; clearErr();
     for (var i = 0; i < steps.length; i++) steps[i].classList.toggle('hidden', i !== n - 1);
-    if (n === 2) tsRender(f);
+    if (n === 2) { tsLoad(); tsRender(f); }
     var first = steps[n - 1].querySelector('input:not([type=hidden]):not([tabindex="-1"]),select');
     if (first && n === 2) first.focus({preventScroll: true});
   }
@@ -530,7 +530,18 @@ function homeSession(){
     if (!res.ok) return;
     document.querySelectorAll('nav.links a[data-login=panelist]').forEach(function(a){ a.remove(); });
     document.querySelectorAll('[data-nav-join]').forEach(function(a){ a.textContent = EN ? 'My account' : 'Moje konto'; a.setAttribute('href', PATHS.account); });
-    document.querySelectorAll('[data-hero-join]').forEach(function(a){ a.setAttribute('href', PATHS.profile); });
+    // pozostałe przyciski „Dołącz”, w tym grupy docelowe i stopka, prowadzą do profilu
+    document.querySelectorAll('a[href="#dolacz"],a[href="#join"],a[href$="index.html#dolacz"],a[href$="index.html#join"]').forEach(function(a){
+      if (!a.hasAttribute('data-nav-join')) a.setAttribute('href', PATHS.profile);
+    });
+    // sekcja #dolacz z formularzem: krótki blok dla zalogowanego (formularz zostaje w HTML dla niezalogowanych)
+    var form = $('regForm'), sec = form && form.closest('section');
+    if (sec) {
+      sec.textContent = '';
+      sec.appendChild(h('div', {class: 'wrap'}, h('div', {class: 'stack', id: 'haveaccount', style: 'gap:16px;align-items:flex-start'},
+        h('h2', {style: 'font-size:clamp(34px,5vw,56px)', text: EN ? 'You already have a panel account.' : 'Masz już konto w panelu.'}),
+        h('a', {class: 'btn btn-white', href: PATHS.profile, style: 'font-size:17px', text: EN ? 'Go to your profile' : 'Przejdź do profilu'}))));
+    }
   });
 }
 

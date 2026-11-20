@@ -556,9 +556,9 @@ test.describe('strona główna: nawigacja zależna od sesji', () => {
 });
 
 test.describe('strona główna: blok „masz już konto” zamiast formularza', () => {
-  for (const [name, url, prof, h2, btn, anchor] of [
-    ['PL', '/', '/konto/profil/', 'Masz już konto w panelu.', 'Przejdź do profilu', '#dolacz'],
-    ['EN', '/en/', '/en/account/profile/', 'You already have a panel account.', 'Go to your profile', '#join'],
+  for (const [name, url, prof, h2, btn, anchor, note, heroOut, noteOut] of [
+    ['PL', '/', '/konto/profil/', 'Masz już konto w panelu.', 'Przejdź do profilu', '#dolacz', 'Jesteś w panelu. Uzupełniony profil to pierwsze zadania.', 'Dołącz do panelu', 'Zapis zajmuje minutę. Pierwsze zadania dostaną osoby z uzupełnionym profilem.'],
+    ['EN', '/en/', '/en/account/profile/', 'You already have a panel account.', 'Go to your profile', '#join', "You're in the panel. A complete profile gets you the first tasks.", 'Join the panel', 'Signing up takes a minute. The first tasks go to people with a complete profile.'],
   ]) {
     test(`${name}: zalogowany: blok zamiast formularza, wszystkie CTA na profil, jedno /me, bez Turnstile`, async ({ page }) => {
       const errors = [], cf = [];
@@ -575,6 +575,8 @@ test.describe('strona główna: blok „masz już konto” zamiast formularza', 
       await expect(page.locator(`a[href="${anchor}"]`)).toHaveCount(0);
       await expect(page.locator('a[data-grp]').first()).toHaveAttribute('href', prof);
       await expect(page.locator('[data-hero-join]')).toHaveAttribute('href', prof);
+      await expect(page.locator('[data-hero-join]')).toHaveText(btn);
+      await expect(page.locator('[data-hero-note]')).toHaveText(note);
       await expect(page.locator('footer a.btn-ghost')).toHaveAttribute('href', prof);
       await expect(page.locator('[data-nav-join]')).toHaveAttribute('href', url === '/' ? '/konto/' : '/en/account/');
       // klik w kartę grupy nie wywołuje błędu (formularza już nie ma)
@@ -596,6 +598,8 @@ test.describe('strona główna: blok „masz już konto” zamiast formularza', 
       await expect(page.locator('#regForm')).toHaveCount(1);
       await expect(page.locator('#haveaccount')).toHaveCount(0);
       await expect(page.locator('[data-hero-join]')).toHaveAttribute('href', anchor);
+      await expect(page.locator('[data-hero-join]')).toHaveText(heroOut);
+      await expect(page.locator('[data-hero-note]')).toHaveText(noteOut);
       await expect(page.locator('a[data-grp]').first()).toHaveAttribute('href', anchor);
       expect(cf).toEqual([]);
       await fillStep1(page);

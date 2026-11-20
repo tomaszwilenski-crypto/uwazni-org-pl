@@ -530,6 +530,8 @@ function homeSession(){
     if (!res.ok) return;
     document.querySelectorAll('nav.links a[data-login=panelist]').forEach(function(a){ a.remove(); });
     document.querySelectorAll('[data-nav-join]').forEach(function(a){ a.textContent = EN ? 'My account' : 'Moje konto'; a.setAttribute('href', PATHS.account); });
+    document.querySelectorAll('[data-hero-join]').forEach(function(a){ a.textContent = EN ? 'Go to your profile' : 'Przejdź do profilu'; });
+    document.querySelectorAll('[data-hero-note]').forEach(function(p){ p.textContent = EN ? "You're in the panel. A complete profile gets you the first tasks." : 'Jesteś w panelu. Uzupełniony profil to pierwsze zadania.'; });
     // pozostałe przyciski „Dołącz”, w tym grupy docelowe i stopka, prowadzą do profilu
     document.querySelectorAll('a[href="#dolacz"],a[href="#join"],a[href$="index.html#dolacz"],a[href$="index.html#join"]').forEach(function(a){
       if (!a.hasAttribute('data-nav-join')) a.setAttribute('href', PATHS.profile);

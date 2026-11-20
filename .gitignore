@@ -4,3 +4,5 @@ node_modules/
 .dev.vars
 .env*
 CLAUDE.md
+test-results/
+playwright-report/

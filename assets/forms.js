@@ -4,10 +4,12 @@ var CONFIG = {
   web3formsKey: '710eb010-e277-4c4c-98ab-de7fca9685ff',                   // klucz z web3forms.com (publiczny z założenia); puste = formularze pokażą adres e-mail
   gaId: '',                           // np. 'G-XXXXXXX'; puste = brak GA
   submitUrl: 'https://api.web3forms.com/submit',  // adres wysyłki formularzy (po przepięciu na własne API: adres Workera)
-  turnstileSiteKey: '',               // klucz witryny Cloudflare Turnstile; puste = widget się nie renderuje
+  turnstileSiteKey: '0x4AAAAAAGKQhiVP8g8DR0G3',  // klucz witryny Cloudflare Turnstile (publiczny); widget tylko w formularzach z atrybutem data-turnstile
+  apiBase: 'https://api.uwazni.org.pl/api/panel',  // API panelisty (rejestracja, logowanie, konto)
   endpoints: { lead: 'lead', sampleReport: 'sampleReport', register: 'register', support: 'support' },
   loginClient: '',                    // puste = link „Zaloguj” ukryty do czasu uruchomienia panelu
-  loginPanelist: '',
+  loginPanelist: '/zaloguj/',
+  loginPanelistEn: '/en/login/',
   salesEmail: 'kontakt@uwazni.org.pl',
   supportEmail: 'pomoc@uwazni.org.pl'
 };
@@ -72,7 +74,7 @@ gtag('consent', 'default', {
     });
     document.querySelectorAll('[data-email=sales]').forEach(function(el){ el.textContent = CONFIG.salesEmail; el.href = 'mailto:' + CONFIG.salesEmail; });
     document.querySelectorAll('[data-email=support]').forEach(function(el){ el.textContent = CONFIG.supportEmail; el.href = 'mailto:' + CONFIG.supportEmail; });
-    document.querySelectorAll('[data-login]').forEach(function(el){ var u = el.dataset.login === 'client' ? CONFIG.loginClient : CONFIG.loginPanelist; if (u) el.href = u; else el.remove(); });
+    document.querySelectorAll('[data-login]').forEach(function(el){ var u = el.dataset.login === 'client' ? CONFIG.loginClient : (IS_EN && CONFIG.loginPanelistEn ? CONFIG.loginPanelistEn : CONFIG.loginPanelist); if (u) el.href = u; else el.remove(); });
   });
 })();
 
@@ -84,7 +86,7 @@ function submitForm(form, endpoint, payload, okText, onOk){
   if (!form.checkValidity()) { form.reportValidity(); return; }
   var hp = form.querySelector('.hp input');
   if (hp && hp.value) { say('ok', okText); if (onOk) onOk(msg); return; }            // spam: udajemy sukces, nic nie wysyłamy
-  if (CONFIG.turnstileSiteKey && !form.dataset.tsToken) { say('err', IS_EN ? 'Please complete the verification first.' : 'Najpierw wykonaj weryfikację.'); return; }
+  if (CONFIG.turnstileSiteKey && form.hasAttribute('data-turnstile') && !form.dataset.tsToken) { say('err', IS_EN ? 'Please complete the verification first.' : 'Najpierw wykonaj weryfikację.'); return; }
   btn.disabled = true;
   var done = function(){ btn.disabled = false; say('ok', okText); form.reset(); tsReset(form); if (onOk) onOk(msg); };
   var fail = function(){ btn.disabled = false; tsReset(form); say('err', (IS_EN ? 'Sending failed. Please try again or write to ' : 'Nie udało się wysłać. Spróbuj ponownie albo napisz na ') + CONFIG.salesEmail + '.'); };
@@ -94,34 +96,30 @@ function submitForm(form, endpoint, payload, okText, onOk){
   var body = {access_key: CONFIG.web3formsKey, subject: 'uwazni.org.pl' + (IS_EN ? ' [EN]' : '') + ': ' + (SUBJ[endpoint] || endpoint), from_name: 'uwazni.org.pl', strona: location.href};
   Object.keys(payload).forEach(function(k){ var v = payload[k]; body[k] = (v && typeof v === 'object') ? JSON.stringify(v) : v; });
   if (payload.email) body.replyto = payload.email;
-  if (CONFIG.turnstileSiteKey) body['cf-turnstile-response'] = form.dataset.tsToken;
   fetch(CONFIG.submitUrl, {method:'POST', headers:{'Content-Type':'application/json', 'Accept':'application/json'}, body: JSON.stringify(body)})
     .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ if (r.ok && j.success !== false) done(); else fail(); }); })
     .catch(fail);
 }
 
 
-/* ===== Cloudflare Turnstile: widget renderuje się tylko, gdy CONFIG.turnstileSiteKey nie jest pusty ===== */
+/* ===== Cloudflare Turnstile: tylko w formularzach z atrybutem data-turnstile (zapis do panelu); renderowany, gdy .ts-slot jest widoczny ===== */
 function tsReset(form){
   delete form.dataset.tsToken;
   if (window.turnstile && form._tsId != null) { try { window.turnstile.reset(form._tsId); } catch (e) {} }
 }
-window.uwazniTurnstileReady = function(){
-  document.querySelectorAll('form').forEach(function(form){
-    var btn = form.querySelector('button[type=submit]');
-    if (!btn || !form.querySelector('.msg')) return;
-    var slot = document.createElement('div'); slot.className = 'ts-slot';
-    btn.parentNode.insertBefore(slot, btn);
-    form._tsId = window.turnstile.render(slot, {
-      sitekey: CONFIG.turnstileSiteKey, language: IS_EN ? 'en' : 'pl',
-      callback: function(t){ form.dataset.tsToken = t; },
-      'expired-callback': function(){ delete form.dataset.tsToken; },
-      'error-callback': function(){ delete form.dataset.tsToken; }
-    });
+function tsRender(form){
+  var slot = form.querySelector('.ts-slot');
+  if (!window.turnstile || form._tsId != null || !slot || slot.offsetParent === null) return;
+  form._tsId = window.turnstile.render(slot, {
+    sitekey: CONFIG.turnstileSiteKey, language: IS_EN ? 'en' : 'pl',
+    callback: function(t){ form.dataset.tsToken = t; },
+    'expired-callback': function(){ delete form.dataset.tsToken; },
+    'error-callback': function(){ delete form.dataset.tsToken; }
   });
-};
+}
+window.uwazniTurnstileReady = function(){ document.querySelectorAll('form[data-turnstile]').forEach(tsRender); };
 document.addEventListener('DOMContentLoaded', function(){
-  if (!CONFIG.turnstileSiteKey) return;
+  if (!CONFIG.turnstileSiteKey || !document.querySelector('form[data-turnstile]')) return;
   var s = document.createElement('script');
   s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=uwazniTurnstileReady';
   s.async = true; s.defer = true; document.head.appendChild(s);

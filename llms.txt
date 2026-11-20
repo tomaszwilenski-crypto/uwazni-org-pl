@@ -68,7 +68,7 @@
 - Stawki (Złoty / Srebrny / Nowy): uważne czytanie, ok. 3 min: 20 / 14 / 10 pkt (0,20 / 0,14 / 0,10 zł). Czytanie i interakcja, ok. 3,5 min: 35 / 25 / 18 pkt. Czytanie i 3 pytania, ok. 5 min: 120 / 85 pkt (od statusu Srebrny). Czytanie i ankieta, ok. 8 min: 300 / 210 pkt (od statusu Srebrny). W grupach trudno dostępnych stawki są wyższe o 50%. Do 3 zł za zadanie.
 - Statusy: Nowy (po zapisie i potwierdzeniu e-maila), Srebrny (10 zaliczonych zadań, min. 90% poprawnych odpowiedzi, profil w 80%), Złoty (40 zaliczonych zadań, min. 95% poprawnych odpowiedzi, pełny profil, potwierdzony telefon). Status liczony z ostatnich 20 zadań. Wybór uczestników: dopasowanie do grupy, status, czas od ostatniego zadania, bez losowania. Pełny profil to 200 pkt.
 - Wypłata: pierwsza od 5 zł, kolejne od 20 zł, przelewem na konto w polskim banku w ciągu 5 dni roboczych. BLIK i karty podarunkowe: wkrótce. Polecenie: 300 pkt (3 zł), gdy polecona osoba wypłaci pierwsze 20 zł.
-- Kto może dołączyć: pełnoletnie osoby mieszkające w Polsce. Jedno konto na osobę, telefon potwierdzany SMS-em przed pierwszą wypłatą. Panel jeszcze nie wystartował: trwa zapis na listę (e-mail, rok urodzenia, tematy). Panel prowadzi TGV Sp. z o.o.
+- Kto może dołączyć: pełnoletnie osoby mieszkające w Polsce. Jedno konto na osobę, telefon potwierdzany SMS-em przed pierwszą wypłatą. Zapis zajmuje minutę (e-mail, rok urodzenia, tematy), potem potwierdzasz adres i uzupełniasz profil w koncie. Panel prowadzi TGV Sp. z o.o.
 
 ## Dokumenty
 
@@ -98,7 +98,7 @@ uwazni.org.pl is a Polish attention research panel. Companies commission a study
   - Level 4, reading and survey: PLN 5.50. Like level 1, plus a survey of up to 10 questions, about 5 minutes.
 - Pricing rules: hard-to-reach groups (e.g. seniors 65+, B2B decision-makers): +50% of the level price. Minimum order: levels 1 and 2 from 1,000 people (from PLN 500 net), levels 3 and 4 from 100 people; delivery time for levels 3 and 4 depends on group availability and we confirm it in the quote. Delivery standard: 5,000 people per article in 7 days, 15,000 in 14-21 days.
 - Examples: 5,000 people, level 1 = PLN 2,500; 15,000 people, level 1 = PLN 7,500; 300 people, level 3 = PLN 750. Prices are net, VAT is added. International clients welcome.
-- [Paid reading tasks for people living in Poland](https://uwazni.org.pl/en/): points for attentive reading, 1 pt = 1 grosz, up to PLN 3 per task (3 to 8 minutes). Rates depend on status (Gold, Silver, New) and are shown before you apply. Payouts by bank transfer, first from PLN 5, later from PLN 20. Waiting list open, the panel launches soon. Run by TGV Sp. z o.o.
+- [Paid reading tasks for people living in Poland](https://uwazni.org.pl/en/): points for attentive reading, 1 pt = 1 grosz, up to PLN 3 per task (3 to 8 minutes). Rates depend on status (Gold, Silver, New) and are shown before you apply. Payouts by bank transfer, first from PLN 5, later from PLN 20. Sign-up takes a minute; the first tasks go to people with a complete profile. Run by TGV Sp. z o.o.
 - Documents (English translations, Polish versions binding): [Terms of service](https://uwazni.org.pl/en/service-terms.html), [Panel terms](https://uwazni.org.pl/en/panel-terms.html), [Privacy policy](https://uwazni.org.pl/en/privacy-policy.html).
 
 ## Industry studies (English)

@@ -75,3 +75,6 @@ nav.links a[aria-current=page]{border-bottom:3px solid var(--red);padding-bottom
   body[data-page] header.site .wrap{grid-template-columns:minmax(0,1fr)}
   body[data-page] header.site .wrap>nav.links{justify-content:space-between;gap:8px}
 }
+nav.links button.signout{font:inherit;font-weight:600;font-size:15px;background:none;border:0;padding:0;min-height:44px;color:var(--navy);cursor:pointer}
+nav.links button.signout:hover{color:var(--red)}
+nav.links button.signout[disabled]{opacity:.5;cursor:wait}

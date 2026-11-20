@@ -505,6 +505,24 @@ function pageSettings(){
   });
 }
 
+/* ===== Wylogowanie: POST /logout (204, idempotentne), potem strona publiczna ===== */
+function initSignOut(){
+  document.querySelectorAll('[data-signout]').forEach(function(b){
+    b.addEventListener('click', function(){
+      b.disabled = true;
+      api('POST', '/logout').then(function(r){
+        if (r.status === 0) {
+          b.disabled = false;
+          var a = app(); if (a) a.insertBefore(h('p', {class: 'msg err', role: 'alert', text: T.err.network}), a.firstChild);
+          return;
+        }
+        store('uwazni_pending', null);
+        location.href = PATHS.home;
+      });
+    });
+  });
+}
+
 /* ===== Start ===== */
 document.addEventListener('DOMContentLoaded', function(){
   if (PAGE === 'login') pageLogin();
@@ -513,6 +531,7 @@ document.addEventListener('DOMContentLoaded', function(){
   else if (PAGE === 'profile') pageProfile();
   else if (PAGE === 'settings') pageSettings();
   else { if (handleReturn()) return; initSignup(); }
+  initSignOut();
   document.querySelectorAll('nav.links a[data-nav]').forEach(function(a){ if (a.dataset.nav === PAGE) a.setAttribute('aria-current', 'page'); });
 });
 })();

@@ -416,3 +416,76 @@ test.describe('mobile 375 px: brak poziomego przewijania na stronach aplikacji',
     });
   }
 });
+
+test.describe('wylogowanie', () => {
+  for (const [lang, urls, label, home] of [
+    ['PL', ['/konto/', '/konto/profil/', '/konto/ustawienia/'], 'Wyloguj', '/'],
+    ['EN', ['/en/account/', '/en/account/profile/', '/en/account/settings/'], 'Sign out', '/en/'],
+  ]) for (const url of urls) test(`${lang} ${url}: POST /logout z credentials include, potem ${home}`, async ({ page }) => {
+    const calls = await mock(page, { 'GET /me': () => [200, ME], 'GET /me/profile': () => [200, PROFILE], 'GET /me/consents': () => [200, { current: {}, history: [] }], 'POST /logout': () => ({ status: 204, text: '' }) });
+    await page.goto(url);
+    const btn = page.getByRole('button', { name: label });
+    await expect(btn).toBeVisible();
+    await btn.click();
+    await page.waitForURL((u) => u.pathname === home);
+    const lo = calls.filter((c) => c.path === '/logout');
+    expect(lo).toHaveLength(1);
+    expect(lo[0].method).toBe('POST');
+    // credentials: "include" sprawdzone w poprzednim dokumencie, więc przez zdarzenie żądania poniżej w osobnym teście
+  });
+  test('credentials: "include" i brak ciała w żądaniu /logout', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME], 'POST /logout': () => ({ status: 204, text: '' }) });
+    await page.goto('/konto/');
+    await page.evaluate(() => { const f = window.fetch; window.fetch = function (u, o) { sessionStorage.setItem('lastfetch', JSON.stringify({ u: String(u), c: o && o.credentials, body: o && o.body })); return f.apply(this, arguments); }; });
+    await page.getByRole('button', { name: 'Wyloguj' }).click();
+    await page.waitForURL((u) => u.pathname === '/');
+    const last = JSON.parse(await page.evaluate(() => sessionStorage.getItem('lastfetch')));
+    expect(last).toMatchObject({ c: 'include' });
+    expect(last.u).toMatch(/\/api\/panel\/logout$/);
+    expect(last.body).toBeUndefined();
+  });
+  test('wylogowany: /konto/ po 401 prowadzi na logowanie', async ({ page }) => {
+    let out = false;
+    await mock(page, { 'GET /me': () => (out ? [401, { error: 'unauthorized' }] : [200, ME]), 'POST /logout': () => { out = true; return { status: 204, text: '' }; } });
+    await page.goto('/konto/');
+    await page.getByRole('button', { name: 'Wyloguj' }).click();
+    await page.waitForURL((u) => u.pathname === '/');
+    await page.goto('/konto/');
+    await page.waitForURL('**/zaloguj/');
+  });
+  test('błąd sieci przy wylogowaniu: zostaje na stronie z komunikatem', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME] });
+    await page.route('https://api.uwazni.org.pl/api/panel/logout', (r) => r.abort());
+    await page.goto('/konto/');
+    await page.getByRole('button', { name: 'Wyloguj' }).click();
+    await expect(page.locator('.msg.err').first()).toContainText('Brak połączenia');
+    expect(new URL(page.url()).pathname).toBe('/konto/');
+  });
+  test('brak przycisku na stronie logowania i sprawdz-poczte', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [401, {}] });
+    for (const u of ['/zaloguj/', '/dolacz/sprawdz-poczte/', '/en/login/']) { await page.goto(u); await expect(page.locator('[data-signout]')).toHaveCount(0); }
+  });
+  test('mobile 375 px: nawigacja z przyciskiem mieści się', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME] });
+    await page.goto('/konto/');
+    await noHorizontalScroll(page);
+    await shot(page, '12-konto-wyloguj');
+  });
+});
+
+test.describe('hero i teksty panelisty', () => {
+  test('PL: Dołącz do panelu, bez „listy”', async ({ page }) => {
+    await mock(page, {});
+    await page.goto('/');
+    await expect(page.locator('main a.btn-red').first()).toHaveText('Dołącz do panelu');
+    await expect(page.locator('main')).toContainText('Zapis zajmuje minutę. Pierwsze zadania dostaną osoby z uzupełnionym profilem.');
+    await expect(page.locator('main')).not.toContainText(/Zapisz się na listę|Startujemy wkrótce|Osoby z listy/);
+  });
+  test('EN: Join the panel, bez „waiting list”', async ({ page }) => {
+    await mock(page, {});
+    await page.goto('/en/');
+    await expect(page.locator('main a.btn-red').first()).toHaveText('Join the panel');
+    await expect(page.locator('main')).toContainText('Signing up takes a minute. The first tasks go to people with a complete profile.');
+    await expect(page.locator('main')).not.toContainText(/waiting list|We launch soon|People on the list/i);
+  });
+});

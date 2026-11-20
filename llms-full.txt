@@ -2997,7 +2997,7 @@ Dla panelistów
 
 ## Płatne zadania: czytaj artykuły z Twoich tematów i dostawaj punkty
 
-Panel uwazni.org.pl jeszcze nie wystartował, trwa zapis na listę. Osoby z listy dostaną zaproszenie jako pierwsze. Wybieramy artykuły z tematów panelisty. Czytasz kilka minut, odpowiadasz na pytanie o treść i dostajesz punkty. 1 pkt = 1 gr. Do 3 zł za zadanie.
+Zapis do panelu uwazni.org.pl zajmuje minutę. Pierwsze zadania dostają osoby z uzupełnionym profilem. Wybieramy artykuły z tematów panelisty. Czytasz kilka minut, odpowiadasz na pytanie o treść i dostajesz punkty. 1 pkt = 1 gr. Do 3 zł za zadanie.
 
 ## Stawki za zadanie
 
@@ -3023,7 +3023,7 @@ Pierwsza wypłata od 5 zł, kolejne od 20 zł, przelewem na konto w polskim bank
 
 ## Dane
 
-Na liście zbieramy tylko e-mail, rok urodzenia i tematy (oraz grupę, jeśli została wybrana). Klienci dostają wyłącznie wyniki zbiorcze. Panel prowadzi TGV Sp. z o.o., KRS 0000534661, NIP 5213684806. Kontakt: pomoc@uwazni.org.pl.
+Przy zapisie zbieramy tylko e-mail, rok urodzenia i tematy (oraz grupę, jeśli została wybrana). Klienci dostają wyłącznie wyniki zbiorcze. Panel prowadzi TGV Sp. z o.o., KRS 0000534661, NIP 5213684806. Kontakt: pomoc@uwazni.org.pl.
 
 ---
 
@@ -3033,7 +3033,7 @@ For panelists
 
 ## Paid reading tasks: read articles on your topics and earn points
 
-The uwazni.org.pl panel has not launched yet and the waiting list is open. People on the list get the invitation first. We pick articles on the panelist's topics. You read for a few minutes, answer a question about the text and earn points. 1 pt = 1 grosz. Up to PLN 3 per task.
+Signing up for the uwazni.org.pl panel takes a minute. The first tasks go to people with a complete profile. We pick articles on the panelist's topics. You read for a few minutes, answer a question about the text and earn points. 1 pt = 1 grosz. Up to PLN 3 per task.
 
 ## Rates per task
 
@@ -3059,4 +3059,4 @@ First payout from PLN 5, later ones from PLN 20, by bank transfer to a Polish ba
 
 ## Data
 
-On the list we collect only email, year of birth and topics (and a group, if chosen). Clients only get aggregate results. The panel is run by TGV Sp. z o.o., KRS 0000534661, NIP 5213684806. Contact: pomoc@uwazni.org.pl.
+When you sign up we collect only email, year of birth and topics (and a group, if chosen). Clients only get aggregate results. The panel is run by TGV Sp. z o.o., KRS 0000534661, NIP 5213684806. Contact: pomoc@uwazni.org.pl.

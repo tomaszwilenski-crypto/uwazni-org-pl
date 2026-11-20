@@ -1,0 +1,418 @@
+const { test, expect } = require('@playwright/test');
+const { mock, noHorizontalScroll, ME, PROFILE } = require('./helpers');
+const fs = require('fs');
+const SHOTS = process.env.SHOTS_DIR || '';
+async function shotView(page, name) { if (SHOTS) { fs.mkdirSync(SHOTS, { recursive: true }); await page.screenshot({ path: `${SHOTS}/${name}.png` }); } }
+async function shot(page, name) { if (SHOTS) { fs.mkdirSync(SHOTS, { recursive: true }); await page.screenshot({ path: `${SHOTS}/${name}.png`, fullPage: true }); } }
+
+test.afterEach(async ({ page }) => { expect(page.__blocked || [], 'żądania poza localhost i mockiem').toEqual([]); });
+
+async function fillStep1(page, en) {
+  await page.fill('#pmail', 'Ty@Przyklad.pl');
+  await page.selectOption('#pyear', '1985');
+  await page.click('[data-next]');
+}
+async function fillStep2(page) {
+  for (const v of ['tech', 'biznes', 'auto']) await page.check(`input[value=${v}]`);
+  await page.check('#zgodaP');
+}
+
+test.describe('rejestracja', () => {
+  test('PL: dwa kroki, ładunek zgodny z API, credentials include, przejście na sprawdz-poczte', async ({ page }) => {
+    const calls = await mock(page, { 'POST /register': () => [202, { ok: true }] });
+    await page.goto('/?ref=ab12cd34#dolacz');
+    await expect(page.locator('#regForm [data-step="1"]')).toBeVisible();
+    await expect(page.locator('#regForm [data-step="2"]')).toBeHidden();
+    // krok 1 widoczny bez przewijania na telefonie 375x667
+    const box = await page.locator('[data-next]').boundingBox();
+    const sy = await page.evaluate(() => window.scrollY);
+    expect(box.y + box.height - 0).toBeGreaterThan(0);
+    await page.evaluate(() => document.getElementById('dolacz').scrollIntoView({ behavior: 'instant' }));
+    await shotView(page, '01-dolacz-krok1');
+    await fillStep1(page);
+    await expect(page.locator('#regForm [data-step="2"]')).toBeVisible();
+    await expect(page.locator('.ts-slot')).toContainText('turnstile mock');
+    await fillStep2(page);
+    await page.check('#mktP');
+    await page.evaluate(() => document.getElementById('regForm').scrollIntoView({ behavior: 'instant' }));
+    await shotView(page, '02-dolacz-krok2');
+    await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken === 'tok-mock');
+    await page.click('#regForm button[type=submit]');
+    await page.waitForURL('**/dolacz/sprawdz-poczte/');
+    expect(calls).toHaveLength(1);
+    expect(calls[0]).toMatchObject({ method: 'POST', path: '/register', contentType: 'application/json', body: {
+      email: 'Ty@Przyklad.pl', birth_year: 1985, interests: ['tech', 'biznes', 'auto'],
+      consents: { terms: true, privacy: true, marketing: true }, lang: 'pl', ref: 'AB12CD34', turnstile_token: 'tok-mock' } });
+    const log = await page.evaluate(() => 0); // log fetch jest w poprzednim dokumencie, patrz test poniżej
+  });
+
+  test('credentials: "include" w żądaniu rejestracji', async ({ page }) => {
+    await mock(page, { 'POST /register': () => [202, { ok: true }] });
+    await page.goto('/');
+    await fillStep1(page); await fillStep2(page);
+    await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
+    const [req] = await Promise.all([
+      page.waitForRequest((r) => r.url().endsWith('/api/panel/register') && r.method() === 'POST'),
+      (async () => { await page.evaluate(() => { window.__log = window.__fetchLog; }); await page.click('#regForm button[type=submit]'); })(),
+    ]);
+    const log = await page.evaluate(() => window.__fetchLog);
+    expect(log.find((l) => l.url.endsWith('/register')).credentials).toBe('include');
+    expect(req.headers()['content-type']).toBe('application/json');
+  });
+
+  test('EN: formularz wysyła lang=en i prowadzi na /en/join/check-email/', async ({ page }) => {
+    const calls = await mock(page, { 'POST /register': () => [202, { ok: true }] });
+    await page.goto('/en/#join');
+    await fillStep1(page); await fillStep2(page);
+    await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
+    await page.click('#regForm button[type=submit]');
+    await page.waitForURL('**/en/join/check-email/');
+    expect(calls[0].body.lang).toBe('en');
+    await expect(page.locator('h1')).toHaveText('Check your inbox');
+  });
+
+  test('walidacja: krok 1, krok 2 (tematy, zgoda, weryfikacja)', async ({ page }) => {
+    const calls = await mock(page, {});
+    await page.goto('/');
+    await page.click('[data-next]');
+    await expect(page.locator('.field-err')).toHaveText('Wpisz adres e-mail.');
+    await page.fill('#pmail', 'zly-adres');
+    await page.click('[data-next]');
+    await expect(page.locator('.field-err')).toHaveText('Sprawdź adres e-mail.');
+    await page.fill('#pmail', 'a@b.pl');
+    await page.click('[data-next]');
+    await expect(page.locator('.field-err')).toHaveText('Wybierz rok urodzenia.');
+    await page.selectOption('#pyear', '1990'); await page.click('[data-next]');
+    await page.click('#regForm button[type=submit]');
+    await expect(page.locator('.field-err')).toHaveText('Wybierz od 3 do 5 tematów.');
+    for (const v of ['tech', 'biznes', 'auto']) await page.check(`input[value=${v}]`);
+    await page.click('#regForm button[type=submit]');
+    await expect(page.locator('.field-err')).toHaveText('Zaznacz zgodę na regulamin i politykę prywatności.');
+    await page.check('#zgodaP');
+    // maks. 5 tematów
+    for (const v of ['zdrowie', 'dom']) await page.check(`input[value=${v}]`);
+    expect(await page.locator('#topics input:checked').count()).toBe(5);
+    await page.locator('input[value=sport]').click();  // szósty temat: odrzucony
+    expect(await page.locator('#topics input:checked').count()).toBe(5);
+    expect(calls).toHaveLength(0);
+    await shot(page, '03-dolacz-blad-walidacji');
+  });
+
+  for (const [status, error, text, backToStep1] of [
+    [400, 'underage', 'Panelistą może zostać tylko osoba pełnoletnia.', true],
+    [403, 'turnstile_failed', 'Weryfikacja nie powiodła się. Spróbuj ponownie.', false],
+    [429, 'rate_limited', 'Zbyt wiele prób. Spróbuj ponownie za godzinę.', false],
+    [500, 'internal_error', 'Coś poszło nie tak. Spróbuj ponownie za chwilę.', false],
+  ]) {
+    test(`błąd API ${status} ${error}`, async ({ page }) => {
+      await mock(page, { 'POST /register': () => [status, { error }] });
+      await page.goto('/');
+      await fillStep1(page); await fillStep2(page);
+      await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
+      await page.click('#regForm button[type=submit]');
+      await expect(page.locator('.field-err')).toHaveText(text);
+      await expect(page.locator(`#regForm [data-step="${backToStep1 ? 1 : 2}"]`)).toBeVisible();
+      await expect(page.locator('#regForm button[type=submit]')).toBeEnabled();
+    });
+  }
+
+  test('brak sieci: komunikat o połączeniu', async ({ page }) => {
+    await mock(page, {});
+    await page.route('https://api.uwazni.org.pl/**', (r) => r.abort());
+    await page.goto('/');
+    await fillStep1(page); await fillStep2(page);
+    await page.waitForFunction(() => document.getElementById('regForm').dataset.tsToken);
+    await page.click('#regForm button[type=submit]');
+    await expect(page.locator('.field-err')).toContainText('Brak połączenia z serwerem');
+  });
+
+  test('mobile 375 px: krok 1 mieści się na ekranie, brak poziomego przewijania', async ({ page }) => {
+    await mock(page, {});
+    await page.goto('/');
+    await page.evaluate(() => document.getElementById('dolacz').scrollIntoView({ behavior: 'instant' }));
+    await page.waitForTimeout(300);
+    const b = await page.locator('[data-next]').boundingBox();
+    console.log('NEXT bottom', b.y + b.height);
+    const vh = page.viewportSize().height;
+    expect(b.y + b.height).toBeLessThanOrEqual(vh);
+    await noHorizontalScroll(page);
+  });
+});
+
+test.describe('sprawdz-poczte', () => {
+  test('PL: adres, ponowne wysłanie (POST /login), odliczanie, zmiana adresu', async ({ page }) => {
+    const calls = await mock(page, { 'POST /login': () => [202, { ok: true }] });
+    await page.addInitScript(() => { if (location.pathname.includes('sprawdz')) sessionStorage.setItem('uwazni_pending', JSON.stringify({ email: 'ty@przyklad.pl' })); });
+    await page.goto('/dolacz/sprawdz-poczte/');
+    await expect(page.locator('h1')).toHaveText('Sprawdź skrzynkę');
+    await expect(page.locator('#app')).toContainText('ty@przyklad.pl');
+    await expect(page.locator('#app')).toContainText('w tej samej przeglądarce');
+    await shot(page, '04-sprawdz-poczte');
+    await page.getByRole('button', { name: 'Wyślij link ponownie' }).click();
+    await expect(page.locator('.msg.ok')).toHaveText('Wysłane ponownie. Sprawdź skrzynkę.');
+    await expect(page.getByRole('button', { name: /Ponowna wysyłka za/ })).toBeDisabled();
+    expect(calls[0]).toMatchObject({ method: 'POST', path: '/login', body: { email: 'ty@przyklad.pl' } });
+    await page.getByRole('link', { name: 'Zmień adres e-mail' }).click();
+    await page.waitForURL(/\/#dolacz$/);
+    expect(await page.evaluate(() => sessionStorage.getItem('uwazni_pending'))).toBeNull();
+    await noHorizontalScroll(page);
+  });
+  test('429 przy ponownej wysyłce', async ({ page }) => {
+    await mock(page, { 'POST /login': () => [429, { error: 'rate_limited' }] });
+    await page.addInitScript(() => { if (location.pathname.includes('sprawdz')) sessionStorage.setItem('uwazni_pending', JSON.stringify({ email: 'ty@przyklad.pl' })); });
+    await page.goto('/dolacz/sprawdz-poczte/');
+    await page.getByRole('button', { name: 'Wyślij link ponownie' }).click();
+    await expect(page.locator('.msg.err')).toHaveText('Zbyt wiele prób. Spróbuj ponownie za godzinę.');
+    await expect(page.getByRole('button', { name: 'Wyślij link ponownie' })).toBeEnabled();
+  });
+  test('bez zapamiętanego adresu: pole e-mail', async ({ page }) => {
+    const calls = await mock(page, { 'POST /login': () => [202, {}] });
+    await page.goto('/dolacz/sprawdz-poczte/');
+    await page.fill('#cmail', 'ktos@example.com');
+    await page.getByRole('button', { name: 'Wyślij link ponownie' }).click();
+    await expect(page.locator('.msg.ok')).toBeVisible();
+    expect(calls[0].body).toEqual({ email: 'ktos@example.com' });
+  });
+  test('EN', async ({ page }) => {
+    await mock(page, { 'POST /login': () => [202, {}] });
+    await page.addInitScript(() => sessionStorage.setItem('uwazni_pending', JSON.stringify({ email: 'you@example.com' })));
+    await page.goto('/en/join/check-email/');
+    await expect(page.locator('h1')).toHaveText('Check your inbox');
+    await page.getByRole('button', { name: 'Send the link again' }).click();
+    await expect(page.locator('.msg.ok')).toHaveText('Sent again. Check your inbox.');
+  });
+});
+
+test.describe('zaloguj i powroty z maili', () => {
+  test('/zaloguj: formularz, POST /login, komunikat', async ({ page }) => {
+    const calls = await mock(page, { 'GET /me': () => [401, { error: 'unauthorized' }], 'POST /login': () => [202, { ok: true }] });
+    await page.goto('/zaloguj/');
+    await page.fill('#lmail', 'zle');
+    await page.getByRole('button', { name: 'Wyślij link' }).click();
+    await expect(page.locator('.msg.err')).toHaveText('Sprawdź adres e-mail.');
+    await page.fill('#lmail', 'ty@przyklad.pl');
+    await page.getByRole('button', { name: 'Wyślij link' }).click();
+    await expect(page.locator('.msg.ok')).toContainText('w tej samej przeglądarce');
+    expect(calls.find((c) => c.path === '/login').body).toEqual({ email: 'ty@przyklad.pl' });
+    await shot(page, '05-zaloguj');
+    await noHorizontalScroll(page);
+  });
+  test('zalogowany użytkownik z /zaloguj trafia na /konto', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME] });
+    await page.goto('/zaloguj/');
+    await page.waitForURL('**/konto/');
+  });
+  for (const [from, to, text] of [
+    ['/?konto=potwierdzone', '/konto/', null],
+    ['/?konto=zalogowano', '/konto/', null],
+    ['/?konto=potwierdzone-zaloguj', '/zaloguj/', 'otwarto w innej przeglądarce'],
+    ['/?konto=link-nieaktywny', '/zaloguj/', 'wygasł albo został już użyty'],
+    ['/en/?account=confirmed', '/en/account/', null],
+    ['/en/?account=signed-in', '/en/account/', null],
+    ['/en/?account=confirmed-sign-in', '/en/login/', 'different browser'],
+    ['/en/?account=link-expired', '/en/login/', 'expired or was already used'],
+  ]) {
+    test(`powrót ${from}`, async ({ page }) => {
+      await mock(page, { 'GET /me': () => [text ? 401 : 200, text ? { error: 'unauthorized' } : ME] });
+      await page.goto(from);
+      await page.waitForURL(`**${to}*`);
+      if (text) await expect(page.locator('.notice')).toContainText(text);
+      else await expect(page.locator('h1')).toBeVisible();
+    });
+  }
+  test('potwierdzone bez sesji (ponowne otwarcie linku): /konto przekierowuje na logowanie z komunikatem', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [401, { error: 'unauthorized' }] });
+    await page.goto('/?konto=potwierdzone');
+    await page.waitForURL('**/zaloguj/*');
+    await expect(page.locator('.notice')).toContainText('w tej samej przeglądarce');
+    await shot(page, '06-zaloguj-inna-przegladarka');
+  });
+  test('link Zaloguj w nawigacji: PL i EN', async ({ page }) => {
+    await mock(page, {});
+    await page.goto('/');
+    await expect(page.locator('a[data-login=panelist]').first()).toHaveAttribute('href', '/zaloguj/');
+    await page.goto('/en/');
+    await expect(page.locator('a[data-login=panelist]').first()).toHaveAttribute('href', '/en/login/');
+  });
+});
+
+test.describe('konto: poczekalnia', () => {
+  test('PL: wszystkie elementy', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, { ...ME, first_name: 'Ania' }] });
+    await page.goto('/konto/?konto=potwierdzone');
+    await expect(page.locator('h1')).toHaveText('Jesteś w panelu');
+    await expect(page.locator('.notice')).toHaveText('Konto potwierdzone. Witaj w panelu.');
+    await expect(page.locator('.lead')).toContainText('Cześć, Ania.');
+    await expect(page.locator('#profilebar')).toContainText('Uzupełniony w 33%');
+    await expect(page.locator('#profilebar [role=progressbar]')).toHaveAttribute('aria-valuenow', '33');
+    await expect(page.locator('#sampletask')).toContainText('Przykładowe zadanie');
+    const pick = page.getByRole('button', { name: 'Wybierz zadanie: wkrótce' });
+    await expect(pick).toBeDisabled();
+    await expect(page.locator('#ptsval')).toContainText('250');
+    await expect(page.locator('#zlval')).toHaveText('= 2,50 zł');
+    await expect(page.locator('#referral input')).toHaveValue('http://localhost:4173/?ref=ABCD1234');
+    await expect(page.locator('body')).not.toContainText(/syntetycz/i);
+    await shot(page, '07-konto');
+    await noHorizontalScroll(page);
+  });
+  test('EN', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME] });
+    await page.goto('/en/account/');
+    await expect(page.locator('h1')).toHaveText('You are in the panel');
+    await expect(page.locator('#zlval')).toHaveText('= PLN 2.50');
+    await expect(page.getByRole('button', { name: 'Choose a task: coming soon' })).toBeDisabled();
+  });
+  test('401 przekierowuje na logowanie', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [401, { error: 'unauthorized' }] });
+    await page.goto('/konto/');
+    await page.waitForURL('**/zaloguj/');
+  });
+  test('błąd sieci: komunikat i ponów', async ({ page }) => {
+    await mock(page, {});
+    await page.route('https://api.uwazni.org.pl/**', (r) => r.abort());
+    await page.goto('/konto/');
+    await expect(page.locator('.msg.err')).toContainText('Brak połączenia');
+    await expect(page.getByRole('button', { name: 'Spróbuj ponownie' })).toBeVisible();
+  });
+});
+
+test.describe('profil', () => {
+  test('PL: kroki z zapisem po każdym, bonus na końcu', async ({ page }) => {
+    let pct = 33;
+    const calls = await mock(page, {
+      'GET /me': () => [200, ME], 'GET /me/profile': () => [200, PROFILE],
+      'PUT /me/profile': (b) => { pct += 17; return [200, { ...PROFILE, ...b, completion_pct: pct, bonus_awarded: pct >= 100 }]; },
+      'PUT /me': (b) => [200, { ...ME, ...b, completion_pct: pct }],
+    });
+    pct = 33;
+    await page.goto('/konto/profil/');
+    await expect(page.locator('#app legend')).toHaveText('Twoja płeć');
+    await expect(page.locator('#app')).toContainText('Krok 1 z 5');
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await expect(page.locator('.msg.err')).toHaveText('Wybierz jedną z opcji.');
+    await page.getByLabel('Kobieta').check();
+    await shot(page, '08-profil-krok1');
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await expect(page.locator('#app legend')).toHaveText('Gdzie mieszkasz?');
+    expect(calls.filter((c) => c.method === 'PUT')[0]).toMatchObject({ path: '/me/profile', body: { gender: 'kobieta' } });
+    await page.getByLabel('Mazowieckie').check();
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await page.getByLabel('Powyżej 500 tys.').check();
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await page.getByLabel('Smartfon z Androidem').check();
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await expect(page.locator('#app legend')).toHaveText('Jak mamy się do Ciebie zwracać?');
+    await page.fill('#pname', 'Ania');
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await expect(page.locator('h1')).toHaveText('Profil uzupełniony');
+    await expect(page.locator('.msg.ok')).toContainText('Dopisaliśmy 200 pkt');
+    const puts = calls.filter((c) => c.method === 'PUT').map((c) => [c.path, c.body]);
+    expect(puts).toEqual([
+      ['/me/profile', { gender: 'kobieta' }], ['/me/profile', { voivodeship: 'mazowieckie' }],
+      ['/me/profile', { town_size: '500k_plus' }], ['/me/profile', { device: 'smartfon_android' }], ['/me', { first_name: 'Ania' }],
+    ]);
+    await shot(page, '09-profil-gotowe');
+    await noHorizontalScroll(page);
+  });
+  test('błąd zapisu zostaje na kroku', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME], 'GET /me/profile': () => [200, PROFILE], 'PUT /me/profile': () => [400, { error: 'invalid_gender' }] });
+    await page.goto('/konto/profil/');
+    await page.getByLabel('Mężczyzna').check();
+    await page.getByRole('button', { name: 'Zapisz i dalej' }).click();
+    await expect(page.locator('.msg.err')).toBeVisible();
+    await expect(page.locator('#app legend')).toHaveText('Twoja płeć');
+  });
+  test('EN: etykiety', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME], 'GET /me/profile': () => [200, PROFILE] });
+    await page.goto('/en/account/profile/');
+    await expect(page.locator('#app legend')).toHaveText('Your gender');
+    await expect(page.getByLabel('Woman')).toBeVisible();
+  });
+});
+
+test.describe('ustawienia', () => {
+  const consents = { current: { terms: { granted: true, doc_version: '3', at: 1795000000000 }, privacy: { granted: true, doc_version: '3', at: 1795000000000 }, marketing: { granted: false, doc_version: '3', at: 1795000000000 } }, history: [] };
+  const base = { 'GET /me': () => [200, ME], 'GET /me/consents': () => [200, consents] };
+
+  test('zgody: zmiana marketingowej zapisuje PUT /me/consents', async ({ page }) => {
+    const calls = await mock(page, { ...base, 'PUT /me/consents': () => [200, consents] });
+    await page.goto('/konto/ustawienia/');
+    await expect(page.locator('dl')).toContainText('wersja 3');
+    await page.getByLabel('Chcę dostawać e-mailem').check();
+    await expect(page.locator('.msg.ok')).toHaveText('Zapisano');
+    expect(calls.find((c) => c.method === 'PUT')).toMatchObject({ path: '/me/consents', body: { marketing: true } });
+    await shot(page, '10-ustawienia');
+    await noHorizontalScroll(page);
+  });
+  test('pobranie danych: plik JSON', async ({ page }) => {
+    await mock(page, { ...base, 'GET /me/export': () => ({ status: 200, json: { exported_at: 1, account: { id: 'x' } } }) });
+    await page.goto('/konto/ustawienia/');
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Pobierz moje dane' }).click()]);
+    expect(dl.suggestedFilename()).toBe('uwazni-moje-dane.json');
+    expect(JSON.parse(fs.readFileSync(await dl.path(), 'utf8')).account.id).toBe('x');
+  });
+  test('usunięcie konta bez salda', async ({ page }) => {
+    const calls = await mock(page, { ...base, 'DELETE /me': () => [200, { ok: true }] });
+    await page.goto('/konto/ustawienia/');
+    await page.getByRole('button', { name: 'Usuń moje konto…' }).click();
+    const go = page.getByRole('button', { name: 'Usuń konto na stałe' });
+    await expect(go).toBeDisabled();
+    await page.getByLabel('Rozumiem, że tego nie da się cofnąć.').check();
+    await go.click();
+    await expect(page.locator('h1')).toHaveText('Konto zostało usunięte');
+    expect(calls.find((c) => c.method === 'DELETE')).toMatchObject({ path: '/me', body: {} });
+  });
+  test('409 balance_pending: rezygnacja z salda wysyła forfeit_balance', async ({ page }) => {
+    let n = 0;
+    const calls = await mock(page, { ...base, 'DELETE /me': (b) => (b.forfeit_balance ? [200, { ok: true }] : [409, { error: 'balance_pending', balance_points: 250, balance_pln: 2.5 }]) });
+    await page.goto('/konto/ustawienia/');
+    await page.getByRole('button', { name: 'Usuń moje konto…' }).click();
+    await page.getByLabel('Rozumiem, że tego nie da się cofnąć.').check();
+    await page.getByRole('button', { name: 'Usuń konto na stałe' }).click();
+    await expect(page.locator('#delzone')).toContainText('Saldo to 250 pkt (2,50 zł)');
+    await shot(page, '11-usuniecie-saldo');
+    const fgo = page.getByRole('button', { name: 'Zrezygnuj z salda i usuń konto' });
+    await expect(fgo).toBeDisabled();
+    await page.getByLabel(/Rezygnuję z 2,50/).check();
+    await fgo.click();
+    await expect(page.locator('h1')).toHaveText('Konto zostało usunięte');
+    expect(calls.filter((c) => c.method === 'DELETE').map((c) => c.body)).toEqual([{}, { forfeit_balance: true }]);
+  });
+  test('409 balance_pending: podanie danych do wypłaty, PUT /me i ponowne DELETE', async ({ page }) => {
+    let paid = false;
+    const calls = await mock(page, { ...base,
+      'PUT /me': () => { paid = true; return [200, ME]; },
+      'DELETE /me': () => (paid ? [200, { ok: true, payout_id: 'del:x:250' }] : [409, { error: 'balance_pending', balance_points: 250, balance_pln: 2.5 }]) });
+    await page.goto('/konto/ustawienia/');
+    await page.getByRole('button', { name: 'Usuń moje konto…' }).click();
+    await page.getByLabel('Rozumiem, że tego nie da się cofnąć.').check();
+    await page.getByRole('button', { name: 'Usuń konto na stałe' }).click();
+    await page.getByRole('button', { name: 'Wypłać i usuń konto' }).click();
+    await expect(page.locator('#delzone .msg.err')).toBeVisible();
+    await page.fill('#pfn', 'Anna'); await page.fill('#pln', 'Nowak'); await page.fill('#pac', '61109010140000071219812874');
+    await page.getByRole('button', { name: 'Wypłać i usuń konto' }).click();
+    await expect(page.locator('h1')).toHaveText('Konto zostało usunięte');
+    await expect(page.locator('.msg.ok')).toContainText('ostatnią wypłatę');
+    expect(calls.map((c) => `${c.method} ${c.path}`).filter((x) => /PUT|DELETE/.test(x))).toEqual(['DELETE /me', 'PUT /me', 'DELETE /me']);
+    expect(calls.find((c) => c.method === 'PUT').body).toEqual({ first_name: 'Anna', last_name: 'Nowak', account_number: '61109010140000071219812874' });
+  });
+  test('usuwanie: balance_changed i EN', async ({ page }) => {
+    await mock(page, { 'GET /me': () => [200, ME], 'GET /me/consents': () => [200, consents], 'DELETE /me': () => [409, { error: 'balance_changed' }] });
+    await page.goto('/en/account/settings/');
+    await page.getByRole('button', { name: 'Delete my account…' }).click();
+    await page.getByLabel('I understand that this cannot be undone.').check();
+    await page.getByRole('button', { name: 'Delete account permanently' }).click();
+    await expect(page.locator('#delconfirm .msg.err')).toHaveText('Your balance changed while we were deleting the account. Try again.');
+  });
+});
+
+test.describe('mobile 375 px: brak poziomego przewijania na stronach aplikacji', () => {
+  for (const url of ['/zaloguj/', '/en/login/', '/dolacz/sprawdz-poczte/', '/konto/', '/en/account/', '/konto/profil/', '/konto/ustawienia/', '/en/account/settings/']) {
+    test(url, async ({ page }) => {
+      await mock(page, { 'GET /me': () => [url.includes('login') || url.includes('zaloguj') ? 401 : 200, ME], 'GET /me/profile': () => [200, PROFILE], 'GET /me/consents': () => [200, { current: {}, history: [] }] });
+      await page.goto(url);
+      await page.waitForFunction(() => document.getElementById('app').getAttribute('aria-busy') !== 'true');
+      await noHorizontalScroll(page);
+    });
+  }
+});

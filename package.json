@@ -1,0 +1,7 @@
+{
+  "name": "uwazni-org-pl-tests",
+  "private": true,
+  "description": "Testy front-endu panelisty (Playwright, API zamockowane)",
+  "scripts": { "test": "playwright test" },
+  "devDependencies": { "@playwright/test": "^1.49.0" }
+}
